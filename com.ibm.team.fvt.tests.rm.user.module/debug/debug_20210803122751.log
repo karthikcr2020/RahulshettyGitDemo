@@ -1,0 +1,387 @@
+**********  Open Debug Session: 20210803122751  ********
+Attach debug log file to RQM Adapter:
+	'com.ibm.rqm.adapter.resultAttachmentsFile' parameter is not set
+	'qm_AttachmentsFile' envirnment variable is not set either, give up...
+	- 'stopOnFailure' value=false
+	- 'timeoutsThreshold' value=2
+	- 'baseUrl' value=https://mb-two1.fyre.ibm.com:9443/rm/web
+Info: path for application 'https://mb-two1.fyre.ibm.com:9443/rm' contains several segments. Context root (rm) was initialized with first one.
+	- 'userRegistry' value=3
+	- 'appsToRegister' value=rm,gc
+		+ CspfFactory.<clinit>(): INFO: Factory 'com.ibm.team.cspf.report.internal.factories.ReportWebPageFactory' has not been found.
+Info: path for application 'https://mb-two1.fyre.ibm.com:9443/rm' contains several segments. Context root (rm) was initialized with first one.
+Info: path for application 'https://mb-two1.fyre.ibm.com:9443/rm' contains several segments. Context root (rm) was initialized with first one.
+	- 'timeout' value=70
+	- 'timeoutShort' value=15
+	- 'timeoutToOpenPage' value=45
+	- 'timeoutMtmSampleCreation' value=12000
+	- 'browserPath' value=C:/Program Files/Mozilla Firefox/firefox.exe
+	- 'geckoPath' value=C:/Users/KarthikCR/workspace/org.selenium.java.client/gecko/v29/geckodriver.exe
+	- 'browserProfile' value=C:/Users/KarthikCR/AppData/Roaming/Mozilla/Firefox/Profiles/wioourlo.default
+	- 'download.dir' value=uploads/test_files
+	- 'selenium.snapshots.dir' value=screenshots
+		+ WebBrowser.setWindow(): (dimension=(1600, 900), location=null)
+	- 'defaultAdminUsername' value=clmadmin
+	- 'defaultAdminUserID' value=clmadmin
+	- 'defaultAdminPassword' value=c*******
+	- 'adminUsername' value=clmadmin
+	- 'adminUserID' value=clmadmin
+	- 'adminPassword' value=c*******
+	- 'adminEmail' value=clmadmin@example.net
+	- 'expressSetup' value=false
+	- 'dwDefaultUser' value=true
+	- 'testUsername' value=Al
+	- 'testUserID' value=al
+	- 'testPassword' value=a*******
+	- 'testEmail' value=al@jkebanking.net
+	- 'runPleTests' value=true
+	- 'testProjectName' value=
+	- 'nonDefaultComponentName' value=Component X
+	- 'nonDefaultStreamName' value=Stream X
+	- 'author1Username' value=bob
+	- 'author1UserID' value=bob
+	- 'author1Password' value=b*******
+	- 'author1Email' value=bob@eu.jke.ibm.com
+	- 'author3Username' value=Dave
+	- 'author3UserID' value=dave
+	- 'author3Password' value=d*******
+	- 'author3Email' value=dave@eu.jke.ibm.com
+	- 'cleanData' value=false
+Selenium and Browser information:
+	- Selenium Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+	- Firefox version: 78.11.0
+	- Browser window size = (1600, 900)
+	- Browser window position = (3, 3)
+
+Starting execution of BVT test case 'GlossaryAndTermTest_01_RmDataSetup' at 12:27:57
+========================================================================
+	- 12:27:57: start test case 'test01_createProject'...
+		+ WebPage.createPage(): Create page https://mb-two1.fyre.ibm.com:9443/rm/admin for user User id=clmadmin, name=clmadmin, passwd=c*******, mail=clmadmin@example.net
+			-> location: https://mb-two1.fyre.ibm.com:9443/rm/admin
+			-> user: User id=clmadmin, name=clmadmin, passwd=c*******, mail=clmadmin@example.net
+			-> class:    com.ibm.team.fvt.tests.clm.pages.jts.admin.JtsAdminHomePage
+		  -> found application 'RM Application (location=https://mb-two1.fyre.ibm.com:9443/rm, no user logged in)' for URL: https://mb-two1.fyre.ibm.com:9443/rm/admin
+		+ Topology.needLogin(): See whether it needs to log in before going to https://mb-two1.fyre.ibm.com:9443/rm/admin
+		  -> found application 'RM Application (location=https://mb-two1.fyre.ibm.com:9443/rm, no user logged in)' for URL: https://mb-two1.fyre.ibm.com:9443/rm/admin
+		+ Application.needLogin(): RM Application (location=https://mb-two1.fyre.ibm.com:9443/rm, no user logged in) need login asno user is set.
+		  -> no application is already logged in on same server
+		  -> store page at https://mb-two1.fyre.ibm.com:9443/rm/admin: about:blank
+		+ WebPage.get(): get page content (https://mb-two1.fyre.ibm.com:9443/rm/admin)
+		  -> browser URL: about:blank
+		  -> current user: null
+		  -> loading page...
+		  -> browser URL: about:blank
+		+ JazzAbstractWebPage.load(): Load the current page: https://mb-two1.fyre.ibm.com:9443/rm/admin
+		+ WebBrowser.get(): browser get: https://mb-two1.fyre.ibm.com:9443/rm/admin
+		  -> driver url: about:blank
+		  -> stored location: null
+INFO: URL of page 'https://mb-two1.fyre.ibm.com:9443/rm/admin' has changed to 'https://mb-two1.fyre.ibm.com:9443/jts/auth/authrequired' just after having been loaded.
+		  -> should login
+			(finding element By.xpath: //div[starts-with(@id,'com_ibm_rqm_planning_web_ui_internal_page_NotAuthorized')] for browser Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/jts/auth/authrequired, location=https://mb-two1.fyre.ibm.com:9443/rm/admin (null) in frame 'null')
+			(finding element By.xpath: //*[@id='errorPageContainer'] for browser Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/jts/auth/authrequired, location=https://mb-two1.fyre.ibm.com:9443/rm/admin (null) in frame 'null')
+			(finding element By.xpath: //div[starts-with(@id,'com_ibm_rqm_planning_web_ui_internal_page_NotAuthorized')] for browser Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/jts/auth/authrequired, location=https://mb-two1.fyre.ibm.com:9443/rm/admin (null) in frame 'null')
+			(finding element By.xpath: //div[@dojoattachpoint='messageArea' and contains(@class,'ERROR')] for browser Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/jts/auth/authrequired, location=https://mb-two1.fyre.ibm.com:9443/rm/admin (null) in frame 'null')
+			(finding element By.xpath: //div[@id='jazz_ui_wizard_ExternalWizardStep_5']//iframe for browser Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/jts/auth/authrequired, location=https://mb-two1.fyre.ibm.com:9443/rm/admin (null) in frame 'null')
+		+ JazzAbstractWebPage.performLogin(): Perform login of user User id=clmadmin, name=clmadmin, passwd=c*******, mail=clmadmin@example.net
+		+ WebBrowser.waitForElement(): waiting for element: [By.name: j_username] (fail=false, timeout=70, displayed=true, single=true)
+		+ WebBrowser.waitForElements(): waiting for elements: [By.name: j_username]
+			(finding elements By.name: j_username for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/jts/auth/authrequired, location=https://mb-two1.fyre.ibm.com:9443/rm/admin (null))
+			  (-> found 'Web element {full xpath: //*[@name='j_username']} in no frame)
+			(getting displayed state for Web element {full xpath: //*[@name='j_username']} in no frame)
+			 ( -> true)
+		  -> found element: Web element {full xpath: //*[@name='j_username']} in no frame (visible)
+		  -> return 1 visible elements
+		+ WebBrowser.typeText(): Type text 'clmadmin' (cleared)
+			(getting enabled state for Web element {full xpath: //*[@name='j_username']} in no frame)
+			 ( -> true)
+			(getting attribute 'aria-label' for Web element {full xpath: //*[@name='j_username']} in no frame, fail=false)
+			 ( -> "null")
+			(getting attribute 'value' for Web element {full xpath: //*[@name='j_username']} in no frame, fail=false)
+			 ( -> "")
+			(sending keys '' to Web element {full xpath: //*[@name='j_username']} in no frame)
+			 ( -> done.)
+			(clearing Web element {full xpath: //*[@name='j_username']} in no frame)
+			 ( -> done.)
+			(sending keys 'clmadmin' to Web element {full xpath: //*[@name='j_username']} in no frame)
+			 ( -> done.)
+			(sending keys '' to Web element {full xpath: //*[@name='j_username']} in no frame)
+			 ( -> done.)
+		+ WebBrowser.waitForElement(): waiting for element: [By.name: j_password] (fail=true, timeout=70, displayed=true, single=true)
+		+ WebBrowser.waitForElements(): waiting for elements: [By.name: j_password]
+			(finding elements By.name: j_password for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/jts/auth/authrequired, location=https://mb-two1.fyre.ibm.com:9443/rm/admin (null))
+			  (-> found 'Web element {full xpath: //*[@name='j_password']} in no frame)
+			(getting displayed state for Web element {full xpath: //*[@name='j_password']} in no frame)
+			 ( -> true)
+		  -> found element: Web element {full xpath: //*[@name='j_password']} in no frame (visible)
+		  -> return 1 visible elements
+		+ WebBrowser.typeText(): Type password '******' (cleared)
+			(getting enabled state for Web element {full xpath: //*[@name='j_password']} in no frame)
+			 ( -> true)
+			(getting attribute 'aria-label' for Web element {full xpath: //*[@name='j_password']} in no frame, fail=false)
+			 ( -> "null")
+			(getting attribute 'value' for Web element {full xpath: //*[@name='j_password']} in no frame, fail=false)
+			 ( -> "")
+			(sending keys '' to Web element {full xpath: //*[@name='j_password']} in no frame)
+			 ( -> done.)
+			(clearing Web element {full xpath: //*[@name='j_password']} in no frame)
+			 ( -> done.)
+			(sending password '*****' to Web element {full xpath: //*[@name='j_password']} in no frame)
+			 ( -> done.)
+			(sending keys '' to Web element {full xpath: //*[@name='j_password']} in no frame)
+			 ( -> done.)
+		+ WebPage.matchBrowserUrl(): Test whether page location matches current browser URL or not.
+		  -> current url: https://mb-two1.fyre.ibm.com:9443/jts/auth/authrequired
+		  -> page location: https://mb-two1.fyre.ibm.com:9443/rm/admin
+		  -> browser URL: https://mb-two1.fyre.ibm.com:9443/jts/auth/authrequired
+		  -> page URL: https://mb-two1.fyre.ibm.com:9443/rm/admin
+		  -> NO MATCH: browser URL path does not start with page URL path
+		+ WebBrowser.waitForElement(): waiting for element: [By.xpath: //button[text()='Log In'] | //button[text()='Log in'] | //input[@value='Log in']] (fail=true, timeout=70, displayed=true, single=true)
+		+ WebBrowser.waitForElements(): waiting for elements: [By.xpath: //button[text()='Log In'] | //button[text()='Log in'] | //input[@value='Log in']]
+			(finding elements By.xpath: //button[text()='Log In'] | //button[text()='Log in'] | //input[@value='Log in'] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/jts/auth/authrequired, location=https://mb-two1.fyre.ibm.com:9443/rm/admin (null))
+			  (-> found 'Web element {full xpath: //button[text()='Log In'] | //button[text()='Log in'] | //input[@value='Log in']} in no frame)
+			(getting displayed state for Web element {full xpath: //button[text()='Log In'] | //button[text()='Log in'] | //input[@value='Log in']} in no frame)
+			 ( -> true)
+		  -> found element: Web element {full xpath: //button[text()='Log In'] | //button[text()='Log in'] | //input[@value='Log in']} in no frame (visible)
+		  -> return 1 visible elements
+		+ WebBrowser.clickButton(): click on button 'Web element {full xpath: //button[text()='Log In'] | //button[text()='Log in'] | //input[@value='Log in']} in no frame'
+			(getting enabled state for Web element {full xpath: //button[text()='Log In'] | //button[text()='Log in'] | //input[@value='Log in']} in no frame)
+			 ( -> true)
+			(clicking on Web element {full xpath: //button[text()='Log In'] | //button[text()='Log in'] | //input[@value='Log in']} in no frame)
+			 ( -> done.)
+			(getting displayed state for Web element {full xpath: //button[text()='Log In'] | //button[text()='Log in'] | //input[@value='Log in']} in no frame)
+			(WORKAROUND: exception The element reference of [object String] "273301c0-e3fc-4d95-a5a3-44d0142d8096" is stale; either the element is no longer attached to the DOM, it is not in the current frame context, or the document has been refreshed
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'DESKTOP-0D63QME', ip: '192.168.225.233', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 78.11.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210531140902, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 6936, moz:profile: C:\Users\KarthikCR\AppData\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: ignore}
+Session ID: 5f456d84-d9ee-4415-8cc1-6aedb65747db has been caught...
+			 -> return false instead)
+			(finding element By.xpath: .//div[@class='loginErrorMessage'] for browser Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/jts/auth/authrequired, location=https://mb-two1.fyre.ibm.com:9443/rm/admin (null) in frame 'null')
+		+ Topology.login(): Login user clmadmin for all applications
+		  -> found application 'RM Application (location=https://mb-two1.fyre.ibm.com:9443/rm, no user logged in)' for URL: https://mb-two1.fyre.ibm.com:9443/rm/admin
+		+ Application.login(): Log in user 'User id=clmadmin, name=clmadmin, passwd=c*******, mail=clmadmin@example.net' to current RM Application (location=https://mb-two1.fyre.ibm.com:9443/rm, no user logged in)
+		+ Application.login(): Log in user 'User id=clmadmin, name=clmadmin, passwd=c*******, mail=clmadmin@example.net' to current RM Application (location=https://mb-two1.fyre.ibm.com:9443/rm, user logged in: User id=clmadmin, name=clmadmin, passwd=c*******, mail=clmadmin@example.net)
+		  -> nothing was done as there user was already logged in.
+		+ Application.login(): Log in user 'User id=clmadmin, name=clmadmin, passwd=c*******, mail=clmadmin@example.net' to current RM Application (location=https://mb-two1.fyre.ibm.com:9443/rm, no user logged in)
+		+ Application.login(): Log in user 'User id=clmadmin, name=clmadmin, passwd=c*******, mail=clmadmin@example.net' to current RM Application (location=https://mb-two1.fyre.ibm.com:9443/rm, no user logged in)
+		+ Application.login(): Log in user 'User id=clmadmin, name=clmadmin, passwd=c*******, mail=clmadmin@example.net' to current RM Application (location=https://mb-two1.fyre.ibm.com:9443/rm, user logged in: User id=clmadmin, name=clmadmin, passwd=c*******, mail=clmadmin@example.net)
+		  -> nothing was done as there user was already logged in.
+		+ Application.login(): Log in user 'User id=clmadmin, name=clmadmin, passwd=c*******, mail=clmadmin@example.net' to current RM Application (location=https://mb-two1.fyre.ibm.com:9443/rm, user logged in: User id=clmadmin, name=clmadmin, passwd=c*******, mail=clmadmin@example.net)
+		  -> nothing was done as there user was already logged in.
+		+ Application.login(): Log in user 'User id=clmadmin, name=clmadmin, passwd=c*******, mail=clmadmin@example.net' to current RM Application (location=https://mb-two1.fyre.ibm.com:9443/rm, user logged in: User id=clmadmin, name=clmadmin, passwd=c*******, mail=clmadmin@example.net)
+		  -> nothing was done as there user was already logged in.
+		+ Topology.login(): Login user clmadmin for all applications
+		  -> found application 'RM Application (location=https://mb-two1.fyre.ibm.com:9443/rm, user logged in: User id=clmadmin, name=clmadmin, passwd=c*******, mail=clmadmin@example.net)' for URL: https://mb-two1.fyre.ibm.com:9443/rm/admin
+		+ Application.login(): Log in user 'User id=clmadmin, name=clmadmin, passwd=c*******, mail=clmadmin@example.net' to current RM Application (location=https://mb-two1.fyre.ibm.com:9443/rm, user logged in: User id=clmadmin, name=clmadmin, passwd=c*******, mail=clmadmin@example.net)
+		  -> nothing was done as there user was already logged in.
+		+ WebBrowser.resetFrame(): Reset frame null
+		+ WebBrowser.waitForElement(): waiting for element: [By.id: net-jazz-ajax-WorkbenchRoot] (fail=true, timeout=70, displayed=true, single=true)
+		+ WebBrowser.waitForElements(): waiting for elements: [By.id: net-jazz-ajax-WorkbenchRoot]
+			(finding elements By.id: net-jazz-ajax-WorkbenchRoot for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/admin (null))
+			  (-> found 'Web element {full xpath: //*[@id='net-jazz-ajax-WorkbenchRoot']} in no frame)
+			(getting displayed state for Web element {full xpath: //*[@id='net-jazz-ajax-WorkbenchRoot']} in no frame)
+			 ( -> true)
+		  -> found element: Web element {full xpath: //*[@id='net-jazz-ajax-WorkbenchRoot']} in no frame (visible)
+		  -> return 1 visible elements
+			(finding elements By.xpath: ./child::* for Web element {full xpath: //*[@id='net-jazz-ajax-WorkbenchRoot']} in no frame, displayed=true, recovery=true)
+			  (-> found 'Web element {full xpath: //*[@id='net-jazz-ajax-WorkbenchRoot']/child::*} in no frame)
+			(finding element By.xpath: .//div[contains(@id, 'jazz_ui_Dialog')] for browser Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/admin (null) in frame 'null')
+			(finding element By.xpath: //div[starts-with(@id,'com_ibm_rqm_planning_web_ui_internal_page_NotAuthorized')] for browser Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/admin (null) in frame 'null')
+		+ JazzAbstractWebPage.checkAcceptableServerErrorMessages(): Check whether a server error message is displayed in the page
+			(finding element By.xpath: //*[@id='errorPageContainer'] for browser Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/admin (null) in frame 'null')
+			(finding element By.xpath: //div[starts-with(@id,'com_ibm_rqm_planning_web_ui_internal_page_NotAuthorized')] for browser Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/admin (null) in frame 'null')
+			(finding element By.xpath: //div[@dojoattachpoint='messageArea' and contains(@class,'ERROR')] for browser Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/admin (null) in frame 'null')
+			(finding element By.xpath: //div[@id='jazz_ui_wizard_ExternalWizardStep_5']//iframe for browser Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/admin (null) in frame 'null')
+		+ WebBrowser.waitForMultipleElements(): waiting for multiple elements (fail=true, timeout=70):'By.tagName: h1', 'By.id: com_ibm_team_repository_web_ui_internal_admin_NotAuthorizedView_0'
+			(finding elements By.tagName: h1 for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/admin (null))
+			  (-> found 'Web element {full xpath: //h1]} in no frame)
+		  -> found 'By.tagName: h1'
+			(finding elements By.id: com_ibm_team_repository_web_ui_internal_admin_NotAuthorizedView_0 for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/admin (null))
+		+ WebBrowser.waitForElement(): waiting for element: [By.xpath: //*[contains(@dojoattachpoint,'bannerTitle')]] (fail=true, timeout=70, displayed=true, single=true)
+		+ WebBrowser.waitForElements(): waiting for elements: [By.xpath: //*[contains(@dojoattachpoint,'bannerTitle')]]
+			(finding elements By.xpath: //*[contains(@dojoattachpoint,'bannerTitle')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/admin (null))
+			  (-> found 'Web element {full xpath: //*[contains(@dojoattachpoint,'bannerTitle')]} in no frame)
+			(getting displayed state for Web element {full xpath: //*[contains(@dojoattachpoint,'bannerTitle')]} in no frame)
+			 ( -> true)
+		  -> found element: Web element {full xpath: //*[contains(@dojoattachpoint,'bannerTitle')]} in no frame (visible)
+		  -> return 1 visible elements
+		+ WebBrowserElement.waitForElement(): waiting for element: [By.className: truncateNode] relatively to Web element {full xpath: //*[contains(@dojoattachpoint,'bannerTitle')]} in no frame
+		+ WebBrowserElement.waitForElements(): waiting for elements: [By.className: truncateNode] relatively to Web element {full xpath: //*[contains(@dojoattachpoint,'bannerTitle')]} in no frame
+		+ WebBrowser.waitForElements(): waiting for elements: [//*[contains(@dojoattachpoint,'bannerTitle')]]//[By.className: truncateNode]
+			(finding elements By.className: truncateNode for Web element {full xpath: //*[contains(@dojoattachpoint,'bannerTitle')]} in no frame, displayed=true, recovery=true)
+			(finding elements By.className: truncateNode for Web element {full xpath: //*[contains(@dojoattachpoint,'bannerTitle')]} in no frame, displayed=true, recovery=true)
+			(finding elements By.className: truncateNode for Web element {full xpath: //*[contains(@dojoattachpoint,'bannerTitle')]} in no frame, displayed=true, recovery=true)
+			(finding elements By.className: truncateNode for Web element {full xpath: //*[contains(@dojoattachpoint,'bannerTitle')]} in no frame, displayed=true, recovery=true)
+			(finding elements By.className: truncateNode for Web element {full xpath: //*[contains(@dojoattachpoint,'bannerTitle')]} in no frame, displayed=true, recovery=true)
+		  -> no element was found
+			(getting text for Web element {full xpath: //*[contains(@dojoattachpoint,'bannerTitle')]} in no frame)
+			 ( -> "Administration - Engineering Requirements Management DOORS Next (/rm)")
+		+ JazzAbstractWebPage.getTitle(): Get page title.
+			(getting text for Web element {full xpath: //h1]} in no frame)
+			 ( -> "Status Summary")
+		+ JazzAbstractWebPage.getTitle(): Get page title.
+			(getting text for Web element {full xpath: //h1]} in no frame)
+			 ( -> "Status Summary")
+		+ ClmWebPage.waitForExpectedTitle(): Wait for expected title 'Welcome to the Jazz Team Server Administration Home' (current is 'Status Summary')
+		+ JazzAbstractWebPage.getTitle(): Get page title.
+			(getting text for Web element {full xpath: //h1]} in no frame)
+			 ( -> "Status Summary")
+		+ JazzAbstractWebPage.getTitle(): Get page title.
+			(getting text for Web element {full xpath: //h1]} in no frame)
+			 ( -> "Status Summary")
+		+ JazzAbstractWebPage.getTitle(): Get page title.
+			(getting text for Web element {full xpath: //h1]} in no frame)
+			 ( -> "Status Summary")
+		+ JazzAbstractWebPage.getTitle(): Get page title.
+			(getting text for Web element {full xpath: //h1]} in no frame)
+			 ( -> "Status Summary")
+		+ JazzAbstractWebPage.getTitle(): Get page title.
+			(getting text for Web element {full xpath: //h1]} in no frame)
+			 ( -> "Status Summary")
+		+ JazzAbstractWebPage.getTitle(): Get page title.
+			(getting text for Web element {full xpath: //h1]} in no frame)
+			 ( -> "Status Summary")
+		+ JazzAbstractWebPage.getTitle(): Get page title.
+			(getting text for Web element {full xpath: //h1]} in no frame)
+			 ( -> "Status Summary")
+		+ JazzAbstractWebPage.getTitle(): Get page title.
+			(getting text for Web element {full xpath: //h1]} in no frame)
+			 ( -> "Status Summary")
+		+ JazzAbstractWebPage.getTitle(): Get page title.
+			(getting text for Web element {full xpath: //h1]} in no frame)
+			 ( -> "Status Summary")
+		+ JazzAbstractWebPage.getTitle(): Get page title.
+			(getting text for Web element {full xpath: //h1]} in no frame)
+			 ( -> "Status Summary")
+		+ JazzAbstractWebPage.getTitle(): Get page title.
+			(getting text for Web element {full xpath: //h1]} in no frame)
+			 ( -> "Status Summary")
+		+ JazzAbstractWebPage.getTitle(): Get page title.
+			(getting text for Web element {full xpath: //h1]} in no frame)
+			 ( -> "Status Summary")
+		+ JazzAbstractWebPage.getTitle(): Get page title.
+			(getting text for Web element {full xpath: //h1]} in no frame)
+			 ( -> "Status Summary")
+		+ JazzAbstractWebPage.getTitle(): Get page title.
+			(getting text for Web element {full xpath: //h1]} in no frame)
+			 ( -> "Status Summary")
+		+ JazzAbstractWebPage.getTitle(): Get page title.
+			(getting text for Web element {full xpath: //h1]} in no frame)
+			 ( -> "Status Summary")
+		+ JazzAbstractWebPage.getTitle(): Get page title.
+			(getting text for Web element {full xpath: //h1]} in no frame)
+			 ( -> "Status Summary")
+		+ JazzAbstractWebPage.getTitle(): Get page title.
+			(getting text for Web element {full xpath: //h1]} in no frame)
+			 ( -> "Status Summary")
+		+ JazzAbstractWebPage.getTitle(): Get page title.
+			(getting text for Web element {full xpath: //h1]} in no frame)
+			 ( -> "Status Summary")
+		+ JazzAbstractWebPage.getTitle(): Get page title.
+			(getting text for Web element {full xpath: //h1]} in no frame)
+			 ( -> "Status Summary")
+		+ JazzAbstractWebPage.getTitle(): Get page title.
+			(getting text for Web element {full xpath: //h1]} in no frame)
+			 ( -> "Status Summary")
+		+ JazzAbstractWebPage.getTitle(): Get page title.
+			(getting text for Web element {full xpath: //h1]} in no frame)
+			 ( -> "Status Summary")
+		+ JazzAbstractWebPage.getTitle(): Get page title.
+			(getting text for Web element {full xpath: //h1]} in no frame)
+			 ( -> "Status Summary")
+		+ JazzAbstractWebPage.getTitle(): Get page title.
+			(getting text for Web element {full xpath: //h1]} in no frame)
+			 ( -> "Status Summary")
+		+ JazzAbstractWebPage.getTitle(): Get page title.
+			(getting text for Web element {full xpath: //h1]} in no frame)
+			 ( -> "Status Summary")
+		+ JazzAbstractWebPage.getTitle(): Get page title.
+			(getting text for Web element {full xpath: //h1]} in no frame)
+			 ( -> "Status Summary")
+		+ JazzAbstractWebPage.getTitle(): Get page title.
+			(getting text for Web element {full xpath: //h1]} in no frame)
+			 ( -> "Status Summary")
+		+ JazzAbstractWebPage.getTitle(): Get page title.
+			(getting text for Web element {full xpath: //h1]} in no frame)
+			 ( -> "Status Summary")
+		+ JazzAbstractWebPage.getTitle(): Get page title.
+			(getting text for Web element {full xpath: //h1]} in no frame)
+			 ( -> "Status Summary")
+		+ JazzAbstractWebPage.getTitle(): Get page title.
+			(getting text for Web element {full xpath: //h1]} in no frame)
+			 ( -> "Status Summary")
+		+ JazzAbstractWebPage.getTitle(): Get page title.
+			(getting text for Web element {full xpath: //h1]} in no frame)
+			 ( -> "Status Summary")
+		+ JazzAbstractWebPage.getTitle(): Get page title.
+			(getting text for Web element {full xpath: //h1]} in no frame)
+			 ( -> "Status Summary")
+		+ JazzAbstractWebPage.getTitle(): Get page title.
+			(getting text for Web element {full xpath: //h1]} in no frame)
+			 ( -> "Status Summary")
+		+ JazzAbstractWebPage.getTitle(): Get page title.
+			(getting text for Web element {full xpath: //h1]} in no frame)
+			 ( -> "Status Summary")
+		+ JazzAbstractWebPage.getTitle(): Get page title.
+			(getting text for Web element {full xpath: //h1]} in no frame)
+			 ( -> "Status Summary")
+		+ JazzAbstractWebPage.getTitle(): Get page title.
+			(getting text for Web element {full xpath: //h1]} in no frame)
+			 ( -> "Status Summary")
+		+ JazzAbstractWebPage.getTitle(): Get page title.
+			(getting text for Web element {full xpath: //h1]} in no frame)
+			 ( -> "Status Summary")
+		+ JazzAbstractWebPage.getTitle(): Get page title.
+			(getting text for Web element {full xpath: //h1]} in no frame)
+			 ( -> "Status Summary")
+		+ JazzAbstractWebPage.getTitle(): Get page title.
+			(getting text for Web element {full xpath: //h1]} in no frame)
+			 ( -> "Status Summary")
+		+ JazzAbstractWebPage.getTitle(): Get page title.
+			(getting text for Web element {full xpath: //h1]} in no frame)
+			 ( -> "Status Summary")
+		+ JazzAbstractWebPage.getTitle(): Get page title.
+			(getting text for Web element {full xpath: //h1]} in no frame)
+			 ( -> "Status Summary")
+		+ JazzAbstractWebPage.getTitle(): Get page title.
+			(getting text for Web element {full xpath: //h1]} in no frame)
+			 ( -> "Status Summary")
+		+ JazzAbstractWebPage.getTitle(): Get page title.
+			(getting text for Web element {full xpath: //h1]} in no frame)
+			 ( -> "Status Summary")
+		+ JazzAbstractWebPage.getTitle(): Get page title.
+			(getting text for Web element {full xpath: //h1]} in no frame)
+			 ( -> "Status Summary")
+		+ JazzAbstractWebPage.getTitle(): Get page title.
+			(getting text for Web element {full xpath: //h1]} in no frame)
+			 ( -> "Status Summary")
+		+ JazzAbstractWebPage.getTitle(): Get page title.
+			(getting text for Web element {full xpath: //h1]} in no frame)
+			 ( -> "Status Summary")
+		+ JazzAbstractWebPage.getTitle(): Get page title.
+			(getting text for Web element {full xpath: //h1]} in no frame)
+			 ( -> "Status Summary")
+		+ JazzAbstractWebPage.getTitle(): Get page title.
+			(getting text for Web element {full xpath: //h1]} in no frame)
+			 ( -> "Status Summary")
+Current page title 'Status Summary' does not match the expected one: 'Welcome to the Jazz Team Server Administration Home'
+ScenarioFailedError: Current page title 'Status Summary' does not match the expected one: 'Welcome to the Jazz Team Server Administration Home'
+	- com.ibm.team.fvt.tests.clm.pages.ClmWebPage.waitForExpectedTitle(ClmWebPage.java:1084)
+	- com.ibm.team.cspf.jazz.internal.pages.JazzAbstractWebPage.load(JazzAbstractWebPage.java:941)
+	- com.ibm.team.fvt.tests.web.WebPage.get(WebPage.java:969)
+	- com.ibm.team.fvt.tests.web.WebPage.openPage(WebPage.java:447)
+	- com.ibm.team.fvt.tests.web.WebPage.openPage(WebPage.java:421)
+	- com.ibm.team.cspf.jazz.scenario.JazzScenarioStep.openWebPage(JazzScenarioStep.java:666)
+	- com.ibm.team.fvt.tests.clm.scenario.ClmScenarioStep.openJtsAdminHomePage(ClmScenarioStep.java:3938)
+	- com.ibm.team.fvt.tests.clm.scenario.ClmScenarioStep.openClmAdminActiveProjectAreasPage(ClmScenarioStep.java:2748)
+	- com.ibm.team.fvt.tests.clm.scenario.ClmScenarioStep.createRmProject(ClmScenarioStep.java:984)
+	- com.ibm.team.fvt.tests.rm.user.module.steps.GlossaryAndTermTest_01_RmDataSetup.test01_createProject(GlossaryAndTermTest_01_RmDataSetup.java:46)
+	  -> KO (in 1mn 10s)
+		due to: Current page title 'Status Summary' does not match the expected one: 'Welcome to the Jazz Team Server Administration Home'
+		+ one snaphot taken when the failure occured:
+		  -> screenshot available at C:\Users\KarthikCR\workspace\com.ibm.team.fvt.tests.rm.user.module\screenshots\failures\20210803122751_GlossaryAndTermTest_01_RmDataSetup.test01_createProject.png
+		-> Cleanup test by clearing the pages cache.
+ERROR: Unexpected error encountered while running current test, scenario execution will be aborted as it's a mandatory test!
+	- 'isPipeline' value=false
+**********  Close Debug Session: 20210803122751  ********

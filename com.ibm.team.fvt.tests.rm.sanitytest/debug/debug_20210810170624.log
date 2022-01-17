@@ -1,0 +1,64 @@
+**********  Open Debug Session: 20210810170624  ********
+Attach debug log file to RQM Adapter:
+	'com.ibm.rqm.adapter.resultAttachmentsFile' parameter is not set
+	'qm_AttachmentsFile' envirnment variable is not set either, give up...
+	- 'stopOnFailure' value=false
+	- 'timeoutsThreshold' value=2
+	- 'baseUrl' value=https://mb-titanium1.fyre.ibm.com:9443
+	- 'userRegistry' value=3
+	- 'appsToRegister' value=rm,gc
+		+ CspfFactory.<clinit>(): INFO: Factory 'com.ibm.team.cspf.report.internal.factories.ReportWebPageFactory' has not been found.
+	- 'timeout' value=70
+	- 'timeoutShort' value=15
+	- 'timeoutToOpenPage' value=45
+	- 'timeoutMtmSampleCreation' value=12000
+	- 'browserPath' value=C:/Program Files/Mozilla Firefox/firefox.exe
+	- 'geckoPath' value=C:/Users/KarthikCR/workspace/org.selenium.java.client/gecko/v29/geckodriver.exe
+	- 'browserProfile' value=C:/Users/KarthikCR/AppData/Roaming/Mozilla/Firefox/Profiles/wioourlo.default
+	- 'download.dir' value=uploads/test_files
+	- 'selenium.snapshots.dir' value=screenshots
+		+ WebBrowser.setWindow(): (dimension=(1600, 900), location=null)
+	- 'defaultAdminUsername' value=clmadmin
+	- 'defaultAdminUserID' value=clmadmin
+	- 'defaultAdminPassword' value=c*******
+	- 'adminUsername' value=clmadmin
+	- 'adminUserID' value=clmadmin
+	- 'adminPassword' value=c*******
+	- 'adminEmail' value=clmadmin@example.net
+	- 'expressSetup' value=false
+	- 'dwDefaultUser' value=true
+	- 'testPrefix' value=
+	- 'testUsername' value=Al
+	- 'testUserID' value=al
+	- 'testPassword' value=a*******
+	- 'testEmail' value=al@jkebanking.net
+	- 'runPleTests' value=true
+	- 'testProjectName' value=
+	- 'nonDefaultComponentName' value=Component X
+	- 'nonDefaultStreamName' value=Stream X
+	- 'author1Username' value=bob
+	- 'author1UserID' value=bob
+	- 'author1Password' value=b*******
+	- 'author1Email' value=bob@eu.jke.ibm.com
+	- 'author2Username' value=deb
+	- 'author2UserID' value=deb
+	- 'author2Password' value=d*******
+	- 'author2Email' value=deb@eu.jke.ibm.com
+	- 'author3Username' value=Dave
+	- 'author3UserID' value=dave
+	- 'author3Password' value=d*******
+	- 'author3Email' value=dave@eu.jke.ibm.com
+	- 'commenter1Username' value=tammy
+	- 'commenter1UserID' value=tammy
+	- 'commenter1Password' value=t*******
+	- 'commenter1Email' value=tammy@jkebanking.net
+File 'uploads\test_files' exists at location 'C:\Users\KarthikCR\workspace\com.ibm.team.fvt.tests.rm.sanitytest\uploads\test_files'.
+File 'uploads\setup_files' exists at location 'C:\Users\KarthikCR\workspace\com.ibm.team.fvt.tests.rm.sanitytest\uploads\setup_files'.
+	- 'testsPerFolder' value=10
+Selenium and Browser information:
+	- Selenium Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+	- Firefox version: 78.11.0
+	- Browser window size = (1600, 900)
+	- Browser window position = (3, 3)
+	- 'isPipeline' value=false
+**********  Close Debug Session: 20210810170624  ********

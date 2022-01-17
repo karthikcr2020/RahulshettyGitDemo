@@ -1,0 +1,535 @@
+**********  Open Debug Session: 20210626175929  ********
+Attach debug log file to RQM Adapter:
+	'com.ibm.rqm.adapter.resultAttachmentsFile' parameter is not set
+	'qm_AttachmentsFile' envirnment variable is not set either, give up...
+	- 'stopOnFailure' value=false
+	- 'timeoutsThreshold' value=2
+	- 'baseUrl' value=https://testmonday7031.fyre.ibm.com:9443
+	- 'userRegistry' value=3
+	- 'appsToRegister' value=rm,gc
+		+ CspfFactory.<clinit>(): INFO: Factory 'com.ibm.team.cspf.report.internal.factories.ReportWebPageFactory' has not been found.
+	- 'timeout' value=70
+	- 'timeoutShort' value=15
+	- 'timeoutToOpenPage' value=45
+	- 'timeoutMtmSampleCreation' value=12000
+	- 'browserPath' value=C:/Program Files/Mozilla Firefox/firefox.exe
+	- 'geckoPath' value=C:/Users/KarthikCR/workspace/org.selenium.java.client/gecko/v29/geckodriver.exe
+	- 'browserProfile' value=C:/Users/KarthikCR/AppData/Roaming/Mozilla/Firefox/Profiles/wioourlo.default
+	- 'download.dir' value=uploads/test_files
+	- 'selenium.snapshots.dir' value=screenshots
+		+ WebBrowser.setWindow(): (dimension=(1600, 900), location=null)
+	- 'defaultAdminUsername' value=clmadmin
+	- 'defaultAdminUserID' value=clmadmin
+	- 'defaultAdminPassword' value=c*******
+	- 'adminUsername' value=clmadmin
+	- 'adminUserID' value=clmadmin
+	- 'adminPassword' value=c*******
+	- 'adminEmail' value=clmadmin@example.net
+	- 'expressSetup' value=false
+	- 'dwDefaultUser' value=true
+	- 'testPrefix' value=
+	- 'testUsername' value=Al
+	- 'testUserID' value=al
+	- 'testPassword' value=a*******
+	- 'testEmail' value=al@jkebanking.net
+	- 'runPleTests' value=true
+	- 'testProjectName' value=
+	- 'nonDefaultComponentName' value=Component X
+	- 'nonDefaultStreamName' value=Stream X
+	- 'author1Username' value=bob
+	- 'author1UserID' value=bob
+	- 'author1Password' value=b*******
+	- 'author1Email' value=bob@eu.jke.ibm.com
+	- 'author2Username' value=deb
+	- 'author2UserID' value=deb
+	- 'author2Password' value=d*******
+	- 'author2Email' value=deb@eu.jke.ibm.com
+	- 'author3Username' value=Dave
+	- 'author3UserID' value=dave
+	- 'author3Password' value=d*******
+	- 'author3Email' value=dave@eu.jke.ibm.com
+	- 'commenter1Username' value=tammy
+	- 'commenter1UserID' value=tammy
+	- 'commenter1Password' value=t*******
+	- 'commenter1Email' value=tammy@jkebanking.net
+File 'uploads\test_files' exists at location 'C:\Users\KarthikCR\workspace\com.ibm.team.fvt.tests.rm.sanitytest\uploads\test_files'.
+File 'uploads\setup_files' exists at location 'C:\Users\KarthikCR\workspace\com.ibm.team.fvt.tests.rm.sanitytest\uploads\setup_files'.
+	- 'testsPerFolder' value=10
+Selenium and Browser information:
+	- Selenium Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+	- Firefox version: 78.11.0
+	- Browser window size = (1600, 900)
+	- Browser window position = (3, 3)
+
+Starting execution of BVT test case 'STS_HistoryModule' at 17:59:32
+=======================================================
+	- 17:59:32: start test case 'test01_SingleArtifactSingleUpdate'...
+			(finding element By.xpath: .//button[normalize-space(text())='Cancel'] for browser Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe in frame 'null')
+		+ WebPage.createPage(): Create page https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage for user User id=al, name=Al, passwd=a*******, mail=al@jkebanking.net
+			-> location: https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage
+			-> user: User id=al, name=Al, passwd=a*******, mail=al@jkebanking.net
+			-> class:    com.ibm.team.fvt.tests.clm.pages.rm.RmWebAllProjectsPage
+		  -> found application 'RM Application (location=https://testmonday7031.fyre.ibm.com:9443/rm, no user logged in)' for URL: https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage
+		+ Topology.needLogin(): See whether it needs to log in before going to https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage
+		  -> found application 'RM Application (location=https://testmonday7031.fyre.ibm.com:9443/rm, no user logged in)' for URL: https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage
+		+ Application.needLogin(): RM Application (location=https://testmonday7031.fyre.ibm.com:9443/rm, no user logged in) need login asno user is set.
+		  -> no application is already logged in on same server
+		  -> store page at https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage: about:blank
+		+ WebPage.get(): get page content (https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage)
+		  -> browser URL: about:blank
+		  -> current user: null
+		  -> loading page...
+		  -> browser URL: about:blank
+		+ JazzAbstractWebPage.load(): Load the current page: https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage
+		+ WebBrowser.get(): browser get: https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage
+		  -> driver url: about:blank
+		  -> stored location: null
+INFO: URL of page 'https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage' has changed to 'https://testmonday7031.fyre.ibm.com:9443/jts/auth/authrequired#action=com.ibm.rdm.web.pages.showAllProjectsPage' just after having been loaded.
+		  -> should login
+		+ WebBrowser.waitForElement(): waiting for element: [By.xpath: //div[starts-with(@id,'com_ibm_rqm_planning_web_ui_internal_page_NotAuthorized')]] (fail=false, timeout=2, displayed=true, single=true)
+		+ WebBrowser.waitForElements(): waiting for elements: [By.xpath: //div[starts-with(@id,'com_ibm_rqm_planning_web_ui_internal_page_NotAuthorized')]]
+			(finding elements By.xpath: //div[starts-with(@id,'com_ibm_rqm_planning_web_ui_internal_page_NotAuthorized')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/jts/auth/authrequired#action=com.ibm.rdm.web.pages.showAllProjectsPage, location=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			(finding elements By.xpath: //div[starts-with(@id,'com_ibm_rqm_planning_web_ui_internal_page_NotAuthorized')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/jts/auth/authrequired#action=com.ibm.rdm.web.pages.showAllProjectsPage, location=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			(finding elements By.xpath: //div[starts-with(@id,'com_ibm_rqm_planning_web_ui_internal_page_NotAuthorized')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/jts/auth/authrequired#action=com.ibm.rdm.web.pages.showAllProjectsPage, location=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			(finding elements By.xpath: //div[starts-with(@id,'com_ibm_rqm_planning_web_ui_internal_page_NotAuthorized')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/jts/auth/authrequired#action=com.ibm.rdm.web.pages.showAllProjectsPage, location=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			(finding elements By.xpath: //div[starts-with(@id,'com_ibm_rqm_planning_web_ui_internal_page_NotAuthorized')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/jts/auth/authrequired#action=com.ibm.rdm.web.pages.showAllProjectsPage, location=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			(finding elements By.xpath: //div[starts-with(@id,'com_ibm_rqm_planning_web_ui_internal_page_NotAuthorized')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/jts/auth/authrequired#action=com.ibm.rdm.web.pages.showAllProjectsPage, location=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			(finding elements By.xpath: //div[starts-with(@id,'com_ibm_rqm_planning_web_ui_internal_page_NotAuthorized')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/jts/auth/authrequired#action=com.ibm.rdm.web.pages.showAllProjectsPage, location=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			(finding elements By.xpath: //div[starts-with(@id,'com_ibm_rqm_planning_web_ui_internal_page_NotAuthorized')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/jts/auth/authrequired#action=com.ibm.rdm.web.pages.showAllProjectsPage, location=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			(finding elements By.xpath: //div[starts-with(@id,'com_ibm_rqm_planning_web_ui_internal_page_NotAuthorized')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/jts/auth/authrequired#action=com.ibm.rdm.web.pages.showAllProjectsPage, location=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+		  -> no element was found
+			(finding element By.xpath: //*[@id='errorPageContainer'] for browser Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/jts/auth/authrequired#action=com.ibm.rdm.web.pages.showAllProjectsPage, location=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null) in frame 'null')
+		+ WebBrowser.waitForElement(): waiting for element: [By.xpath: //div[starts-with(@id,'com_ibm_rqm_planning_web_ui_internal_page_NotAuthorized')]] (fail=false, timeout=2, displayed=true, single=true)
+		+ WebBrowser.waitForElements(): waiting for elements: [By.xpath: //div[starts-with(@id,'com_ibm_rqm_planning_web_ui_internal_page_NotAuthorized')]]
+			(finding elements By.xpath: //div[starts-with(@id,'com_ibm_rqm_planning_web_ui_internal_page_NotAuthorized')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/jts/auth/authrequired#action=com.ibm.rdm.web.pages.showAllProjectsPage, location=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			(finding elements By.xpath: //div[starts-with(@id,'com_ibm_rqm_planning_web_ui_internal_page_NotAuthorized')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/jts/auth/authrequired#action=com.ibm.rdm.web.pages.showAllProjectsPage, location=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			(finding elements By.xpath: //div[starts-with(@id,'com_ibm_rqm_planning_web_ui_internal_page_NotAuthorized')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/jts/auth/authrequired#action=com.ibm.rdm.web.pages.showAllProjectsPage, location=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			(finding elements By.xpath: //div[starts-with(@id,'com_ibm_rqm_planning_web_ui_internal_page_NotAuthorized')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/jts/auth/authrequired#action=com.ibm.rdm.web.pages.showAllProjectsPage, location=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			(finding elements By.xpath: //div[starts-with(@id,'com_ibm_rqm_planning_web_ui_internal_page_NotAuthorized')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/jts/auth/authrequired#action=com.ibm.rdm.web.pages.showAllProjectsPage, location=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			(finding elements By.xpath: //div[starts-with(@id,'com_ibm_rqm_planning_web_ui_internal_page_NotAuthorized')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/jts/auth/authrequired#action=com.ibm.rdm.web.pages.showAllProjectsPage, location=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			(finding elements By.xpath: //div[starts-with(@id,'com_ibm_rqm_planning_web_ui_internal_page_NotAuthorized')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/jts/auth/authrequired#action=com.ibm.rdm.web.pages.showAllProjectsPage, location=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			(finding elements By.xpath: //div[starts-with(@id,'com_ibm_rqm_planning_web_ui_internal_page_NotAuthorized')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/jts/auth/authrequired#action=com.ibm.rdm.web.pages.showAllProjectsPage, location=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			(finding elements By.xpath: //div[starts-with(@id,'com_ibm_rqm_planning_web_ui_internal_page_NotAuthorized')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/jts/auth/authrequired#action=com.ibm.rdm.web.pages.showAllProjectsPage, location=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+		  -> no element was found
+			(finding element By.xpath: //div[@dojoattachpoint='messageArea' and contains(@class,'ERROR')] for browser Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/jts/auth/authrequired#action=com.ibm.rdm.web.pages.showAllProjectsPage, location=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null) in frame 'null')
+			(finding element By.xpath: //div[@id='jazz_ui_wizard_ExternalWizardStep_5']//iframe for browser Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/jts/auth/authrequired#action=com.ibm.rdm.web.pages.showAllProjectsPage, location=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null) in frame 'null')
+		+ JazzAbstractWebPage.performLogin(): Perform login of user User id=al, name=Al, passwd=a*******, mail=al@jkebanking.net
+		+ WebBrowser.waitForElement(): waiting for element: [By.name: j_username] (fail=false, timeout=70, displayed=true, single=true)
+		+ WebBrowser.waitForElements(): waiting for elements: [By.name: j_username]
+			(finding elements By.name: j_username for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/jts/auth/authrequired#action=com.ibm.rdm.web.pages.showAllProjectsPage, location=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			  (-> found 'Web element {full xpath: //*[@name='j_username']} in no frame)
+			(getting displayed state for Web element {full xpath: //*[@name='j_username']} in no frame)
+			 ( -> true)
+		  -> found element: Web element {full xpath: //*[@name='j_username']} in no frame (visible)
+		  -> return 1 visible elements
+		+ WebBrowser.typeText(): Type text 'al' (cleared)
+			(getting enabled state for Web element {full xpath: //*[@name='j_username']} in no frame)
+			 ( -> true)
+			(getting attribute 'aria-label' for Web element {full xpath: //*[@name='j_username']} in no frame, fail=false)
+			 ( -> "null")
+			(getting attribute 'value' for Web element {full xpath: //*[@name='j_username']} in no frame, fail=false)
+			 ( -> "")
+			(sending keys '' to Web element {full xpath: //*[@name='j_username']} in no frame)
+			 ( -> done.)
+			(clearing Web element {full xpath: //*[@name='j_username']} in no frame)
+			 ( -> done.)
+			(sending keys 'al' to Web element {full xpath: //*[@name='j_username']} in no frame)
+			 ( -> done.)
+			(sending keys '' to Web element {full xpath: //*[@name='j_username']} in no frame)
+			 ( -> done.)
+		+ WebBrowser.waitForElement(): waiting for element: [By.name: j_password] (fail=true, timeout=70, displayed=true, single=true)
+		+ WebBrowser.waitForElements(): waiting for elements: [By.name: j_password]
+			(finding elements By.name: j_password for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/jts/auth/authrequired#action=com.ibm.rdm.web.pages.showAllProjectsPage, location=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			  (-> found 'Web element {full xpath: //*[@name='j_password']} in no frame)
+			(getting displayed state for Web element {full xpath: //*[@name='j_password']} in no frame)
+			 ( -> true)
+		  -> found element: Web element {full xpath: //*[@name='j_password']} in no frame (visible)
+		  -> return 1 visible elements
+		+ WebBrowser.typeText(): Type password '******' (cleared)
+			(getting enabled state for Web element {full xpath: //*[@name='j_password']} in no frame)
+			 ( -> true)
+			(getting attribute 'aria-label' for Web element {full xpath: //*[@name='j_password']} in no frame, fail=false)
+			 ( -> "null")
+			(getting attribute 'value' for Web element {full xpath: //*[@name='j_password']} in no frame, fail=false)
+			 ( -> "")
+			(sending keys '' to Web element {full xpath: //*[@name='j_password']} in no frame)
+			 ( -> done.)
+			(clearing Web element {full xpath: //*[@name='j_password']} in no frame)
+			 ( -> done.)
+			(sending password '*****' to Web element {full xpath: //*[@name='j_password']} in no frame)
+			 ( -> done.)
+			(sending keys '' to Web element {full xpath: //*[@name='j_password']} in no frame)
+			 ( -> done.)
+		  -> found application 'JTS Application (location=https://testmonday7031.fyre.ibm.com:9443/jts, no user logged in)' for URL: https://testmonday7031.fyre.ibm.com:9443/jts/auth/authrequired#action=com.ibm.rdm.web.pages.showAllProjectsPage
+		+ WebPage.matchBrowserUrl(): Test whether page location matches current browser URL or not.
+		  -> current url: https://testmonday7031.fyre.ibm.com:9443/jts/auth/authrequired#action=com.ibm.rdm.web.pages.showAllProjectsPage
+		  -> page location: https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage
+		  -> browser URL: https://testmonday7031.fyre.ibm.com:9443/jts/auth/authrequired#action=com.ibm.rdm.web.pages.showAllProjectsPage
+		  -> page URL: https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage
+		  -> NO MATCH: browser URL path does not start with page URL path
+		+ WebBrowser.waitForElement(): waiting for element: [By.xpath: //button[text()='Log In'] | //button[text()='Log in'] | //input[@value='Log in']] (fail=true, timeout=70, displayed=true, single=true)
+		+ WebBrowser.waitForElements(): waiting for elements: [By.xpath: //button[text()='Log In'] | //button[text()='Log in'] | //input[@value='Log in']]
+			(finding elements By.xpath: //button[text()='Log In'] | //button[text()='Log in'] | //input[@value='Log in'] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/jts/auth/authrequired#action=com.ibm.rdm.web.pages.showAllProjectsPage, location=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			  (-> found 'Web element {full xpath: //button[text()='Log In'] | //button[text()='Log in'] | //input[@value='Log in']} in no frame)
+			(getting displayed state for Web element {full xpath: //button[text()='Log In'] | //button[text()='Log in'] | //input[@value='Log in']} in no frame)
+			 ( -> true)
+		  -> found element: Web element {full xpath: //button[text()='Log In'] | //button[text()='Log in'] | //input[@value='Log in']} in no frame (visible)
+		  -> return 1 visible elements
+		+ WebBrowser.clickButton(): click on button 'Web element {full xpath: //button[text()='Log In'] | //button[text()='Log in'] | //input[@value='Log in']} in no frame'
+			(getting enabled state for Web element {full xpath: //button[text()='Log In'] | //button[text()='Log in'] | //input[@value='Log in']} in no frame)
+			 ( -> true)
+			(clicking on Web element {full xpath: //button[text()='Log In'] | //button[text()='Log in'] | //input[@value='Log in']} in no frame)
+			 ( -> done.)
+			(getting displayed state for Web element {full xpath: //button[text()='Log In'] | //button[text()='Log in'] | //input[@value='Log in']} in no frame)
+			(WORKAROUND: exception The element reference of [object String] "85bc54b6-f358-472a-9c99-04663b392b9a" is stale; either the element is no longer attached to the DOM, it is not in the current frame context, or the document has been refreshed
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'DESKTOP-0D63QME', ip: '192.168.0.110', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 78.11.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210531140902, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 3876, moz:profile: C:\Users\KarthikCR\AppData\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: ignore}
+Session ID: c8163f82-ea78-43a6-8541-975821e93536 has been caught...
+			 -> return false instead)
+			(finding element By.xpath: .//div[@class='loginErrorMessage'] for browser Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/jts/auth/authrequired#action=com.ibm.rdm.web.pages.showAllProjectsPage, location=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null) in frame 'null')
+		+ Topology.login(): Login user al for all applications
+		  -> found application 'RM Application (location=https://testmonday7031.fyre.ibm.com:9443/rm, no user logged in)' for URL: https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage
+		+ Application.login(): Log in user 'User id=al, name=Al, passwd=a*******, mail=al@jkebanking.net' to current RM Application (location=https://testmonday7031.fyre.ibm.com:9443/rm, no user logged in)
+		+ Application.login(): Log in user 'User id=al, name=Al, passwd=a*******, mail=al@jkebanking.net' to current JTS Application (location=https://testmonday7031.fyre.ibm.com:9443/jts, no user logged in)
+		+ Application.login(): Log in user 'User id=al, name=Al, passwd=a*******, mail=al@jkebanking.net' to current RM Application (location=https://testmonday7031.fyre.ibm.com:9443/rm, user logged in: User id=al, name=Al, passwd=a*******, mail=al@jkebanking.net)
+		  -> nothing was done as there user was already logged in.
+		+ Application.login(): Log in user 'User id=al, name=Al, passwd=a*******, mail=al@jkebanking.net' to current GC Application (location=https://testmonday7031.fyre.ibm.com:9443/gc, no user logged in)
+		+ Application.login(): Log in user 'User id=al, name=Al, passwd=a*******, mail=al@jkebanking.net' to current JTS Application (location=https://testmonday7031.fyre.ibm.com:9443/jts, user logged in: User id=al, name=Al, passwd=a*******, mail=al@jkebanking.net)
+		  -> nothing was done as there user was already logged in.
+		+ Application.login(): Log in user 'User id=al, name=Al, passwd=a*******, mail=al@jkebanking.net' to current RM Application (location=https://testmonday7031.fyre.ibm.com:9443/rm, user logged in: User id=al, name=Al, passwd=a*******, mail=al@jkebanking.net)
+		  -> nothing was done as there user was already logged in.
+		+ Application.login(): Log in user 'User id=al, name=Al, passwd=a*******, mail=al@jkebanking.net' to current GC Application (location=https://testmonday7031.fyre.ibm.com:9443/gc, user logged in: User id=al, name=Al, passwd=a*******, mail=al@jkebanking.net)
+		  -> nothing was done as there user was already logged in.
+		+ Topology.login(): Login user al for all applications
+		  -> found application 'RM Application (location=https://testmonday7031.fyre.ibm.com:9443/rm, user logged in: User id=al, name=Al, passwd=a*******, mail=al@jkebanking.net)' for URL: https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage
+		+ Application.login(): Log in user 'User id=al, name=Al, passwd=a*******, mail=al@jkebanking.net' to current RM Application (location=https://testmonday7031.fyre.ibm.com:9443/rm, user logged in: User id=al, name=Al, passwd=a*******, mail=al@jkebanking.net)
+		  -> nothing was done as there user was already logged in.
+		+ WebBrowser.resetFrame(): Reset frame null
+		+ WebBrowser.waitForElement(): waiting for element: [By.id: net-jazz-ajax-WorkbenchRoot] (fail=true, timeout=70, displayed=true, single=true)
+		+ WebBrowser.waitForElements(): waiting for elements: [By.id: net-jazz-ajax-WorkbenchRoot]
+			(finding elements By.id: net-jazz-ajax-WorkbenchRoot for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			  (-> found 'Web element {full xpath: //*[@id='net-jazz-ajax-WorkbenchRoot']} in no frame)
+			(getting displayed state for Web element {full xpath: //*[@id='net-jazz-ajax-WorkbenchRoot']} in no frame)
+			 ( -> true)
+		  -> found element: Web element {full xpath: //*[@id='net-jazz-ajax-WorkbenchRoot']} in no frame (visible)
+		  -> return 1 visible elements
+			(finding elements By.xpath: ./child::* for Web element {full xpath: //*[@id='net-jazz-ajax-WorkbenchRoot']} in no frame, displayed=true, recovery=true)
+			  (-> found 'Web element {full xpath: //*[@id='net-jazz-ajax-WorkbenchRoot']/child::*} in no frame)
+			(finding element By.xpath: .//div[contains(@id, 'jazz_ui_Dialog')] for browser Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null) in frame 'null')
+		+ WebBrowser.waitForElement(): waiting for element: [By.xpath: //div[starts-with(@id,'com_ibm_rqm_planning_web_ui_internal_page_NotAuthorized')]] (fail=false, timeout=2, displayed=true, single=true)
+		+ WebBrowser.waitForElements(): waiting for elements: [By.xpath: //div[starts-with(@id,'com_ibm_rqm_planning_web_ui_internal_page_NotAuthorized')]]
+			(finding elements By.xpath: //div[starts-with(@id,'com_ibm_rqm_planning_web_ui_internal_page_NotAuthorized')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			(finding elements By.xpath: //div[starts-with(@id,'com_ibm_rqm_planning_web_ui_internal_page_NotAuthorized')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			(finding elements By.xpath: //div[starts-with(@id,'com_ibm_rqm_planning_web_ui_internal_page_NotAuthorized')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			(finding elements By.xpath: //div[starts-with(@id,'com_ibm_rqm_planning_web_ui_internal_page_NotAuthorized')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			(finding elements By.xpath: //div[starts-with(@id,'com_ibm_rqm_planning_web_ui_internal_page_NotAuthorized')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			(finding elements By.xpath: //div[starts-with(@id,'com_ibm_rqm_planning_web_ui_internal_page_NotAuthorized')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			(finding elements By.xpath: //div[starts-with(@id,'com_ibm_rqm_planning_web_ui_internal_page_NotAuthorized')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			(finding elements By.xpath: //div[starts-with(@id,'com_ibm_rqm_planning_web_ui_internal_page_NotAuthorized')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			(finding elements By.xpath: //div[starts-with(@id,'com_ibm_rqm_planning_web_ui_internal_page_NotAuthorized')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+		  -> no element was found
+		+ JazzAbstractWebPage.checkAcceptableServerErrorMessages(): Check whether a server error message is displayed in the page
+			(finding element By.xpath: //*[@id='errorPageContainer'] for browser Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null) in frame 'null')
+		+ WebBrowser.waitForElement(): waiting for element: [By.xpath: //div[starts-with(@id,'com_ibm_rqm_planning_web_ui_internal_page_NotAuthorized')]] (fail=false, timeout=2, displayed=true, single=true)
+		+ WebBrowser.waitForElements(): waiting for elements: [By.xpath: //div[starts-with(@id,'com_ibm_rqm_planning_web_ui_internal_page_NotAuthorized')]]
+			(finding elements By.xpath: //div[starts-with(@id,'com_ibm_rqm_planning_web_ui_internal_page_NotAuthorized')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			(finding elements By.xpath: //div[starts-with(@id,'com_ibm_rqm_planning_web_ui_internal_page_NotAuthorized')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			(finding elements By.xpath: //div[starts-with(@id,'com_ibm_rqm_planning_web_ui_internal_page_NotAuthorized')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			(finding elements By.xpath: //div[starts-with(@id,'com_ibm_rqm_planning_web_ui_internal_page_NotAuthorized')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			(finding elements By.xpath: //div[starts-with(@id,'com_ibm_rqm_planning_web_ui_internal_page_NotAuthorized')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			(finding elements By.xpath: //div[starts-with(@id,'com_ibm_rqm_planning_web_ui_internal_page_NotAuthorized')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			(finding elements By.xpath: //div[starts-with(@id,'com_ibm_rqm_planning_web_ui_internal_page_NotAuthorized')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			(finding elements By.xpath: //div[starts-with(@id,'com_ibm_rqm_planning_web_ui_internal_page_NotAuthorized')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			(finding elements By.xpath: //div[starts-with(@id,'com_ibm_rqm_planning_web_ui_internal_page_NotAuthorized')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+		  -> no element was found
+			(finding element By.xpath: //div[@dojoattachpoint='messageArea' and contains(@class,'ERROR')] for browser Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null) in frame 'null')
+			(finding element By.xpath: //div[@id='jazz_ui_wizard_ExternalWizardStep_5']//iframe for browser Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null) in frame 'null')
+		+ WebBrowser.waitForElement(): waiting for element: [By.tagName: h1] (fail=true, timeout=70, displayed=true, single=true)
+		+ WebBrowser.waitForElements(): waiting for elements: [By.tagName: h1]
+			(finding elements By.tagName: h1 for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			  (-> found 'Web element {full xpath: //h1]} in no frame)
+			(getting displayed state for Web element {full xpath: //h1]} in no frame)
+			 ( -> true)
+		  -> found element: Web element {full xpath: //h1]} in no frame (visible)
+		  -> return 1 visible elements
+		+ WebBrowser.waitForElement(): waiting for element: [By.xpath: //*[contains(@dojoattachpoint,'bannerTitle')]] (fail=true, timeout=70, displayed=true, single=true)
+		+ WebBrowser.waitForElements(): waiting for elements: [By.xpath: //*[contains(@dojoattachpoint,'bannerTitle')]]
+			(finding elements By.xpath: //*[contains(@dojoattachpoint,'bannerTitle')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			  (-> found 'Web element {full xpath: //*[contains(@dojoattachpoint,'bannerTitle')]} in no frame)
+			(getting displayed state for Web element {full xpath: //*[contains(@dojoattachpoint,'bannerTitle')]} in no frame)
+			 ( -> true)
+		  -> found element: Web element {full xpath: //*[contains(@dojoattachpoint,'bannerTitle')]} in no frame (visible)
+		  -> return 1 visible elements
+		+ WebBrowserElement.waitForElement(): waiting for element: [By.className: truncateNode] relatively to Web element {full xpath: //*[contains(@dojoattachpoint,'bannerTitle')]} in no frame
+		+ WebBrowserElement.waitForElements(): waiting for elements: [By.className: truncateNode] relatively to Web element {full xpath: //*[contains(@dojoattachpoint,'bannerTitle')]} in no frame
+		+ WebBrowser.waitForElements(): waiting for elements: [//*[contains(@dojoattachpoint,'bannerTitle')]]//[By.className: truncateNode]
+			(finding elements By.className: truncateNode for Web element {full xpath: //*[contains(@dojoattachpoint,'bannerTitle')]} in no frame, displayed=true, recovery=true)
+			(finding elements By.className: truncateNode for Web element {full xpath: //*[contains(@dojoattachpoint,'bannerTitle')]} in no frame, displayed=true, recovery=true)
+			(finding elements By.className: truncateNode for Web element {full xpath: //*[contains(@dojoattachpoint,'bannerTitle')]} in no frame, displayed=true, recovery=true)
+			(finding elements By.className: truncateNode for Web element {full xpath: //*[contains(@dojoattachpoint,'bannerTitle')]} in no frame, displayed=true, recovery=true)
+			(finding elements By.className: truncateNode for Web element {full xpath: //*[contains(@dojoattachpoint,'bannerTitle')]} in no frame, displayed=true, recovery=true)
+		  -> no element was found
+			(getting text for Web element {full xpath: //*[contains(@dojoattachpoint,'bannerTitle')]} in no frame)
+			 ( -> "All Projects")
+		+ JazzAbstractWebPage.getTitle(): Get page title.
+			(getting text for Web element {full xpath: //h1]} in no frame)
+			 ( -> "All Projects")
+		+ JazzAbstractWebPage.checkAcceptableServerErrorMessages(): Check whether a server error message is displayed in the page
+			(finding element By.xpath: //*[@id='errorPageContainer'] for browser Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null) in frame 'null')
+		+ WebBrowser.waitForElement(): waiting for element: [By.xpath: //div[starts-with(@id,'com_ibm_rqm_planning_web_ui_internal_page_NotAuthorized')]] (fail=false, timeout=2, displayed=true, single=true)
+		+ WebBrowser.waitForElements(): waiting for elements: [By.xpath: //div[starts-with(@id,'com_ibm_rqm_planning_web_ui_internal_page_NotAuthorized')]]
+			(finding elements By.xpath: //div[starts-with(@id,'com_ibm_rqm_planning_web_ui_internal_page_NotAuthorized')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			(finding elements By.xpath: //div[starts-with(@id,'com_ibm_rqm_planning_web_ui_internal_page_NotAuthorized')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			(finding elements By.xpath: //div[starts-with(@id,'com_ibm_rqm_planning_web_ui_internal_page_NotAuthorized')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			(finding elements By.xpath: //div[starts-with(@id,'com_ibm_rqm_planning_web_ui_internal_page_NotAuthorized')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			(finding elements By.xpath: //div[starts-with(@id,'com_ibm_rqm_planning_web_ui_internal_page_NotAuthorized')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			(finding elements By.xpath: //div[starts-with(@id,'com_ibm_rqm_planning_web_ui_internal_page_NotAuthorized')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			(finding elements By.xpath: //div[starts-with(@id,'com_ibm_rqm_planning_web_ui_internal_page_NotAuthorized')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			(finding elements By.xpath: //div[starts-with(@id,'com_ibm_rqm_planning_web_ui_internal_page_NotAuthorized')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			(finding elements By.xpath: //div[starts-with(@id,'com_ibm_rqm_planning_web_ui_internal_page_NotAuthorized')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+		  -> no element was found
+			(finding element By.xpath: //div[@dojoattachpoint='messageArea' and contains(@class,'ERROR')] for browser Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null) in frame 'null')
+			(finding element By.xpath: //div[@id='jazz_ui_wizard_ExternalWizardStep_5']//iframe for browser Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null) in frame 'null')
+		+ WebBrowser.switchToMainWindow(): Switch to main window using stored handle 10
+		+ WebBrowser.switchToMainWindow(): Switch to main window using stored handle 10
+		+ JazzAbstractWebPage.waitWhileBusy(): Wait while the page is busy...
+		+ WebBrowser.waitForElement(): waiting for element: [By.xpath: //*[@dojoattachpoint='_statusMessage' and @role='status']] (fail=false, timeout=90, displayed=false, single=true)
+		+ WebBrowser.waitForElements(): waiting for elements: [By.xpath: //*[@dojoattachpoint='_statusMessage' and @role='status']]
+			(finding elements By.xpath: //*[@dojoattachpoint='_statusMessage' and @role='status'] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			  (-> found 'Web element {full xpath: //*[@dojoattachpoint='_statusMessage' and @role='status']} in no frame)
+		  -> found element: Web element {full xpath: //*[@dojoattachpoint='_statusMessage' and @role='status']} in no frame
+		  -> return 1  elements
+			(getting displayed state for Web element {full xpath: //*[@dojoattachpoint='_statusMessage' and @role='status']} in no frame)
+			 ( -> false)
+		  -> it has lasted 37ms
+		+ WebPage.verifyPageUser(): Verify page user User id=al, name=Al, passwd=a*******, mail=al@jkebanking.net
+		+ WebPage.getLoggedUserElement(): Get logged user web element (fail is false, timeout is 15 sec)
+		+ WebBrowser.waitForElement(): waiting for element: [By.xpath: //a[@title='User Profile']/span[1]] (fail=false, timeout=15, displayed=true, single=true)
+		+ WebBrowser.waitForElements(): waiting for elements: [By.xpath: //a[@title='User Profile']/span[1]]
+			(finding elements By.xpath: //a[@title='User Profile']/span[1] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			  (-> found 'Web element {full xpath: //a[@title='User Profile']/span[1]} in no frame)
+			(getting displayed state for Web element {full xpath: //a[@title='User Profile']/span[1]} in no frame)
+			 ( -> true)
+		  -> found element: Web element {full xpath: //a[@title='User Profile']/span[1]} in no frame (visible)
+		  -> return 1 visible elements
+		+ JazzAbstractWebPage.matchDisplayedUser(): Test whether user 'User id=al, name=Al, passwd=a*******, mail=al@jkebanking.net' matches the user text displayed in the page in Web element {full xpath: //a[@title='User Profile']/span[1]} in no frame
+			(getting text for Web element {full xpath: //a[@title='User Profile']/span[1]} in no frame)
+			 ( -> "Al")
+		  -> OK
+		  -> page loaded in 30.2s
+		  -> found application 'RM Application (location=https://testmonday7031.fyre.ibm.com:9443/rm, user logged in: User id=al, name=Al, passwd=a*******, mail=al@jkebanking.net)' for URL: https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage
+		  -> browser URL: https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage
+		+ WebBrowser.waitForMultipleElements(): waiting for multiple elements (fail=true, timeout=70):'By.xpath: .//div[@title='My Projects']'
+			(finding elements By.xpath: .//div[@title='My Projects'] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			  (-> found 'Web element {full xpath: .//div[@title='My Projects']} in no frame)
+		  -> found 'By.xpath: .//div[@title='My Projects']'
+			(clicking on Web element {full xpath: .//div[@title='My Projects']} in no frame)
+			 ( -> done.)
+		+ WebBrowser.waitForElement(): waiting for element: [By.xpath: //*[starts-with(text(),'Loading') and contains(text(),'Project')]] (fail=false, timeout=1, displayed=true, single=true)
+		+ WebBrowser.waitForElements(): waiting for elements: [By.xpath: //*[starts-with(text(),'Loading') and contains(text(),'Project')]]
+			(finding elements By.xpath: //*[starts-with(text(),'Loading') and contains(text(),'Project')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			  (-> found 'Web element {full xpath: //*[starts-with(text(),'Loading') and contains(text(),'Project')]} in no frame)
+			(getting displayed state for Web element {full xpath: //*[starts-with(text(),'Loading') and contains(text(),'Project')]} in no frame)
+			 ( -> true)
+		  -> found element: Web element {full xpath: //*[starts-with(text(),'Loading') and contains(text(),'Project')]} in no frame (visible)
+		  -> return 1 visible elements
+		+ WebBrowser.waitForElement(): waiting for element: [By.xpath: //*[starts-with(text(),'Loading') and contains(text(),'Project')]] (fail=false, timeout=1, displayed=true, single=true)
+		+ WebBrowser.waitForElements(): waiting for elements: [By.xpath: //*[starts-with(text(),'Loading') and contains(text(),'Project')]]
+			(finding elements By.xpath: //*[starts-with(text(),'Loading') and contains(text(),'Project')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			  (-> element not displayed)
+			(finding elements By.xpath: //*[starts-with(text(),'Loading') and contains(text(),'Project')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			  (-> element not displayed)
+			(finding elements By.xpath: //*[starts-with(text(),'Loading') and contains(text(),'Project')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			  (-> element not displayed)
+			(finding elements By.xpath: //*[starts-with(text(),'Loading') and contains(text(),'Project')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			  (-> element not displayed)
+			(finding elements By.xpath: //*[starts-with(text(),'Loading') and contains(text(),'Project')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			  (-> element not displayed)
+		  -> no element was found
+		+ WebBrowser.waitForElement(): waiting for element: [By.xpath: //div[@data-dojo-attach-point='_noProjectsDiv']] (fail=false, timeout=1, displayed=true, single=true)
+		+ WebBrowser.waitForElements(): waiting for elements: [By.xpath: //div[@data-dojo-attach-point='_noProjectsDiv']]
+			(finding elements By.xpath: //div[@data-dojo-attach-point='_noProjectsDiv'] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			  (-> element not displayed)
+			(finding elements By.xpath: //div[@data-dojo-attach-point='_noProjectsDiv'] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			  (-> element not displayed)
+			(finding elements By.xpath: //div[@data-dojo-attach-point='_noProjectsDiv'] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			  (-> element not displayed)
+			(finding elements By.xpath: //div[@data-dojo-attach-point='_noProjectsDiv'] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			  (-> element not displayed)
+			(finding elements By.xpath: //div[@data-dojo-attach-point='_noProjectsDiv'] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			  (-> element not displayed)
+		  -> no element was found
+		+ WebBrowser.waitForElement(): waiting for element: [By.xpath: //div[@data-dojo-attach-point='_projectsListingDiv']] (fail=true, timeout=70, displayed=true, single=true)
+		+ WebBrowser.waitForElements(): waiting for elements: [By.xpath: //div[@data-dojo-attach-point='_projectsListingDiv']]
+			(finding elements By.xpath: //div[@data-dojo-attach-point='_projectsListingDiv'] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			  (-> found 'Web element {full xpath: //div[@data-dojo-attach-point='_projectsListingDiv']} in no frame)
+			(getting displayed state for Web element {full xpath: //div[@data-dojo-attach-point='_projectsListingDiv']} in no frame)
+			 ( -> true)
+		  -> found element: Web element {full xpath: //div[@data-dojo-attach-point='_projectsListingDiv']} in no frame (visible)
+		  -> return 1 visible elements
+		+ WebBrowserElement.waitForElements(): waiting for elements: [By.xpath: .//div[@class='com-ibm-rdm-web-projects-ProjectDescription']/div] relatively to Web element {full xpath: //div[@data-dojo-attach-point='_projectsListingDiv']} in no frame
+		+ WebBrowser.waitForElements(): waiting for elements: [//div[@data-dojo-attach-point='_projectsListingDiv']]//[By.xpath: .//div[@class='com-ibm-rdm-web-projects-ProjectDescription']/div]
+			(finding elements By.xpath: .//div[@class='com-ibm-rdm-web-projects-ProjectDescription']/div for Web element {full xpath: //div[@data-dojo-attach-point='_projectsListingDiv']} in no frame, displayed=true, recovery=true)
+			  (-> found 'Web element {full xpath: //div[@data-dojo-attach-point='_projectsListingDiv']//div[@class='com-ibm-rdm-web-projects-ProjectDescription']/div} in no frame)
+			  (-> found 'Web element {full xpath: //div[@data-dojo-attach-point='_projectsListingDiv']//div[@class='com-ibm-rdm-web-projects-ProjectDescription']/div} in no frame)
+			(getting displayed state for Web element {full xpath: //div[@data-dojo-attach-point='_projectsListingDiv']//div[@class='com-ibm-rdm-web-projects-ProjectDescription']/div} in no frame)
+			 ( -> true)
+		  -> found element: Web element {full xpath: //div[@data-dojo-attach-point='_projectsListingDiv']//div[@class='com-ibm-rdm-web-projects-ProjectDescription']/div} in no frame (visible)
+			(getting displayed state for Web element {full xpath: //div[@data-dojo-attach-point='_projectsListingDiv']//div[@class='com-ibm-rdm-web-projects-ProjectDescription']/div} in no frame)
+			 ( -> true)
+		  -> found element: Web element {full xpath: //div[@data-dojo-attach-point='_projectsListingDiv']//div[@class='com-ibm-rdm-web-projects-ProjectDescription']/div} in no frame (visible)
+		  -> return 2 visible elements
+			(finding element By.xpath: .//h3/a[starts-with(@id,'jazz_ui_ResourceLink_')] for Web element {full xpath: //div[@data-dojo-attach-point='_projectsListingDiv']//div[@class='com-ibm-rdm-web-projects-ProjectDescription']/div} in no frame in frame 'null')
+			(  -> found Web element {full xpath: //div[@data-dojo-attach-point='_projectsListingDiv']//div[@class='com-ibm-rdm-web-projects-ProjectDescription']/div//h3/a[starts-with(@id,'jazz_ui_ResourceLink_')]} in no frame)
+			(getting text for Web element {full xpath: //div[@data-dojo-attach-point='_projectsListingDiv']//div[@class='com-ibm-rdm-web-projects-ProjectDescription']/div//h3/a[starts-with(@id,'jazz_ui_ResourceLink_')]} in no frame)
+			 ( -> "STS_HistoryModule Test Project 2021-06-24 11:31:33")
+			(finding element By.xpath: .//h3/a[starts-with(@id,'jazz_ui_ResourceLink_')] for Web element {full xpath: //div[@data-dojo-attach-point='_projectsListingDiv']//div[@class='com-ibm-rdm-web-projects-ProjectDescription']/div} in no frame in frame 'null')
+			(  -> found Web element {full xpath: //div[@data-dojo-attach-point='_projectsListingDiv']//div[@class='com-ibm-rdm-web-projects-ProjectDescription']/div//h3/a[starts-with(@id,'jazz_ui_ResourceLink_')]} in no frame)
+			(getting text for Web element {full xpath: //div[@data-dojo-attach-point='_projectsListingDiv']//div[@class='com-ibm-rdm-web-projects-ProjectDescription']/div//h3/a[starts-with(@id,'jazz_ui_ResourceLink_')]} in no frame)
+			 ( -> "STS_HistoryModule Test Project 2021-06-26 17:00:19")
+		+ WebBrowser.waitForElement(): waiting for element: [By.xpath: .//*[starts-with(@id,'jazz_ui_PaginationControl_')]/*[starts-with(@id,'jazz_ui_toolbar_Button')][3]/a] (fail=false, timeout=15, displayed=true, single=true)
+		+ WebBrowser.waitForElements(): waiting for elements: [By.xpath: .//*[starts-with(@id,'jazz_ui_PaginationControl_')]/*[starts-with(@id,'jazz_ui_toolbar_Button')][3]/a]
+			(finding elements By.xpath: .//*[starts-with(@id,'jazz_ui_PaginationControl_')]/*[starts-with(@id,'jazz_ui_toolbar_Button')][3]/a for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			  (-> element not displayed)
+			(finding elements By.xpath: .//*[starts-with(@id,'jazz_ui_PaginationControl_')]/*[starts-with(@id,'jazz_ui_toolbar_Button')][3]/a for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			  (-> element not displayed)
+			(finding elements By.xpath: .//*[starts-with(@id,'jazz_ui_PaginationControl_')]/*[starts-with(@id,'jazz_ui_toolbar_Button')][3]/a for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			  (-> element not displayed)
+			(finding elements By.xpath: .//*[starts-with(@id,'jazz_ui_PaginationControl_')]/*[starts-with(@id,'jazz_ui_toolbar_Button')][3]/a for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			  (-> element not displayed)
+			(finding elements By.xpath: .//*[starts-with(@id,'jazz_ui_PaginationControl_')]/*[starts-with(@id,'jazz_ui_toolbar_Button')][3]/a for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			  (-> element not displayed)
+			(finding elements By.xpath: .//*[starts-with(@id,'jazz_ui_PaginationControl_')]/*[starts-with(@id,'jazz_ui_toolbar_Button')][3]/a for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			  (-> element not displayed)
+			(finding elements By.xpath: .//*[starts-with(@id,'jazz_ui_PaginationControl_')]/*[starts-with(@id,'jazz_ui_toolbar_Button')][3]/a for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			  (-> element not displayed)
+			(finding elements By.xpath: .//*[starts-with(@id,'jazz_ui_PaginationControl_')]/*[starts-with(@id,'jazz_ui_toolbar_Button')][3]/a for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			  (-> element not displayed)
+			(finding elements By.xpath: .//*[starts-with(@id,'jazz_ui_PaginationControl_')]/*[starts-with(@id,'jazz_ui_toolbar_Button')][3]/a for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			  (-> element not displayed)
+			(finding elements By.xpath: .//*[starts-with(@id,'jazz_ui_PaginationControl_')]/*[starts-with(@id,'jazz_ui_toolbar_Button')][3]/a for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			  (-> element not displayed)
+			(finding elements By.xpath: .//*[starts-with(@id,'jazz_ui_PaginationControl_')]/*[starts-with(@id,'jazz_ui_toolbar_Button')][3]/a for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			  (-> element not displayed)
+			(finding elements By.xpath: .//*[starts-with(@id,'jazz_ui_PaginationControl_')]/*[starts-with(@id,'jazz_ui_toolbar_Button')][3]/a for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			  (-> element not displayed)
+			(finding elements By.xpath: .//*[starts-with(@id,'jazz_ui_PaginationControl_')]/*[starts-with(@id,'jazz_ui_toolbar_Button')][3]/a for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			  (-> element not displayed)
+			(finding elements By.xpath: .//*[starts-with(@id,'jazz_ui_PaginationControl_')]/*[starts-with(@id,'jazz_ui_toolbar_Button')][3]/a for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			  (-> element not displayed)
+			(finding elements By.xpath: .//*[starts-with(@id,'jazz_ui_PaginationControl_')]/*[starts-with(@id,'jazz_ui_toolbar_Button')][3]/a for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			  (-> element not displayed)
+			(finding elements By.xpath: .//*[starts-with(@id,'jazz_ui_PaginationControl_')]/*[starts-with(@id,'jazz_ui_toolbar_Button')][3]/a for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			  (-> element not displayed)
+			(finding elements By.xpath: .//*[starts-with(@id,'jazz_ui_PaginationControl_')]/*[starts-with(@id,'jazz_ui_toolbar_Button')][3]/a for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			  (-> element not displayed)
+			(finding elements By.xpath: .//*[starts-with(@id,'jazz_ui_PaginationControl_')]/*[starts-with(@id,'jazz_ui_toolbar_Button')][3]/a for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			  (-> element not displayed)
+			(finding elements By.xpath: .//*[starts-with(@id,'jazz_ui_PaginationControl_')]/*[starts-with(@id,'jazz_ui_toolbar_Button')][3]/a for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			  (-> element not displayed)
+			(finding elements By.xpath: .//*[starts-with(@id,'jazz_ui_PaginationControl_')]/*[starts-with(@id,'jazz_ui_toolbar_Button')][3]/a for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			  (-> element not displayed)
+			(finding elements By.xpath: .//*[starts-with(@id,'jazz_ui_PaginationControl_')]/*[starts-with(@id,'jazz_ui_toolbar_Button')][3]/a for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			  (-> element not displayed)
+			(finding elements By.xpath: .//*[starts-with(@id,'jazz_ui_PaginationControl_')]/*[starts-with(@id,'jazz_ui_toolbar_Button')][3]/a for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			  (-> element not displayed)
+			(finding elements By.xpath: .//*[starts-with(@id,'jazz_ui_PaginationControl_')]/*[starts-with(@id,'jazz_ui_toolbar_Button')][3]/a for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			  (-> element not displayed)
+			(finding elements By.xpath: .//*[starts-with(@id,'jazz_ui_PaginationControl_')]/*[starts-with(@id,'jazz_ui_toolbar_Button')][3]/a for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			  (-> element not displayed)
+			(finding elements By.xpath: .//*[starts-with(@id,'jazz_ui_PaginationControl_')]/*[starts-with(@id,'jazz_ui_toolbar_Button')][3]/a for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			  (-> element not displayed)
+			(finding elements By.xpath: .//*[starts-with(@id,'jazz_ui_PaginationControl_')]/*[starts-with(@id,'jazz_ui_toolbar_Button')][3]/a for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			  (-> element not displayed)
+			(finding elements By.xpath: .//*[starts-with(@id,'jazz_ui_PaginationControl_')]/*[starts-with(@id,'jazz_ui_toolbar_Button')][3]/a for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			  (-> element not displayed)
+			(finding elements By.xpath: .//*[starts-with(@id,'jazz_ui_PaginationControl_')]/*[starts-with(@id,'jazz_ui_toolbar_Button')][3]/a for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			  (-> element not displayed)
+			(finding elements By.xpath: .//*[starts-with(@id,'jazz_ui_PaginationControl_')]/*[starts-with(@id,'jazz_ui_toolbar_Button')][3]/a for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			  (-> element not displayed)
+			(finding elements By.xpath: .//*[starts-with(@id,'jazz_ui_PaginationControl_')]/*[starts-with(@id,'jazz_ui_toolbar_Button')][3]/a for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			  (-> element not displayed)
+			(finding elements By.xpath: .//*[starts-with(@id,'jazz_ui_PaginationControl_')]/*[starts-with(@id,'jazz_ui_toolbar_Button')][3]/a for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			  (-> element not displayed)
+			(finding elements By.xpath: .//*[starts-with(@id,'jazz_ui_PaginationControl_')]/*[starts-with(@id,'jazz_ui_toolbar_Button')][3]/a for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			  (-> element not displayed)
+			(finding elements By.xpath: .//*[starts-with(@id,'jazz_ui_PaginationControl_')]/*[starts-with(@id,'jazz_ui_toolbar_Button')][3]/a for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			  (-> element not displayed)
+			(finding elements By.xpath: .//*[starts-with(@id,'jazz_ui_PaginationControl_')]/*[starts-with(@id,'jazz_ui_toolbar_Button')][3]/a for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			  (-> element not displayed)
+			(finding elements By.xpath: .//*[starts-with(@id,'jazz_ui_PaginationControl_')]/*[starts-with(@id,'jazz_ui_toolbar_Button')][3]/a for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			  (-> element not displayed)
+			(finding elements By.xpath: .//*[starts-with(@id,'jazz_ui_PaginationControl_')]/*[starts-with(@id,'jazz_ui_toolbar_Button')][3]/a for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			  (-> element not displayed)
+			(finding elements By.xpath: .//*[starts-with(@id,'jazz_ui_PaginationControl_')]/*[starts-with(@id,'jazz_ui_toolbar_Button')][3]/a for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			  (-> element not displayed)
+			(finding elements By.xpath: .//*[starts-with(@id,'jazz_ui_PaginationControl_')]/*[starts-with(@id,'jazz_ui_toolbar_Button')][3]/a for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			  (-> element not displayed)
+			(finding elements By.xpath: .//*[starts-with(@id,'jazz_ui_PaginationControl_')]/*[starts-with(@id,'jazz_ui_toolbar_Button')][3]/a for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			  (-> element not displayed)
+			(finding elements By.xpath: .//*[starts-with(@id,'jazz_ui_PaginationControl_')]/*[starts-with(@id,'jazz_ui_toolbar_Button')][3]/a for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			  (-> element not displayed)
+			(finding elements By.xpath: .//*[starts-with(@id,'jazz_ui_PaginationControl_')]/*[starts-with(@id,'jazz_ui_toolbar_Button')][3]/a for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			  (-> element not displayed)
+			(finding elements By.xpath: .//*[starts-with(@id,'jazz_ui_PaginationControl_')]/*[starts-with(@id,'jazz_ui_toolbar_Button')][3]/a for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			  (-> element not displayed)
+			(finding elements By.xpath: .//*[starts-with(@id,'jazz_ui_PaginationControl_')]/*[starts-with(@id,'jazz_ui_toolbar_Button')][3]/a for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			  (-> element not displayed)
+			(finding elements By.xpath: .//*[starts-with(@id,'jazz_ui_PaginationControl_')]/*[starts-with(@id,'jazz_ui_toolbar_Button')][3]/a for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			  (-> element not displayed)
+			(finding elements By.xpath: .//*[starts-with(@id,'jazz_ui_PaginationControl_')]/*[starts-with(@id,'jazz_ui_toolbar_Button')][3]/a for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			  (-> element not displayed)
+			(finding elements By.xpath: .//*[starts-with(@id,'jazz_ui_PaginationControl_')]/*[starts-with(@id,'jazz_ui_toolbar_Button')][3]/a for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			  (-> element not displayed)
+			(finding elements By.xpath: .//*[starts-with(@id,'jazz_ui_PaginationControl_')]/*[starts-with(@id,'jazz_ui_toolbar_Button')][3]/a for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			  (-> element not displayed)
+			(finding elements By.xpath: .//*[starts-with(@id,'jazz_ui_PaginationControl_')]/*[starts-with(@id,'jazz_ui_toolbar_Button')][3]/a for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			  (-> element not displayed)
+			(finding elements By.xpath: .//*[starts-with(@id,'jazz_ui_PaginationControl_')]/*[starts-with(@id,'jazz_ui_toolbar_Button')][3]/a for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			  (-> element not displayed)
+			(finding elements By.xpath: .//*[starts-with(@id,'jazz_ui_PaginationControl_')]/*[starts-with(@id,'jazz_ui_toolbar_Button')][3]/a for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			  (-> element not displayed)
+			(finding elements By.xpath: .//*[starts-with(@id,'jazz_ui_PaginationControl_')]/*[starts-with(@id,'jazz_ui_toolbar_Button')][3]/a for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			  (-> element not displayed)
+			(finding elements By.xpath: .//*[starts-with(@id,'jazz_ui_PaginationControl_')]/*[starts-with(@id,'jazz_ui_toolbar_Button')][3]/a for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			  (-> element not displayed)
+			(finding elements By.xpath: .//*[starts-with(@id,'jazz_ui_PaginationControl_')]/*[starts-with(@id,'jazz_ui_toolbar_Button')][3]/a for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			  (-> element not displayed)
+			(finding elements By.xpath: .//*[starts-with(@id,'jazz_ui_PaginationControl_')]/*[starts-with(@id,'jazz_ui_toolbar_Button')][3]/a for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			  (-> element not displayed)
+			(finding elements By.xpath: .//*[starts-with(@id,'jazz_ui_PaginationControl_')]/*[starts-with(@id,'jazz_ui_toolbar_Button')][3]/a for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			  (-> element not displayed)
+			(finding elements By.xpath: .//*[starts-with(@id,'jazz_ui_PaginationControl_')]/*[starts-with(@id,'jazz_ui_toolbar_Button')][3]/a for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			  (-> element not displayed)
+			(finding elements By.xpath: .//*[starts-with(@id,'jazz_ui_PaginationControl_')]/*[starts-with(@id,'jazz_ui_toolbar_Button')][3]/a for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			  (-> element not displayed)
+			(finding elements By.xpath: .//*[starts-with(@id,'jazz_ui_PaginationControl_')]/*[starts-with(@id,'jazz_ui_toolbar_Button')][3]/a for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			  (-> element not displayed)
+			(finding elements By.xpath: .//*[starts-with(@id,'jazz_ui_PaginationControl_')]/*[starts-with(@id,'jazz_ui_toolbar_Button')][3]/a for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			  (-> element not displayed)
+			(finding elements By.xpath: .//*[starts-with(@id,'jazz_ui_PaginationControl_')]/*[starts-with(@id,'jazz_ui_toolbar_Button')][3]/a for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			  (-> element not displayed)
+			(finding elements By.xpath: .//*[starts-with(@id,'jazz_ui_PaginationControl_')]/*[starts-with(@id,'jazz_ui_toolbar_Button')][3]/a for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://testmonday7031.fyre.ibm.com:9443/rm/web#action=com.ibm.rdm.web.pages.showAllProjectsPage (null))
+			  (-> element not displayed)
+		  -> no element was found
+Cannot find project 'STS_HistoryModule Test Project 2021-06-26 17:59:32 in All Projects page
+ScenarioFailedError: Cannot find project 'STS_HistoryModule Test Project 2021-06-26 17:59:32 in All Projects page
+	- com.ibm.team.fvt.tests.clm.pages.rm.RmWebAllProjectsPage.gotoProjectComponentsPage(RmWebAllProjectsPage.java:92)
+	- com.ibm.team.fvt.tests.clm.scenario.ClmScenarioStep.openRmArtifactsPage(ClmScenarioStep.java:6606)
+	- com.ibm.team.fvt.tests.rm.sanitytest.scenario.SanityTestScenarioStep.openRmArtifactsPage(SanityTestScenarioStep.java:290)
+	- com.ibm.team.fvt.tests.rm.sanitytest.scenario.SanityTestScenarioStep.openRmArtifactsPage(SanityTestScenarioStep.java:282)
+	- com.ibm.team.fvt.tests.rm.sanitytest.steps.STS_HistoryModule.test01_SingleArtifactSingleUpdate(STS_HistoryModule.java:70)
+	  -> KO (in 52.2s)
+		due to: Cannot find project 'STS_HistoryModule Test Project 2021-06-26 17:59:32 in All Projects page
+		+ one snaphot taken when the failure occured:
+		  -> screenshot available at C:\Users\KarthikCR\workspace\com.ibm.team.fvt.tests.rm.sanitytest\screenshots\failures\20210626175929_STS_HistoryModule.test01_SingleArtifactSingleUpdate.png
+		-> Cleanup test by clearing the pages cache.
+	- 18:00:27: start test case 'test04_SingleArtifactSetMultipleAttributes'...
+	  -> OK (in 0ms)
+	- 18:00:27: start test case 'test05_SingleArtifactUnsetMultipleAttributes'...
+	  -> OK (in 0ms)
+	- 'isPipeline' value=false
+**********  Close Debug Session: 20210626175929  ********

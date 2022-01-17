@@ -1,0 +1,448 @@
+**********  Open Debug Session: 20210614103555  ********
+Attach debug log file to RQM Adapter:
+	'com.ibm.rqm.adapter.resultAttachmentsFile' parameter is not set
+	'qm_AttachmentsFile' envirnment variable is not set either, give up...
+	- 'stopOnFailure' value=false
+	- 'timeoutsThreshold' value=2
+	- 'baseUrl' value=https://mb-two1.fyre.ibm.com:9443/rm/web
+Info: path for application 'https://mb-two1.fyre.ibm.com:9443/rm' contains several segments. Context root (rm) was initialized with first one.
+	- 'userRegistry' value=3
+	- 'appsToRegister' value=rm,gc
+		+ CspfFactory.<clinit>(): INFO: Factory 'com.ibm.team.cspf.report.internal.factories.ReportWebPageFactory' has not been found.
+Info: path for application 'https://mb-two1.fyre.ibm.com:9443/rm' contains several segments. Context root (rm) was initialized with first one.
+Info: path for application 'https://mb-two1.fyre.ibm.com:9443/rm' contains several segments. Context root (rm) was initialized with first one.
+	- 'timeout' value=70
+	- 'timeoutShort' value=15
+	- 'timeoutToOpenPage' value=45
+	- 'timeoutMtmSampleCreation' value=12000
+	- 'browserPath' value=C:/Program Files/Mozilla Firefox/firefox.exe
+	- 'geckoPath' value=C:/Users/KarthikCR/workspace/org.selenium.java.client/gecko/v29/geckodriver.exe
+	- 'browserProfile' value=C:/Users/KarthikCR/AppData/Roaming/Mozilla/Firefox/Profiles/wioourlo.default
+	- 'download.dir' value=uploads/test_files
+	- 'selenium.snapshots.dir' value=screenshots
+		+ WebBrowser.setWindow(): (dimension=(1600, 900), location=null)
+	- 'defaultAdminUsername' value=clmadmin
+	- 'defaultAdminUserID' value=clmadmin
+	- 'defaultAdminPassword' value=c*******
+	- 'adminUsername' value=clmadmin
+	- 'adminUserID' value=clmadmin
+	- 'adminPassword' value=c*******
+	- 'adminEmail' value=clmadmin@example.net
+	- 'expressSetup' value=false
+	- 'dwDefaultUser' value=true
+	- 'testUsername' value=Al
+	- 'testUserID' value=al
+	- 'testPassword' value=a*******
+	- 'testEmail' value=al@jkebanking.net
+	- 'runPleTests' value=true
+	- 'testProjectName' value=
+	- 'nonDefaultComponentName' value=Component X
+	- 'nonDefaultStreamName' value=Stream X
+	- 'author1Username' value=bob
+	- 'author1UserID' value=bob
+	- 'author1Password' value=b*******
+	- 'author1Email' value=bob@eu.jke.ibm.com
+	- 'author3Username' value=Dave
+	- 'author3UserID' value=dave
+	- 'author3Password' value=d*******
+	- 'author3Email' value=dave@eu.jke.ibm.com
+	- 'cleanData' value=false
+Selenium and Browser information:
+	- Selenium Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+	- Firefox version: 68.10.0
+	- Browser window size = (1600, 900)
+	- Browser window position = (3, 3)
+Filtering test08a_DatabaseForAm(com.ibm.team.cspf.jazz.scenario.steps.JazzScenarioStep00_CustomSetup) due to the value of the 'appsToRegister' argument
+Filtering test08b_FinalizeApplicationForAm(com.ibm.team.cspf.jazz.scenario.steps.JazzScenarioStep00_CustomSetup) due to the value of the 'appsToRegister' argument
+Filtering test08c_DatawarehouseForAm(com.ibm.team.cspf.jazz.scenario.steps.JazzScenarioStep00_CustomSetup) due to the value of the 'appsToRegister' argument
+Filtering test09a_DatabaseForCcm(com.ibm.team.cspf.jazz.scenario.steps.JazzScenarioStep00_CustomSetup) due to the value of the 'appsToRegister' argument
+Filtering test09b_FinalizeApplicationForCcm(com.ibm.team.cspf.jazz.scenario.steps.JazzScenarioStep00_CustomSetup) due to the value of the 'appsToRegister' argument
+Filtering test09c_DatawarehouseForCcm(com.ibm.team.cspf.jazz.scenario.steps.JazzScenarioStep00_CustomSetup) due to the value of the 'appsToRegister' argument
+Filtering test10a_DatabaseForRelm(com.ibm.team.cspf.jazz.scenario.steps.JazzScenarioStep00_CustomSetup) due to the value of the 'includesRELM' argument
+Filtering test10b_FinalizeApplicationForRelm(com.ibm.team.cspf.jazz.scenario.steps.JazzScenarioStep00_CustomSetup) due to the value of the 'includesRELM' argument
+Filtering test10c_DatawarehouseForRelm(com.ibm.team.cspf.jazz.scenario.steps.JazzScenarioStep00_CustomSetup) due to the value of the 'includesRELM' argument
+Filtering test12a_DatabaseForQm(com.ibm.team.cspf.jazz.scenario.steps.JazzScenarioStep00_CustomSetup) due to the value of the 'appsToRegister' argument
+Filtering test12b_FinalizeApplicationForQm(com.ibm.team.cspf.jazz.scenario.steps.JazzScenarioStep00_CustomSetup) due to the value of the 'appsToRegister' argument
+Filtering test12c_DatawarehouseForQm(com.ibm.team.cspf.jazz.scenario.steps.JazzScenarioStep00_CustomSetup) due to the value of the 'appsToRegister' argument
+Filtering test14a_DatabaseForDCC(com.ibm.team.cspf.jazz.scenario.steps.JazzScenarioStep00_CustomSetup) due to the value of the 'includesDCC' argument
+Filtering test14b_FinalizeApplicationForDCC(com.ibm.team.cspf.jazz.scenario.steps.JazzScenarioStep00_CustomSetup) due to the value of the 'includesDCC' argument
+Filtering test14c_DatawarehouseForDCC(com.ibm.team.cspf.jazz.scenario.steps.JazzScenarioStep00_CustomSetup) due to the value of the 'includesDCC' argument
+Filtering test15a_DatabaseForRhapsodyDm(com.ibm.team.cspf.jazz.scenario.steps.JazzScenarioStep00_CustomSetup) due to the value of the 'appsToRegister' argument
+Filtering test15b_FinalizeApplicationForRhapsodyDm(com.ibm.team.cspf.jazz.scenario.steps.JazzScenarioStep00_CustomSetup) due to the value of the 'appsToRegister' argument
+Filtering test16a_DatabaseForRsaDm(com.ibm.team.cspf.jazz.scenario.steps.JazzScenarioStep00_CustomSetup) due to the value of the 'includesRsaDm' argument
+Filtering test16b_FinalizeApplicationForRsaDm(com.ibm.team.cspf.jazz.scenario.steps.JazzScenarioStep00_CustomSetup) due to the value of the 'includesRsaDm' argument
+Filtering test17a_DatabaseForLqe(com.ibm.team.cspf.jazz.scenario.steps.JazzScenarioStep00_CustomSetup) due to the value of the 'includesLQE' argument
+Filtering test17b_BackupForLqe(com.ibm.team.cspf.jazz.scenario.steps.JazzScenarioStep00_CustomSetup) due to the value of the 'includesLQE' argument
+Filtering test17c_DataSourcesForLqe(com.ibm.team.cspf.jazz.scenario.steps.JazzScenarioStep00_CustomSetup) due to the value of the 'includesLQE' argument
+Filtering test17d_FinalizeLqeApplication(com.ibm.team.cspf.jazz.scenario.steps.JazzScenarioStep00_CustomSetup) due to the value of the 'includesLQE' argument
+Filtering test18a_DatabaseForLdx(com.ibm.team.cspf.jazz.scenario.steps.JazzScenarioStep00_CustomSetup) due to the value of the 'appsToRegister' argument
+Filtering test18b_BackupForLdx(com.ibm.team.cspf.jazz.scenario.steps.JazzScenarioStep00_CustomSetup) due to the value of the 'appsToRegister' argument
+Filtering test19_SetupJazzReportingService(com.ibm.team.cspf.jazz.scenario.steps.JazzScenarioStep00_CustomSetup) due to the value of the 'includesJRS' argument
+
+Starting execution of BVT test case 'JazzScenarioStep00_CustomSetup' at 10:36:01
+====================================================================
+	- 10:36:01: start test case 'test01_ChooseOption'...
+		+ WebPage.createPage(): Create page https://mb-two1.fyre.ibm.com:9443/rm/setup#/steps/1 for user User id=clmadmin, name=clmadmin, passwd=c*******, mail=clmadmin@ibm.cspf.com
+			-> location: https://mb-two1.fyre.ibm.com:9443/rm/setup#/steps/1
+			-> user: User id=clmadmin, name=clmadmin, passwd=c*******, mail=clmadmin@ibm.cspf.com
+			-> class:    com.ibm.team.fvt.tests.clm.pages.jts.setup.JtsSetupWelcomePageImpl
+		  -> found application 'RM Application (location=https://mb-two1.fyre.ibm.com:9443/rm, no user logged in)' for URL: https://mb-two1.fyre.ibm.com:9443/rm/setup#/steps/1
+		+ Topology.needLogin(): See whether it needs to log in before going to https://mb-two1.fyre.ibm.com:9443/rm/setup#/steps/1
+		  -> found application 'RM Application (location=https://mb-two1.fyre.ibm.com:9443/rm, no user logged in)' for URL: https://mb-two1.fyre.ibm.com:9443/rm/setup#/steps/1
+		+ Application.needLogin(): RM Application (location=https://mb-two1.fyre.ibm.com:9443/rm, no user logged in) need login asno user is set.
+		  -> no application is already logged in on same server
+		  -> store page at https://mb-two1.fyre.ibm.com:9443/rm/setup#/steps/1: about:blank
+		+ WebPage.get(): get page content (https://mb-two1.fyre.ibm.com:9443/rm/setup#/steps/1)
+		  -> browser URL: about:blank
+		  -> current user: null
+		  -> loading page...
+		  -> browser URL: about:blank
+		+ JazzAbstractWebPage.load(): Load the current page: https://mb-two1.fyre.ibm.com:9443/rm/setup#/steps/1
+		+ WebBrowser.get(): browser get: https://mb-two1.fyre.ibm.com:9443/rm/setup#/steps/1
+		  -> driver url: about:blank
+		  -> stored location: null
+INFO: URL of page 'https://mb-two1.fyre.ibm.com:9443/rm/setup#/steps/1' has changed to 'https://mb-two1.fyre.ibm.com:9443/jts/auth/authrequired/steps/1' just after having been loaded.
+		  -> should login
+			(finding element By.xpath: //div[starts-with(@id,'com_ibm_rqm_planning_web_ui_internal_page_NotAuthorized')] for browser Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/jts/auth/authrequired/steps/1, location=https://mb-two1.fyre.ibm.com:9443/rm/setup#/steps/1 (null) in frame 'null')
+			(finding element By.xpath: //*[@id='errorPageContainer'] for browser Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/jts/auth/authrequired/steps/1, location=https://mb-two1.fyre.ibm.com:9443/rm/setup#/steps/1 (null) in frame 'null')
+			(finding element By.xpath: //div[starts-with(@id,'com_ibm_rqm_planning_web_ui_internal_page_NotAuthorized')] for browser Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/jts/auth/authrequired/steps/1, location=https://mb-two1.fyre.ibm.com:9443/rm/setup#/steps/1 (null) in frame 'null')
+			(finding element By.xpath: //div[@dojoattachpoint='messageArea' and contains(@class,'ERROR')] for browser Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/jts/auth/authrequired/steps/1, location=https://mb-two1.fyre.ibm.com:9443/rm/setup#/steps/1 (null) in frame 'null')
+			(finding element By.xpath: //div[@id='jazz_ui_wizard_ExternalWizardStep_5']//iframe for browser Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/jts/auth/authrequired/steps/1, location=https://mb-two1.fyre.ibm.com:9443/rm/setup#/steps/1 (null) in frame 'null')
+		+ JazzAbstractWebPage.performLogin(): Perform login of user User id=clmadmin, name=clmadmin, passwd=c*******, mail=clmadmin@ibm.cspf.com
+		+ WebBrowser.waitForElement(): waiting for element: [By.name: j_username] (fail=false, timeout=70, displayed=true, single=true)
+		+ WebBrowser.waitForElements(): waiting for elements: [By.name: j_username]
+			(finding elements By.name: j_username for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/jts/auth/authrequired/steps/1, location=https://mb-two1.fyre.ibm.com:9443/rm/setup#/steps/1 (null))
+			  (-> found 'Web element {full xpath: //*[@name='j_username']} in no frame)
+			(getting displayed state for Web element {full xpath: //*[@name='j_username']} in no frame)
+			 ( -> true)
+		  -> found element: Web element {full xpath: //*[@name='j_username']} in no frame (visible)
+		  -> return 1 visible elements
+		+ WebBrowser.typeText(): Type text 'clmadmin' (cleared)
+			(getting enabled state for Web element {full xpath: //*[@name='j_username']} in no frame)
+			 ( -> true)
+			(getting attribute 'aria-label' for Web element {full xpath: //*[@name='j_username']} in no frame, fail=false)
+			 ( -> "null")
+			(getting attribute 'value' for Web element {full xpath: //*[@name='j_username']} in no frame, fail=false)
+			 ( -> "")
+			(sending keys '' to Web element {full xpath: //*[@name='j_username']} in no frame)
+			 ( -> done.)
+			(clearing Web element {full xpath: //*[@name='j_username']} in no frame)
+			 ( -> done.)
+			(sending keys 'clmadmin' to Web element {full xpath: //*[@name='j_username']} in no frame)
+			 ( -> done.)
+			(sending keys '' to Web element {full xpath: //*[@name='j_username']} in no frame)
+			 ( -> done.)
+		+ WebBrowser.waitForElement(): waiting for element: [By.name: j_password] (fail=true, timeout=70, displayed=true, single=true)
+		+ WebBrowser.waitForElements(): waiting for elements: [By.name: j_password]
+			(finding elements By.name: j_password for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/jts/auth/authrequired/steps/1, location=https://mb-two1.fyre.ibm.com:9443/rm/setup#/steps/1 (null))
+			  (-> found 'Web element {full xpath: //*[@name='j_password']} in no frame)
+			(getting displayed state for Web element {full xpath: //*[@name='j_password']} in no frame)
+			 ( -> true)
+		  -> found element: Web element {full xpath: //*[@name='j_password']} in no frame (visible)
+		  -> return 1 visible elements
+		+ WebBrowser.typeText(): Type password '******' (cleared)
+			(getting enabled state for Web element {full xpath: //*[@name='j_password']} in no frame)
+			 ( -> true)
+			(getting attribute 'aria-label' for Web element {full xpath: //*[@name='j_password']} in no frame, fail=false)
+			 ( -> "null")
+			(getting attribute 'value' for Web element {full xpath: //*[@name='j_password']} in no frame, fail=false)
+			 ( -> "")
+			(sending keys '' to Web element {full xpath: //*[@name='j_password']} in no frame)
+			 ( -> done.)
+			(clearing Web element {full xpath: //*[@name='j_password']} in no frame)
+			 ( -> done.)
+			(sending password '*****' to Web element {full xpath: //*[@name='j_password']} in no frame)
+			 ( -> done.)
+			(sending keys '' to Web element {full xpath: //*[@name='j_password']} in no frame)
+			 ( -> done.)
+		+ WebPage.matchBrowserUrl(): Test whether page location matches current browser URL or not.
+		  -> current url: https://mb-two1.fyre.ibm.com:9443/jts/auth/authrequired/steps/1
+		  -> page location: https://mb-two1.fyre.ibm.com:9443/rm/setup#/steps/1
+		  -> browser URL: https://mb-two1.fyre.ibm.com:9443/jts/auth/authrequired/steps/1
+		  -> page URL: https://mb-two1.fyre.ibm.com:9443/rm/setup#/steps/1
+		  -> NO MATCH: browser URL path does not start with page URL path
+		+ WebBrowser.waitForElement(): waiting for element: [By.xpath: //button[text()='Log In'] | //button[text()='Log in'] | //input[@value='Log in']] (fail=true, timeout=70, displayed=true, single=true)
+		+ WebBrowser.waitForElements(): waiting for elements: [By.xpath: //button[text()='Log In'] | //button[text()='Log in'] | //input[@value='Log in']]
+			(finding elements By.xpath: //button[text()='Log In'] | //button[text()='Log in'] | //input[@value='Log in'] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/jts/auth/authrequired/steps/1, location=https://mb-two1.fyre.ibm.com:9443/rm/setup#/steps/1 (null))
+			  (-> found 'Web element {full xpath: //button[text()='Log In'] | //button[text()='Log in'] | //input[@value='Log in']} in no frame)
+			(getting displayed state for Web element {full xpath: //button[text()='Log In'] | //button[text()='Log in'] | //input[@value='Log in']} in no frame)
+			 ( -> true)
+		  -> found element: Web element {full xpath: //button[text()='Log In'] | //button[text()='Log in'] | //input[@value='Log in']} in no frame (visible)
+		  -> return 1 visible elements
+		+ WebBrowser.clickButton(): click on button 'Web element {full xpath: //button[text()='Log In'] | //button[text()='Log in'] | //input[@value='Log in']} in no frame'
+			(getting enabled state for Web element {full xpath: //button[text()='Log In'] | //button[text()='Log in'] | //input[@value='Log in']} in no frame)
+			 ( -> true)
+			(clicking on Web element {full xpath: //button[text()='Log In'] | //button[text()='Log in'] | //input[@value='Log in']} in no frame)
+			 ( -> done.)
+			(getting displayed state for Web element {full xpath: //button[text()='Log In'] | //button[text()='Log in'] | //input[@value='Log in']} in no frame)
+			(WORKAROUND: exception The element reference of <button class="j-button-primary" type="submit"> is stale; either the element is no longer attached to the DOM, it is not in the current frame context, or the document has been refreshed
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'DESKTOP-0D63QME', ip: '192.168.225.233', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.10.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200622191537, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 2560, moz:profile: C:\Users\KarthikCR\AppData\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: ignore}
+Session ID: c78f2c4f-feac-41ae-a2d8-f24bf12de230 has been caught...
+			 -> return false instead)
+			(finding element By.xpath: .//div[@class='loginErrorMessage'] for browser Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/jts/auth/authrequired/steps/1, location=https://mb-two1.fyre.ibm.com:9443/rm/setup#/steps/1 (null) in frame 'null')
+		+ Topology.login(): Login user clmadmin for all applications
+		  -> found application 'RM Application (location=https://mb-two1.fyre.ibm.com:9443/rm, no user logged in)' for URL: https://mb-two1.fyre.ibm.com:9443/rm/setup#/steps/1
+		+ Application.login(): Log in user 'User id=clmadmin, name=clmadmin, passwd=c*******, mail=clmadmin@ibm.cspf.com' to current RM Application (location=https://mb-two1.fyre.ibm.com:9443/rm, no user logged in)
+		+ Application.login(): Log in user 'User id=clmadmin, name=clmadmin, passwd=c*******, mail=clmadmin@ibm.cspf.com' to current RM Application (location=https://mb-two1.fyre.ibm.com:9443/rm, user logged in: User id=clmadmin, name=clmadmin, passwd=c*******, mail=clmadmin@ibm.cspf.com)
+		  -> nothing was done as there user was already logged in.
+		+ Application.login(): Log in user 'User id=clmadmin, name=clmadmin, passwd=c*******, mail=clmadmin@ibm.cspf.com' to current RM Application (location=https://mb-two1.fyre.ibm.com:9443/rm, no user logged in)
+		+ Application.login(): Log in user 'User id=clmadmin, name=clmadmin, passwd=c*******, mail=clmadmin@ibm.cspf.com' to current RM Application (location=https://mb-two1.fyre.ibm.com:9443/rm, no user logged in)
+		+ Application.login(): Log in user 'User id=clmadmin, name=clmadmin, passwd=c*******, mail=clmadmin@ibm.cspf.com' to current RM Application (location=https://mb-two1.fyre.ibm.com:9443/rm, user logged in: User id=clmadmin, name=clmadmin, passwd=c*******, mail=clmadmin@ibm.cspf.com)
+		  -> nothing was done as there user was already logged in.
+		+ Application.login(): Log in user 'User id=clmadmin, name=clmadmin, passwd=c*******, mail=clmadmin@ibm.cspf.com' to current RM Application (location=https://mb-two1.fyre.ibm.com:9443/rm, user logged in: User id=clmadmin, name=clmadmin, passwd=c*******, mail=clmadmin@ibm.cspf.com)
+		  -> nothing was done as there user was already logged in.
+		+ Application.login(): Log in user 'User id=clmadmin, name=clmadmin, passwd=c*******, mail=clmadmin@ibm.cspf.com' to current RM Application (location=https://mb-two1.fyre.ibm.com:9443/rm, user logged in: User id=clmadmin, name=clmadmin, passwd=c*******, mail=clmadmin@ibm.cspf.com)
+		  -> nothing was done as there user was already logged in.
+		+ Topology.login(): Login user clmadmin for all applications
+		  -> found application 'RM Application (location=https://mb-two1.fyre.ibm.com:9443/rm, user logged in: User id=clmadmin, name=clmadmin, passwd=c*******, mail=clmadmin@ibm.cspf.com)' for URL: https://mb-two1.fyre.ibm.com:9443/rm/setup#/steps/1
+		+ Application.login(): Log in user 'User id=clmadmin, name=clmadmin, passwd=c*******, mail=clmadmin@ibm.cspf.com' to current RM Application (location=https://mb-two1.fyre.ibm.com:9443/rm, user logged in: User id=clmadmin, name=clmadmin, passwd=c*******, mail=clmadmin@ibm.cspf.com)
+		  -> nothing was done as there user was already logged in.
+		+ WebBrowser.waitForMultipleElements(): waiting for multiple elements (fail=true, timeout=70):'By.xpath: //span[text()='Try Again']', 'By.xpath: //button[@dojoattachpoint='wizardNextButton']', 'By.xpath: //*[text()='Permission Denied']'
+			(finding elements By.xpath: //span[text()='Try Again'] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/setup#/steps/1 (null))
+			(finding elements By.xpath: //button[@dojoattachpoint='wizardNextButton'] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/setup#/steps/1 (null))
+			  (-> found 'Web element {full xpath: //button[@dojoattachpoint='wizardNextButton']} in no frame)
+		  -> found 'By.xpath: //button[@dojoattachpoint='wizardNextButton']'
+			(finding elements By.xpath: //*[text()='Permission Denied'] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/setup#/steps/1 (null))
+		+ WebBrowser.resetFrame(): Reset frame null
+		+ WebBrowser.waitForElement(): waiting for element: [By.xpath: //div[@class='com-ibm-team-repository-web-setup-RootNode']] (fail=true, timeout=70, displayed=true, single=true)
+		+ WebBrowser.waitForElements(): waiting for elements: [By.xpath: //div[@class='com-ibm-team-repository-web-setup-RootNode']]
+			(finding elements By.xpath: //div[@class='com-ibm-team-repository-web-setup-RootNode'] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/setup#/steps/1 (null))
+			  (-> found 'Web element {full xpath: //div[@class='com-ibm-team-repository-web-setup-RootNode']} in no frame)
+			(getting displayed state for Web element {full xpath: //div[@class='com-ibm-team-repository-web-setup-RootNode']} in no frame)
+			 ( -> true)
+		  -> found element: Web element {full xpath: //div[@class='com-ibm-team-repository-web-setup-RootNode']} in no frame (visible)
+		  -> return 1 visible elements
+			(finding elements By.xpath: ./child::* for Web element {full xpath: //div[@class='com-ibm-team-repository-web-setup-RootNode']} in no frame, displayed=true, recovery=true)
+			  (-> found 'Web element {full xpath: //div[@class='com-ibm-team-repository-web-setup-RootNode']/child::*} in no frame)
+			(finding element By.xpath: .//div[contains(@id, 'jazz_ui_Dialog')] for browser Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/setup#/steps/1 (null) in frame 'null')
+			(finding element By.xpath: //div[starts-with(@id,'com_ibm_rqm_planning_web_ui_internal_page_NotAuthorized')] for browser Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/setup#/steps/1 (null) in frame 'null')
+		+ JazzAbstractWebPage.checkAcceptableServerErrorMessages(): Check whether a server error message is displayed in the page
+			(finding element By.xpath: //*[@id='errorPageContainer'] for browser Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/setup#/steps/1 (null) in frame 'null')
+			(finding element By.xpath: //div[starts-with(@id,'com_ibm_rqm_planning_web_ui_internal_page_NotAuthorized')] for browser Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/setup#/steps/1 (null) in frame 'null')
+			(finding element By.xpath: //div[@dojoattachpoint='messageArea' and contains(@class,'ERROR')] for browser Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/setup#/steps/1 (null) in frame 'null')
+			(finding element By.xpath: //div[@id='jazz_ui_wizard_ExternalWizardStep_5']//iframe for browser Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/setup#/steps/1 (null) in frame 'null')
+		+ WebBrowser.waitForElement(): waiting for element: [By.tagName: h1] (fail=true, timeout=70, displayed=true, single=true)
+		+ WebBrowser.waitForElements(): waiting for elements: [By.tagName: h1]
+			(finding elements By.tagName: h1 for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/setup#/steps/1 (null))
+			  (-> found 'Web element {full xpath: //h1]} in no frame)
+			(getting displayed state for Web element {full xpath: //h1]} in no frame)
+			 ( -> true)
+		  -> found element: Web element {full xpath: //h1]} in no frame (visible)
+		  -> return 1 visible elements
+		+ JazzAbstractWebPage.getTitle(): Get page title.
+			(getting text for Web element {full xpath: //h1]} in no frame)
+			 ( -> "Welcome to the Jazz Team Server & Application Setup")
+		+ JazzAbstractWebPage.checkAcceptableServerErrorMessages(): Check whether a server error message is displayed in the page
+			(finding element By.xpath: //*[@id='errorPageContainer'] for browser Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/setup#/steps/1 (null) in frame 'null')
+			(finding element By.xpath: //div[starts-with(@id,'com_ibm_rqm_planning_web_ui_internal_page_NotAuthorized')] for browser Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/setup#/steps/1 (null) in frame 'null')
+			(finding element By.xpath: //div[@dojoattachpoint='messageArea' and contains(@class,'ERROR')] for browser Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/setup#/steps/1 (null) in frame 'null')
+			(finding element By.xpath: //div[@id='jazz_ui_wizard_ExternalWizardStep_5']//iframe for browser Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/setup#/steps/1 (null) in frame 'null')
+		+ WebBrowser.switchToMainWindow(): Switch to main window using stored handle 6442450945
+		+ WebBrowser.switchToMainWindow(): Switch to main window using stored handle 6442450945
+		+ JazzAbstractWebPage.waitWhileBusy(): Wait while the page is busy...
+		  -> found application 'RM Application (location=https://mb-two1.fyre.ibm.com:9443/rm, user logged in: User id=clmadmin, name=clmadmin, passwd=c*******, mail=clmadmin@ibm.cspf.com)' for URL: https://mb-two1.fyre.ibm.com:9443/rm/setup#/steps/1
+		+ WebBrowser.waitForElement(): waiting for element: [By.className: loading] (fail=false, timeout=90, displayed=false, single=false)
+		+ WebBrowser.waitForElements(): waiting for elements: [By.className: loading]
+			(finding elements By.className: loading for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/setup#/steps/1 (null))
+			  (-> found 'Web element {full xpath: //*[contains(@class,'loading')]} in no frame)
+		  -> found element: Web element {full xpath: //*[contains(@class,'loading')]} in no frame
+		  -> return 1  elements
+			(getting displayed state for Web element {full xpath: //*[contains(@class,'loading')]} in no frame)
+			 ( -> false)
+		  -> it has lasted 107ms
+		  -> page loaded in 22.5s
+		  -> found application 'RM Application (location=https://mb-two1.fyre.ibm.com:9443/rm, user logged in: User id=clmadmin, name=clmadmin, passwd=c*******, mail=clmadmin@ibm.cspf.com)' for URL: https://mb-two1.fyre.ibm.com:9443/rm/setup#/steps/1
+		  -> browser URL: https://mb-two1.fyre.ibm.com:9443/rm/setup#/steps/1
+		+ WebBrowser.waitForElement(): waiting for element: [By.id: customOption] (fail=true, timeout=70, displayed=true, single=true)
+		+ WebBrowser.waitForElements(): waiting for elements: [By.id: customOption]
+			(finding elements By.id: customOption for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/setup#/steps/1 (null))
+			  (-> found 'Web element {full xpath: //*[@id='customOption']} in no frame)
+			(getting displayed state for Web element {full xpath: //*[@id='customOption']} in no frame)
+			 ( -> true)
+		  -> found element: Web element {full xpath: //*[@id='customOption']} in no frame (visible)
+		  -> return 1 visible elements
+		+ WebBrowser.check(): check box 'Web element {full xpath: //*[@id='customOption']} in no frame'
+			(getting selected state for Web element {full xpath: //*[@id='customOption']} in no frame)
+			 ( -> true)
+			(getting attribute 'class' for Web element {full xpath: //*[@id='customOption']} in no frame, fail=false)
+			 ( -> "")
+		  -> check-box was already 'on'
+		  -> found application 'RM Application (location=https://mb-two1.fyre.ibm.com:9443/rm, user logged in: User id=clmadmin, name=clmadmin, passwd=c*******, mail=clmadmin@ibm.cspf.com)' for URL: https://mb-two1.fyre.ibm.com:9443/rm/setup#/steps/1
+		+ ClmSetupPageHelper.clickNextButton(): click on Next button, current url is 'https://mb-two1.fyre.ibm.com:9443/rm/setup#/steps/1'
+		+ WebBrowser.resetFrame(): Reset frame null
+		+ WebBrowser.waitForElement(): waiting for element: [By.xpath: //button[@dojoattachpoint='wizardNextButton']] (fail=true, timeout=70, displayed=true, single=true)
+		+ WebBrowser.waitForElements(): waiting for elements: [By.xpath: //button[@dojoattachpoint='wizardNextButton']]
+			(finding elements By.xpath: //button[@dojoattachpoint='wizardNextButton'] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/setup#/steps/1 (null))
+			  (-> found 'Web element {full xpath: //button[@dojoattachpoint='wizardNextButton']} in no frame)
+			(getting displayed state for Web element {full xpath: //button[@dojoattachpoint='wizardNextButton']} in no frame)
+			 ( -> true)
+		  -> found element: Web element {full xpath: //button[@dojoattachpoint='wizardNextButton']} in no frame (visible)
+		  -> return 1 visible elements
+			(move to Web element {full xpath: //button[@dojoattachpoint='wizardNextButton']} in no frame, entirelyVisible=true)
+		+ WebBrowser.moveToElement(): Move mouse to web element Web element {full xpath: //button[@dojoattachpoint='wizardNextButton']} in no frame
+			(getting size of Web element {full xpath: //button[@dojoattachpoint='wizardNextButton']} in no frame)
+			 ( -> (120, 32))
+			 ( -> done.)
+		+ WebBrowser.clickButton(): click on button 'Web element {full xpath: //button[@dojoattachpoint='wizardNextButton']} in no frame'
+			(getting enabled state for Web element {full xpath: //button[@dojoattachpoint='wizardNextButton']} in no frame)
+			 ( -> true)
+			(clicking on Web element {full xpath: //button[@dojoattachpoint='wizardNextButton']} in no frame)
+			 ( -> done.)
+		+ ClmSetupPageHelper.waitForNextPage(): Wait for next page from https://mb-two1.fyre.ibm.com:9443/rm/setup#/steps/1
+		+ WebBrowser.resetFrame(): Reset frame null
+		+ WebBrowser.waitForElement(): waiting for element: [By.xpath: //button[@dojoattachpoint='wizardNextButton']] (fail=true, timeout=70, displayed=true, single=true)
+		+ WebBrowser.waitForElements(): waiting for elements: [By.xpath: //button[@dojoattachpoint='wizardNextButton']]
+			(finding elements By.xpath: //button[@dojoattachpoint='wizardNextButton'] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/setup#/steps/1 (null))
+			  (-> found 'Web element {full xpath: //button[@dojoattachpoint='wizardNextButton']} in no frame)
+			(getting displayed state for Web element {full xpath: //button[@dojoattachpoint='wizardNextButton']} in no frame)
+			 ( -> true)
+		  -> found element: Web element {full xpath: //button[@dojoattachpoint='wizardNextButton']} in no frame (visible)
+		  -> return 1 visible elements
+			(move to Web element {full xpath: //button[@dojoattachpoint='wizardNextButton']} in no frame, entirelyVisible=true)
+		+ WebBrowser.moveToElement(): Move mouse to web element Web element {full xpath: //button[@dojoattachpoint='wizardNextButton']} in no frame
+			(getting size of Web element {full xpath: //button[@dojoattachpoint='wizardNextButton']} in no frame)
+			 ( -> (114, 32))
+MoveTargetOutOfBoundsException: (908, 760) is out of bounds of viewport width (1280) and height (607)
+	- com.ibm.team.fvt.tests.web.WebBrowser.moveToElement(WebBrowser.java:1645)
+	- com.ibm.team.fvt.tests.web.WebBrowserElement.moveToElement(WebBrowserElement.java:1530)
+	- com.ibm.team.fvt.tests.clm.pages.helper.ClmSetupPageHelper.waitForNextPage(ClmSetupPageHelper.java:308)
+	- com.ibm.team.fvt.tests.clm.pages.helper.ClmSetupPageHelper.clickNextButton(ClmSetupPageHelper.java:71)
+	- com.ibm.team.fvt.tests.clm.pages.helper.ClmSetupPageHelper.setup(ClmSetupPageHelper.java:191)
+	- com.ibm.team.fvt.tests.clm.pages.jts.setup.JtsSetupAbstractPage.setup(JtsSetupAbstractPage.java:432)
+	- com.ibm.team.fvt.tests.clm.pages.jts.setup.JtsSetupWelcomePageImpl.setup(JtsSetupWelcomePageImpl.java:129)
+	- com.ibm.team.cspf.jazz.scenario.JazzScenarioStep.chooseOption(JazzScenarioStep.java:129)
+	- com.ibm.team.cspf.jazz.scenario.steps.JazzScenarioStep00_CustomSetup.test01_ChooseOption(JazzScenarioStep00_CustomSetup.java:106)
+		  -> catching MoveTargetOutOfBoundsException while trying to move to an element, hence do nothing...
+			 ( -> done.)
+		  -> timeout=45 seconds
+		  -> found application 'RM Application (location=https://mb-two1.fyre.ibm.com:9443/rm, user logged in: User id=clmadmin, name=clmadmin, passwd=c*******, mail=clmadmin@ibm.cspf.com)' for URL: https://mb-two1.fyre.ibm.com:9443/rm/customSetup
+		  -> found application 'RM Application (location=https://mb-two1.fyre.ibm.com:9443/rm, user logged in: User id=clmadmin, name=clmadmin, passwd=c*******, mail=clmadmin@ibm.cspf.com)' for URL: https://mb-two1.fyre.ibm.com:9443/rm/customSetup
+		  -> jump to https://mb-two1.fyre.ibm.com:9443/rm/customSetup
+		+ JtsSetupAbstractPage.getNextPageType(): Getting the type of the next page in jts setup
+		+ WebBrowser.resetFrame(): Reset frame null
+		+ WebBrowser.waitForElement(): waiting for element: [By.xpath: //div[contains(@class,'activeStep') and contains(@class,'selected')]/span] (fail=true, timeout=70, displayed=true, single=true)
+		+ WebBrowser.waitForElements(): waiting for elements: [By.xpath: //div[contains(@class,'activeStep') and contains(@class,'selected')]/span]
+			(finding elements By.xpath: //div[contains(@class,'activeStep') and contains(@class,'selected')]/span for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/customSetup, location=https://mb-two1.fyre.ibm.com:9443/rm/setup#/steps/1 (null))
+			  (-> found 'Web element {full xpath: //div[contains(@class,'activeStep') and contains(@class,'selected')]/span} in no frame)
+			(getting displayed state for Web element {full xpath: //div[contains(@class,'activeStep') and contains(@class,'selected')]/span} in no frame)
+			 ( -> true)
+		  -> found element: Web element {full xpath: //div[contains(@class,'activeStep') and contains(@class,'selected')]/span} in no frame (visible)
+		  -> return 1 visible elements
+			(getting text for Web element {full xpath: //div[contains(@class,'activeStep') and contains(@class,'selected')]/span} in no frame)
+			 ( -> "Configure Database")
+			(finding element By.xpath: ../.. for Web element {full xpath: //div[contains(@class,'activeStep') and contains(@class,'selected')]/span} in no frame in frame 'null')
+			(  -> found Web element {full xpath: //div[contains(@class,'activeStep') and contains(@class,'selected')]/span/../..} in no frame)
+			(finding element By.xpath: ./div[@class='section'] for Web element {full xpath: //div[contains(@class,'activeStep') and contains(@class,'selected')]/span/../..} in no frame in frame 'null')
+			(  -> found Web element {full xpath: //div[contains(@class,'activeStep') and contains(@class,'selected')]/span/../../div[@class='section']} in no frame)
+			(getting text for Web element {full xpath: //div[contains(@class,'activeStep') and contains(@class,'selected')]/span/../../div[@class='section']} in no frame)
+			 ( -> "REQUIREMENTS MANAGEMENT(/rm)")
+		  -> current JTS setup page's step info: REQUIREMENTS MANAGEMENT (/rm) - Configure Database
+		  -> returning class com.ibm.team.fvt.tests.clm.pages.jts.setup.JtsSetupDatabasePage
+		+ WebPage.createPage(): Create page https://mb-two1.fyre.ibm.com:9443/rm/customSetup for user User id=clmadmin, name=clmadmin, passwd=c*******, mail=clmadmin@ibm.cspf.com
+			-> location: https://mb-two1.fyre.ibm.com:9443/rm/customSetup
+			-> user: User id=clmadmin, name=clmadmin, passwd=c*******, mail=clmadmin@ibm.cspf.com
+			-> class:    com.ibm.team.fvt.tests.clm.pages.jts.setup.JtsSetupDatabasePage
+		  -> found application 'RM Application (location=https://mb-two1.fyre.ibm.com:9443/rm, user logged in: User id=clmadmin, name=clmadmin, passwd=c*******, mail=clmadmin@ibm.cspf.com)' for URL: https://mb-two1.fyre.ibm.com:9443/rm/customSetup
+		+ Topology.needLogin(): See whether it needs to log in before going to https://mb-two1.fyre.ibm.com:9443/rm/customSetup
+		  -> found application 'RM Application (location=https://mb-two1.fyre.ibm.com:9443/rm, user logged in: User id=clmadmin, name=clmadmin, passwd=c*******, mail=clmadmin@ibm.cspf.com)' for URL: https://mb-two1.fyre.ibm.com:9443/rm/customSetup
+		  -> found application 'RM Application (location=https://mb-two1.fyre.ibm.com:9443/rm, user logged in: User id=clmadmin, name=clmadmin, passwd=c*******, mail=clmadmin@ibm.cspf.com)' for URL: https://mb-two1.fyre.ibm.com:9443/rm/customSetup
+		  -> store page at https://mb-two1.fyre.ibm.com:9443/rm/customSetup: https://mb-two1.fyre.ibm.com:9443/rm/customSetup
+	  -> OK (in 36.9s)
+	- 10:36:38: start test case 'test02_Introduction'...
+		+ JazzScenarioStep.verifySetupStep(): Verify JTS Setup Page for application 'Jazz Team Server' (rm) (fail=true).
+		+ WebPage.get(): get page content (https://mb-two1.fyre.ibm.com:9443/rm/customSetup)
+		  -> found application 'RM Application (location=https://mb-two1.fyre.ibm.com:9443/rm, user logged in: User id=clmadmin, name=clmadmin, passwd=c*******, mail=clmadmin@ibm.cspf.com)' for URL: https://mb-two1.fyre.ibm.com:9443/rm/customSetup
+		  -> browser URL: https://mb-two1.fyre.ibm.com:9443/rm/customSetup
+		  -> current user: User id=clmadmin, name=clmadmin, passwd=c*******, mail=clmadmin@ibm.cspf.com
+		+ JazzAbstractWebPage.isLoaded(): Test if the current Jazz page is already loaded:https://mb-two1.fyre.ibm.com:9443/rm/customSetup
+		  -> found application 'RM Application (location=https://mb-two1.fyre.ibm.com:9443/rm, user logged in: User id=clmadmin, name=clmadmin, passwd=c*******, mail=clmadmin@ibm.cspf.com)' for URL: https://mb-two1.fyre.ibm.com:9443/rm/customSetup
+		+ WebPage.matchBrowserUrl(): Test whether page location matches current browser URL or not.
+		  -> current url: https://mb-two1.fyre.ibm.com:9443/rm/customSetup
+		  -> page location: https://mb-two1.fyre.ibm.com:9443/rm/customSetup
+		  -> browser URL: https://mb-two1.fyre.ibm.com:9443/rm/customSetup
+		  -> page URL: https://mb-two1.fyre.ibm.com:9443/rm/customSetup
+		  -> found application 'RM Application (location=https://mb-two1.fyre.ibm.com:9443/rm, user logged in: User id=clmadmin, name=clmadmin, passwd=c*******, mail=clmadmin@ibm.cspf.com)' for URL: https://mb-two1.fyre.ibm.com:9443/rm/customSetup
+		  -> MATCH: browser URL (https://mb-two1.fyre.ibm.com:9443/rm/customSetup) matches page URL (https://mb-two1.fyre.ibm.com:9443/rm/customSetup)
+			(finding element By.xpath: //div[starts-with(@id,'com_ibm_rqm_planning_web_ui_internal_page_NotAuthorized')] for browser Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/customSetup, location=https://mb-two1.fyre.ibm.com:9443/rm/setup#/steps/1 (null) in frame 'null')
+		  -> found application 'RM Application (location=https://mb-two1.fyre.ibm.com:9443/rm, user logged in: User id=clmadmin, name=clmadmin, passwd=c*******, mail=clmadmin@ibm.cspf.com)' for URL: https://mb-two1.fyre.ibm.com:9443/rm/customSetup
+		+ WebBrowser.waitForElement(): waiting for element: [By.className: loading] (fail=false, timeout=1, displayed=false, single=false)
+		+ WebBrowser.waitForElements(): waiting for elements: [By.className: loading]
+			(finding elements By.className: loading for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/customSetup, location=https://mb-two1.fyre.ibm.com:9443/rm/setup#/steps/1 (null))
+			  (-> found 'Web element {full xpath: //*[contains(@class,'loading')]} in no frame)
+		  -> found element: Web element {full xpath: //*[contains(@class,'loading')]} in no frame
+		  -> return 1  elements
+		+ WebBrowser.selectVisibleFrame(): Select visible frame
+		  -> current frame: null
+		+ WebBrowser.getVisibleFrame(): Get visible frame
+		+ WebBrowser.resetFrame(): Reset frame null
+		+ WebBrowser.waitForElements(): waiting for elements: [By.tagName: iframe]
+			(finding elements By.tagName: iframe for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/customSetup, location=https://mb-two1.fyre.ibm.com:9443/rm/setup#/steps/1 (null))
+			(finding elements By.tagName: iframe for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/customSetup, location=https://mb-two1.fyre.ibm.com:9443/rm/setup#/steps/1 (null))
+			(finding elements By.tagName: iframe for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/customSetup, location=https://mb-two1.fyre.ibm.com:9443/rm/setup#/steps/1 (null))
+			(finding elements By.tagName: iframe for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/customSetup, location=https://mb-two1.fyre.ibm.com:9443/rm/setup#/steps/1 (null))
+			(finding elements By.tagName: iframe for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/customSetup, location=https://mb-two1.fyre.ibm.com:9443/rm/setup#/steps/1 (null))
+			(finding elements By.tagName: iframe for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/customSetup, location=https://mb-two1.fyre.ibm.com:9443/rm/setup#/steps/1 (null))
+			(finding elements By.tagName: iframe for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/customSetup, location=https://mb-two1.fyre.ibm.com:9443/rm/setup#/steps/1 (null))
+			(finding elements By.tagName: iframe for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/customSetup, location=https://mb-two1.fyre.ibm.com:9443/rm/setup#/steps/1 (null))
+			(finding elements By.tagName: iframe for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/customSetup, location=https://mb-two1.fyre.ibm.com:9443/rm/setup#/steps/1 (null))
+			(finding elements By.tagName: iframe for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/customSetup, location=https://mb-two1.fyre.ibm.com:9443/rm/setup#/steps/1 (null))
+			(finding elements By.tagName: iframe for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/customSetup, location=https://mb-two1.fyre.ibm.com:9443/rm/setup#/steps/1 (null))
+			(finding elements By.tagName: iframe for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/customSetup, location=https://mb-two1.fyre.ibm.com:9443/rm/setup#/steps/1 (null))
+			(finding elements By.tagName: iframe for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/customSetup, location=https://mb-two1.fyre.ibm.com:9443/rm/setup#/steps/1 (null))
+			(finding elements By.tagName: iframe for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/customSetup, location=https://mb-two1.fyre.ibm.com:9443/rm/setup#/steps/1 (null))
+			(finding elements By.tagName: iframe for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/customSetup, location=https://mb-two1.fyre.ibm.com:9443/rm/setup#/steps/1 (null))
+			(finding elements By.tagName: iframe for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/customSetup, location=https://mb-two1.fyre.ibm.com:9443/rm/setup#/steps/1 (null))
+			(finding elements By.tagName: iframe for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/customSetup, location=https://mb-two1.fyre.ibm.com:9443/rm/setup#/steps/1 (null))
+			(finding elements By.tagName: iframe for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/customSetup, location=https://mb-two1.fyre.ibm.com:9443/rm/setup#/steps/1 (null))
+			(finding elements By.tagName: iframe for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/customSetup, location=https://mb-two1.fyre.ibm.com:9443/rm/setup#/steps/1 (null))
+			(finding elements By.tagName: iframe for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/customSetup, location=https://mb-two1.fyre.ibm.com:9443/rm/setup#/steps/1 (null))
+			(finding elements By.tagName: iframe for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/customSetup, location=https://mb-two1.fyre.ibm.com:9443/rm/setup#/steps/1 (null))
+			(finding elements By.tagName: iframe for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/customSetup, location=https://mb-two1.fyre.ibm.com:9443/rm/setup#/steps/1 (null))
+			(finding elements By.tagName: iframe for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/customSetup, location=https://mb-two1.fyre.ibm.com:9443/rm/setup#/steps/1 (null))
+			(finding elements By.tagName: iframe for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/customSetup, location=https://mb-two1.fyre.ibm.com:9443/rm/setup#/steps/1 (null))
+			(finding elements By.tagName: iframe for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/customSetup, location=https://mb-two1.fyre.ibm.com:9443/rm/setup#/steps/1 (null))
+			(finding elements By.tagName: iframe for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/customSetup, location=https://mb-two1.fyre.ibm.com:9443/rm/setup#/steps/1 (null))
+			(finding elements By.tagName: iframe for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/customSetup, location=https://mb-two1.fyre.ibm.com:9443/rm/setup#/steps/1 (null))
+			(finding elements By.tagName: iframe for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/customSetup, location=https://mb-two1.fyre.ibm.com:9443/rm/setup#/steps/1 (null))
+			(finding elements By.tagName: iframe for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/customSetup, location=https://mb-two1.fyre.ibm.com:9443/rm/setup#/steps/1 (null))
+			(finding elements By.tagName: iframe for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/customSetup, location=https://mb-two1.fyre.ibm.com:9443/rm/setup#/steps/1 (null))
+			(finding elements By.tagName: iframe for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/customSetup, location=https://mb-two1.fyre.ibm.com:9443/rm/setup#/steps/1 (null))
+			(finding elements By.tagName: iframe for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/customSetup, location=https://mb-two1.fyre.ibm.com:9443/rm/setup#/steps/1 (null))
+			(finding elements By.tagName: iframe for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/customSetup, location=https://mb-two1.fyre.ibm.com:9443/rm/setup#/steps/1 (null))
+			(finding elements By.tagName: iframe for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/customSetup, location=https://mb-two1.fyre.ibm.com:9443/rm/setup#/steps/1 (null))
+			(finding elements By.tagName: iframe for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/customSetup, location=https://mb-two1.fyre.ibm.com:9443/rm/setup#/steps/1 (null))
+			(finding elements By.tagName: iframe for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/customSetup, location=https://mb-two1.fyre.ibm.com:9443/rm/setup#/steps/1 (null))
+			(finding elements By.tagName: iframe for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/customSetup, location=https://mb-two1.fyre.ibm.com:9443/rm/setup#/steps/1 (null))
+			(finding elements By.tagName: iframe for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/customSetup, location=https://mb-two1.fyre.ibm.com:9443/rm/setup#/steps/1 (null))
+			(finding elements By.tagName: iframe for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/customSetup, location=https://mb-two1.fyre.ibm.com:9443/rm/setup#/steps/1 (null))
+			(finding elements By.tagName: iframe for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/customSetup, location=https://mb-two1.fyre.ibm.com:9443/rm/setup#/steps/1 (null))
+			(finding elements By.tagName: iframe for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/customSetup, location=https://mb-two1.fyre.ibm.com:9443/rm/setup#/steps/1 (null))
+		  -> no element was found
+Timeout while waiting for 'By.tagName: iframe'. Took longer than '10' seconds.
+		  -> no frame visible in browser
+Cannot select the current frame.
+ScenarioFailedError: Cannot select the current frame.
+	- com.ibm.team.fvt.tests.clm.pages.helper.ClmSetupFramedPageHelper.selectFrame(ClmSetupFramedPageHelper.java:48)
+	- com.ibm.team.fvt.tests.clm.pages.helper.ClmSetupFramedPageHelper.waitForLocalElement(ClmSetupFramedPageHelper.java:58)
+	- com.ibm.team.fvt.tests.clm.pages.helper.ClmSetupPageHelper.waitForTitle(ClmSetupPageHelper.java:360)
+	- com.ibm.team.fvt.tests.clm.pages.jts.setup.JtsSetupAbstractPage.waitForTitle(JtsSetupAbstractPage.java:467)
+	- com.ibm.team.fvt.tests.clm.pages.jts.setup.JtsSetupDatabasePage.waitForTitle(JtsSetupDatabasePage.java:205)
+	- com.ibm.team.cspf.jazz.internal.pages.JazzAbstractWebPage.isLoaded(JazzAbstractWebPage.java:862)
+	- com.ibm.team.fvt.tests.web.WebPage.get(WebPage.java:938)
+	- com.ibm.team.cspf.jazz.scenario.JazzScenarioStep.openStepPage(JazzScenarioStep.java:654)
+	- com.ibm.team.cspf.jazz.scenario.JazzScenarioStep.verifySetupStep(JazzScenarioStep.java:765)
+	- com.ibm.team.cspf.jazz.scenario.JazzScenarioStep.verifySetupStep(JazzScenarioStep.java:723)
+	- com.ibm.team.cspf.jazz.scenario.steps.JazzScenarioStep00_CustomSetup.test02_Introduction(JazzScenarioStep00_CustomSetup.java:112)
+	  -> KO (in 11.8s)
+		due to: Cannot select the current frame.
+		+ one snaphot taken when the failure occured:
+		  -> screenshot available at C:\Users\KarthikCR\workspace\com.ibm.team.fvt.tests.rm.user.module\screenshots\failures\20210614103555_JazzScenarioStep00_CustomSetup.test02_Introduction.png
+  -> Cleanup test by refreshing browser content.
+		+ WebBrowser.refresh(): Refresh page https://mb-two1.fyre.ibm.com:9443/rm/customSetup
+ERROR: Unexpected error encountered while running current test, scenario execution will be aborted as it's a mandatory test!
+	- 'isPipeline' value=false
+**********  Close Debug Session: 20210614103555  ********

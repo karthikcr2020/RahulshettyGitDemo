@@ -1,0 +1,150 @@
+**********  Open Debug Session: 20210617113256  ********
+Attach debug log file to RQM Adapter:
+	'com.ibm.rqm.adapter.resultAttachmentsFile' parameter is not set
+	'qm_AttachmentsFile' envirnment variable is not set either, give up...
+	- 'stopOnFailure' value=false
+	- 'timeoutsThreshold' value=2
+	- 'baseUrl' value=https://mb-two1.fyre.ibm.com:9443/rm/web
+Info: path for application 'https://mb-two1.fyre.ibm.com:9443/rm' contains several segments. Context root (rm) was initialized with first one.
+	- 'userRegistry' value=3
+	- 'appsToRegister' value=rm,gc
+		+ CspfFactory.<clinit>(): INFO: Factory 'com.ibm.team.cspf.report.internal.factories.ReportWebPageFactory' has not been found.
+Info: path for application 'https://mb-two1.fyre.ibm.com:9443/rm' contains several segments. Context root (rm) was initialized with first one.
+Info: path for application 'https://mb-two1.fyre.ibm.com:9443/rm' contains several segments. Context root (rm) was initialized with first one.
+	- 'timeout' value=70
+	- 'timeoutShort' value=15
+	- 'timeoutToOpenPage' value=45
+	- 'timeoutMtmSampleCreation' value=12000
+	- 'browserPath' value=C:/Program Files/Mozilla Firefox/firefox.exe
+	- 'geckoPath' value=C:/Users/KarthikCR/workspace/org.selenium.java.client/gecko/v29/geckodriver.exe
+	- 'browserProfile' value=C:/Users/KarthikCR/AppData/Roaming/Mozilla/Firefox/Profiles/wioourlo.default
+	- 'download.dir' value=uploads/test_files
+	- 'selenium.snapshots.dir' value=screenshots
+		+ WebBrowser.setWindow(): (dimension=(1600, 900), location=null)
+	- 'defaultAdminUsername' value=clmadmin
+	- 'defaultAdminUserID' value=clmadmin
+	- 'defaultAdminPassword' value=c*******
+	- 'adminUsername' value=clmadmin
+	- 'adminUserID' value=clmadmin
+	- 'adminPassword' value=c*******
+	- 'adminEmail' value=clmadmin@example.net
+	- 'expressSetup' value=false
+	- 'dwDefaultUser' value=true
+	- 'testUsername' value=Al
+	- 'testUserID' value=al
+	- 'testPassword' value=a*******
+	- 'testEmail' value=al@jkebanking.net
+	- 'runPleTests' value=true
+	- 'testProjectName' value=
+	- 'nonDefaultComponentName' value=Component X
+	- 'nonDefaultStreamName' value=Stream X
+	- 'author1Username' value=bob
+	- 'author1UserID' value=bob
+	- 'author1Password' value=b*******
+	- 'author1Email' value=bob@eu.jke.ibm.com
+	- 'author3Username' value=Dave
+	- 'author3UserID' value=dave
+	- 'author3Password' value=d*******
+	- 'author3Email' value=dave@eu.jke.ibm.com
+	- 'cleanData' value=false
+Selenium and Browser information:
+	- Selenium Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+	- Firefox version: 68.10.0
+	- Browser window size = (1600, 900)
+	- Browser window position = (3, 3)
+
+Starting execution of BVT test case 'SetupModuleUsers' at 11:33:02
+======================================================
+	- 11:33:02: start test case 'test01_CreateOrImportAllUsers'...
+		+ WebPage.createPage(): Create page https://mb-two1.fyre.ibm.com:9443/rm/admin for user User id=clmadmin, name=clmadmin, passwd=c*******, mail=clmadmin@example.net
+			-> location: https://mb-two1.fyre.ibm.com:9443/rm/admin
+			-> user: User id=clmadmin, name=clmadmin, passwd=c*******, mail=clmadmin@example.net
+			-> class:    com.ibm.team.fvt.tests.clm.pages.jts.admin.JtsAdminHomePage
+		  -> found application 'RM Application (location=https://mb-two1.fyre.ibm.com:9443/rm, no user logged in)' for URL: https://mb-two1.fyre.ibm.com:9443/rm/admin
+		+ Topology.needLogin(): See whether it needs to log in before going to https://mb-two1.fyre.ibm.com:9443/rm/admin
+		  -> found application 'RM Application (location=https://mb-two1.fyre.ibm.com:9443/rm, no user logged in)' for URL: https://mb-two1.fyre.ibm.com:9443/rm/admin
+		+ Application.needLogin(): RM Application (location=https://mb-two1.fyre.ibm.com:9443/rm, no user logged in) need login asno user is set.
+		  -> no application is already logged in on same server
+		  -> store page at https://mb-two1.fyre.ibm.com:9443/rm/admin: about:blank
+		+ WebPage.get(): get page content (https://mb-two1.fyre.ibm.com:9443/rm/admin)
+		  -> browser URL: about:blank
+		  -> current user: null
+		  -> loading page...
+		  -> browser URL: about:blank
+		+ JazzAbstractWebPage.load(): Load the current page: https://mb-two1.fyre.ibm.com:9443/rm/admin
+		+ WebBrowser.get(): browser get: https://mb-two1.fyre.ibm.com:9443/rm/admin
+		  -> driver url: about:blank
+		  -> stored location: null
+WebDriverException: Reached error page: about:neterror?e=dnsNotFound&u=https%3A//mb-two1.fyre.ibm.com%3A9443/rm/admin&c=UTF-8&f=regular&d=We%20can%E2%80%99t%20connect%20to%20the%20server%20at%20mb-two1.fyre.ibm.com.
+	- com.ibm.team.fvt.tests.web.WebBrowser.get(WebBrowser.java:1219)
+	- com.ibm.team.fvt.tests.web.WebPage.load(WebPage.java:1176)
+	- com.ibm.team.cspf.jazz.internal.pages.JazzAbstractWebPage.load(JazzAbstractWebPage.java:949)
+	- com.ibm.team.fvt.tests.web.WebPage.get(WebPage.java:969)
+	- com.ibm.team.fvt.tests.web.WebPage.openPage(WebPage.java:447)
+	- com.ibm.team.fvt.tests.web.WebPage.openPage(WebPage.java:421)
+	- com.ibm.team.cspf.jazz.scenario.JazzScenarioStep.openWebPage(JazzScenarioStep.java:682)
+	- com.ibm.team.fvt.tests.clm.scenario.ClmScenarioStep.openJtsAdminHomePage(ClmScenarioStep.java:4051)
+	- com.ibm.team.fvt.tests.clm.scenario.ClmScenarioStep.openJtsAdminActiveUsersPage(ClmScenarioStep.java:3988)
+	- com.ibm.team.fvt.tests.clm.scenario.ClmScenarioStep.createOrImportUser(ClmScenarioStep.java:1023)
+	- com.ibm.team.fvt.tests.clm.scenario.ClmScenarioStep.createOrImportUsers(ClmScenarioStep.java:1065)
+	- com.ibm.team.fvt.tests.rm.user.module.helpers.SetupModuleUsers.test01_CreateOrImportAllUsers(SetupModuleUsers.java:41)
+	  -> KO (in 11.4s)
+		due to: Reached error page: about:neterror?e=dnsNotFound&u=https%3A//mb-two1.fyre.ibm.com%3A9443/rm/admin&c=UTF-8&f=regular&d=We%20can%E2%80%99t%20connect%20to%20the%20server%20at%20mb-two1.fyre.ibm.com.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'DESKTOP-0D63QME', ip: '192.168.225.233', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.10.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200622191537, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 16972, moz:profile: C:\Users\KarthikCR\AppData\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: ignore}
+Session ID: b4a7c7ae-269b-40b7-bfd0-ecc0b1c53dcf
+		+ A snapshot has been taken:
+		  -> screenshot available at C:\Users\KarthikCR\workspace\com.ibm.team.fvt.tests.rm.user.module\screenshots\warnings\20210617113256_SetupModuleUsers.test01_CreateOrImportAllUsers.png
+		-> Cleanup test by clearing the pages cache.
+WORKAROUND: Try to run the test again in case this was a transient issue...
+		  -> Re-run the test...
+	- 11:33:16: start test case 'test01_CreateOrImportAllUsers'...
+		+ WebPage.createPage(): Create page https://mb-two1.fyre.ibm.com:9443/rm/admin for user User id=clmadmin, name=clmadmin, passwd=c*******, mail=clmadmin@example.net
+			-> location: https://mb-two1.fyre.ibm.com:9443/rm/admin
+			-> user: User id=clmadmin, name=clmadmin, passwd=c*******, mail=clmadmin@example.net
+			-> class:    com.ibm.team.fvt.tests.clm.pages.jts.admin.JtsAdminHomePage
+		  -> found application 'RM Application (location=https://mb-two1.fyre.ibm.com:9443/rm, no user logged in)' for URL: https://mb-two1.fyre.ibm.com:9443/rm/admin
+		+ Topology.needLogin(): See whether it needs to log in before going to https://mb-two1.fyre.ibm.com:9443/rm/admin
+		  -> found application 'RM Application (location=https://mb-two1.fyre.ibm.com:9443/rm, no user logged in)' for URL: https://mb-two1.fyre.ibm.com:9443/rm/admin
+		+ Application.needLogin(): RM Application (location=https://mb-two1.fyre.ibm.com:9443/rm, no user logged in) need login asno user is set.
+		  -> no application is already logged in on same server
+		  -> found application 'RM Application (location=https://mb-two1.fyre.ibm.com:9443/rm, no user logged in)' for URL: https://mb-two1.fyre.ibm.com:9443/rm/admin
+		  -> store page at https://mb-two1.fyre.ibm.com:9443/rm/admin: https://mb-two1.fyre.ibm.com:9443/rm/admin
+		+ WebPage.get(): get page content (https://mb-two1.fyre.ibm.com:9443/rm/admin)
+		  -> found application 'RM Application (location=https://mb-two1.fyre.ibm.com:9443/rm, no user logged in)' for URL: https://mb-two1.fyre.ibm.com:9443/rm/admin
+		  -> browser URL: https://mb-two1.fyre.ibm.com:9443/rm/admin
+		  -> current user: null
+		  -> loading page...
+		  -> found application 'RM Application (location=https://mb-two1.fyre.ibm.com:9443/rm, no user logged in)' for URL: https://mb-two1.fyre.ibm.com:9443/rm/admin
+		  -> browser URL: https://mb-two1.fyre.ibm.com:9443/rm/admin
+		+ JazzAbstractWebPage.load(): Load the current page: https://mb-two1.fyre.ibm.com:9443/rm/admin
+INFO: browser was already at 'https://mb-two1.fyre.ibm.com:9443/rm/admin'.
+		  -> should login
+			(finding element By.xpath: //div[starts-with(@id,'com_ibm_rqm_planning_web_ui_internal_page_NotAuthorized')] for browser Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/admin (null) in frame 'null')
+			(finding element By.xpath: //*[@id='errorPageContainer'] for browser Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/admin (null) in frame 'null')
+			(  -> found Web element {full xpath: //*[@id='errorPageContainer']} in no frame)
+Cannot access page https://mb-two1.fyre.ibm.com:9443/rm/admin
+BrowserConnectionError: Cannot access page https://mb-two1.fyre.ibm.com:9443/rm/admin
+	- com.ibm.team.fvt.tests.web.WebBrowser.checkConnection(WebBrowser.java:1323)
+	- com.ibm.team.cspf.jazz.internal.pages.JazzAbstractWebPage.getErrorMessageElement(JazzAbstractWebPage.java:426)
+	- com.ibm.team.cspf.jazz.internal.pages.JazzAbstractWebPage.performLogin(JazzAbstractWebPage.java:1158)
+	- com.ibm.team.fvt.tests.web.WebPage.load(WebPage.java:1181)
+	- com.ibm.team.cspf.jazz.internal.pages.JazzAbstractWebPage.load(JazzAbstractWebPage.java:949)
+	- com.ibm.team.fvt.tests.web.WebPage.get(WebPage.java:969)
+	- com.ibm.team.fvt.tests.web.WebPage.openPage(WebPage.java:447)
+	- com.ibm.team.fvt.tests.web.WebPage.openPage(WebPage.java:421)
+	- com.ibm.team.cspf.jazz.scenario.JazzScenarioStep.openWebPage(JazzScenarioStep.java:682)
+	- com.ibm.team.fvt.tests.clm.scenario.ClmScenarioStep.openJtsAdminHomePage(ClmScenarioStep.java:4051)
+	- com.ibm.team.fvt.tests.clm.scenario.ClmScenarioStep.openJtsAdminActiveUsersPage(ClmScenarioStep.java:3988)
+	- com.ibm.team.fvt.tests.clm.scenario.ClmScenarioStep.createOrImportUser(ClmScenarioStep.java:1023)
+	- com.ibm.team.fvt.tests.clm.scenario.ClmScenarioStep.createOrImportUsers(ClmScenarioStep.java:1065)
+	- com.ibm.team.fvt.tests.rm.user.module.helpers.SetupModuleUsers.test01_CreateOrImportAllUsers(SetupModuleUsers.java:41)
+	  -> KO (in 0.12s)
+		due to: Cannot access page https://mb-two1.fyre.ibm.com:9443/rm/admin
+		+ one snaphot taken when the failure occured:
+		  -> screenshot available at C:\Users\KarthikCR\workspace\com.ibm.team.fvt.tests.rm.user.module\screenshots\failures\20210617113256_SetupModuleUsers.test01_CreateOrImportAllUsers.png
+		-> Cleanup test by clearing the pages cache.
+	- 'isPipeline' value=false
+**********  Close Debug Session: 20210617113256  ********

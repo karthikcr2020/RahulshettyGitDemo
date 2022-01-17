@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.junit.launchconfig">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/com.ibm.team.fvt.tests.rm.user.gapanalysis/src/com/ibm/team/fvt/tests/rm/user/gapanalysis/scenario/GapAnalysisUserScenario.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.junit.CONTAINER" value=""/>
+<booleanAttribute key="org.eclipse.jdt.junit.KEEPRUNNING_ATTR" value="false"/>
+<stringAttribute key="org.eclipse.jdt.junit.TESTNAME" value=""/>
+<stringAttribute key="org.eclipse.jdt.junit.TEST_KIND" value="org.eclipse.jdt.junit.loader.junit4"/>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="com.ibm.team.fvt.tests.rm.user.gapanalysis.scenario.GapAnalysisUserScenario"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="com.ibm.team.fvt.tests.rm.user.gapanalysis"/>
+<stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-DparamFilesDir=params&#13;&#10;-DparamFilesPath=browser/firefox_v78.properties;rm-gap-analysis/tomcat.properties;system_under_test.properties&#13;&#10;-DbaseUrl=&lt;url&gt;&#13;&#10;-DfirstStep=STS_ExplicitLocking&#13;&#10;-DfirstTest=test15_OverrideArtifactLockToRenameArtifact&#13;&#10;-Dsteps=&#13;&#10;-Dtests=&#13;&#10;-DcleanData=false"/>
+</launchConfiguration>

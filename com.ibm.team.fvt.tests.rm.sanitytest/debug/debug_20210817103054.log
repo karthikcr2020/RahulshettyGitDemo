@@ -1,0 +1,159 @@
+**********  Open Debug Session: 20210817103054  ********
+Attach debug log file to RQM Adapter:
+	'com.ibm.rqm.adapter.resultAttachmentsFile' parameter is not set
+	'qm_AttachmentsFile' envirnment variable is not set either, give up...
+	- 'stopOnFailure' value=false
+	- 'timeoutsThreshold' value=2
+	- 'baseUrl' value=https://mb-titanium1.fyre.ibm.com:9443
+	- 'userRegistry' value=3
+	- 'appsToRegister' value=rm,gc
+		+ CspfFactory.<clinit>(): INFO: Factory 'com.ibm.team.cspf.report.internal.factories.ReportWebPageFactory' has not been found.
+	- 'timeout' value=70
+	- 'timeoutShort' value=15
+	- 'timeoutToOpenPage' value=45
+	- 'timeoutMtmSampleCreation' value=12000
+	- 'browserPath' value=C:/Program Files/Mozilla Firefox/firefox.exe
+	- 'geckoPath' value=C:/Users/KarthikCR/workspace/org.selenium.java.client/gecko/v29/geckodriver.exe
+	- 'browserProfile' value=C:/Users/KarthikCR/AppData/Roaming/Mozilla/Firefox/Profiles/wioourlo.default
+	- 'download.dir' value=uploads/test_files
+	- 'selenium.snapshots.dir' value=screenshots
+		+ WebBrowser.setWindow(): (dimension=(1600, 900), location=null)
+	- 'defaultAdminUsername' value=clmadmin
+	- 'defaultAdminUserID' value=clmadmin
+	- 'defaultAdminPassword' value=c*******
+	- 'adminUsername' value=clmadmin
+	- 'adminUserID' value=clmadmin
+	- 'adminPassword' value=c*******
+	- 'adminEmail' value=clmadmin@example.net
+	- 'expressSetup' value=false
+	- 'dwDefaultUser' value=true
+	- 'testPrefix' value=
+	- 'testUsername' value=Al
+	- 'testUserID' value=al
+	- 'testPassword' value=a*******
+	- 'testEmail' value=al@jkebanking.net
+	- 'runPleTests' value=true
+	- 'testProjectName' value=
+	- 'nonDefaultComponentName' value=Component X
+	- 'nonDefaultStreamName' value=Stream X
+	- 'author1Username' value=bob
+	- 'author1UserID' value=bob
+	- 'author1Password' value=b*******
+	- 'author1Email' value=bob@eu.jke.ibm.com
+	- 'author2Username' value=deb
+	- 'author2UserID' value=deb
+	- 'author2Password' value=d*******
+	- 'author2Email' value=deb@eu.jke.ibm.com
+	- 'author3Username' value=Dave
+	- 'author3UserID' value=dave
+	- 'author3Password' value=d*******
+	- 'author3Email' value=dave@eu.jke.ibm.com
+	- 'commenter1Username' value=tammy
+	- 'commenter1UserID' value=tammy
+	- 'commenter1Password' value=t*******
+	- 'commenter1Email' value=tammy@jkebanking.net
+File 'uploads\test_files' exists at location 'C:\Users\KarthikCR\workspace\com.ibm.team.fvt.tests.rm.sanitytest\uploads\test_files'.
+File 'uploads\setup_files' exists at location 'C:\Users\KarthikCR\workspace\com.ibm.team.fvt.tests.rm.sanitytest\uploads\setup_files'.
+	- 'testsPerFolder' value=10
+Selenium and Browser information:
+	- Selenium Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+	- Firefox version: 78.11.0
+	- Browser window size = (1600, 900)
+	- Browser window position = (3, 3)
+
+Starting execution of BVT test case 'STS_Automerge_ChangesetToStream' at 10:30:57
+=====================================================================
+	- 10:30:57: start test case 'test01_SetupStep'...
+		+ WebPage.createPage(): Create page https://mb-titanium1.fyre.ibm.com:9443/jts/admin for user User id=clmadmin, name=clmadmin, passwd=c*******, mail=clmadmin@example.net
+			-> location: https://mb-titanium1.fyre.ibm.com:9443/jts/admin
+			-> user: User id=clmadmin, name=clmadmin, passwd=c*******, mail=clmadmin@example.net
+			-> class:    com.ibm.team.fvt.tests.clm.pages.jts.admin.JtsAdminHomePage
+		  -> found application 'JTS Application (location=https://mb-titanium1.fyre.ibm.com:9443/jts, no user logged in)' for URL: https://mb-titanium1.fyre.ibm.com:9443/jts/admin
+		+ Topology.needLogin(): See whether it needs to log in before going to https://mb-titanium1.fyre.ibm.com:9443/jts/admin
+		  -> found application 'JTS Application (location=https://mb-titanium1.fyre.ibm.com:9443/jts, no user logged in)' for URL: https://mb-titanium1.fyre.ibm.com:9443/jts/admin
+		+ Application.needLogin(): JTS Application (location=https://mb-titanium1.fyre.ibm.com:9443/jts, no user logged in) need login asno user is set.
+		  -> no application is already logged in on same server
+		  -> store page at https://mb-titanium1.fyre.ibm.com:9443/jts/admin: about:blank
+		+ WebPage.get(): get page content (https://mb-titanium1.fyre.ibm.com:9443/jts/admin)
+		  -> browser URL: about:blank
+		  -> current user: null
+		  -> loading page...
+		  -> browser URL: about:blank
+		+ JazzAbstractWebPage.load(): Load the current page: https://mb-titanium1.fyre.ibm.com:9443/jts/admin
+		+ WebBrowser.get(): browser get: https://mb-titanium1.fyre.ibm.com:9443/jts/admin
+		  -> driver url: about:blank
+		  -> stored location: null
+WebDriverException: Reached error page: about:neterror?e=dnsNotFound&u=https%3A//mb-titanium1.fyre.ibm.com%3A9443/jts/admin&c=UTF-8&d=We%20can%E2%80%99t%20connect%20to%20the%20server%20at%20mb-titanium1.fyre.ibm.com.
+	- com.ibm.team.fvt.tests.web.WebBrowser.get(WebBrowser.java:1219)
+	- com.ibm.team.fvt.tests.web.WebPage.load(WebPage.java:1176)
+	- com.ibm.team.cspf.jazz.internal.pages.JazzAbstractWebPage.load(JazzAbstractWebPage.java:929)
+	- com.ibm.team.fvt.tests.web.WebPage.get(WebPage.java:969)
+	- com.ibm.team.fvt.tests.web.WebPage.openPage(WebPage.java:447)
+	- com.ibm.team.fvt.tests.web.WebPage.openPage(WebPage.java:421)
+	- com.ibm.team.cspf.jazz.scenario.JazzScenarioStep.openWebPage(JazzScenarioStep.java:667)
+	- com.ibm.team.fvt.tests.clm.scenario.ClmScenarioStep.openJtsAdminHomePage(ClmScenarioStep.java:3938)
+	- com.ibm.team.fvt.tests.clm.scenario.ClmScenarioStep.openClmAdminActiveProjectAreasPage(ClmScenarioStep.java:2748)
+	- com.ibm.team.fvt.tests.clm.scenario.ClmScenarioStep.createRmProject(ClmScenarioStep.java:984)
+	- com.ibm.team.fvt.tests.rm.sanitytest.scenario.SanityTestScenarioStep.createProject(SanityTestScenarioStep.java:107)
+	- com.ibm.team.fvt.tests.rm.sanitytest.scenario.SanityTestScenarioStep.createStepProject(SanityTestScenarioStep.java:92)
+	- com.ibm.team.fvt.tests.rm.sanitytest.scenario.STS_Automerge_ChangesetToStream.test01_SetupStep(STS_Automerge_ChangesetToStream.java:76)
+	  -> KO (in 0.17s)
+		due to: Reached error page: about:neterror?e=dnsNotFound&u=https%3A//mb-titanium1.fyre.ibm.com%3A9443/jts/admin&c=UTF-8&d=We%20can%E2%80%99t%20connect%20to%20the%20server%20at%20mb-titanium1.fyre.ibm.com.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'DESKTOP-0D63QME', ip: '192.168.0.103', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 78.11.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20210531140902, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 25188, moz:profile: C:\Users\KarthikCR\AppData\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: ignore}
+Session ID: 0ead04c5-afef-41d4-8c81-aff1f482c3fd
+		+ A snapshot has been taken:
+		  -> screenshot available at C:\Users\KarthikCR\workspace\com.ibm.team.fvt.tests.rm.sanitytest\screenshots\warnings\20210817103054_STS_Automerge_ChangesetToStream.test01_SetupStep.png
+		-> Cleanup test by clearing the pages cache.
+WORKAROUND: Try to run the test again in case this was a transient issue...
+		  -> Re-run the test...
+	- 10:31:00: start test case 'test01_SetupStep'...
+		+ WebPage.createPage(): Create page https://mb-titanium1.fyre.ibm.com:9443/jts/admin for user User id=clmadmin, name=clmadmin, passwd=c*******, mail=clmadmin@example.net
+			-> location: https://mb-titanium1.fyre.ibm.com:9443/jts/admin
+			-> user: User id=clmadmin, name=clmadmin, passwd=c*******, mail=clmadmin@example.net
+			-> class:    com.ibm.team.fvt.tests.clm.pages.jts.admin.JtsAdminHomePage
+		  -> found application 'JTS Application (location=https://mb-titanium1.fyre.ibm.com:9443/jts, no user logged in)' for URL: https://mb-titanium1.fyre.ibm.com:9443/jts/admin
+		+ Topology.needLogin(): See whether it needs to log in before going to https://mb-titanium1.fyre.ibm.com:9443/jts/admin
+		  -> found application 'JTS Application (location=https://mb-titanium1.fyre.ibm.com:9443/jts, no user logged in)' for URL: https://mb-titanium1.fyre.ibm.com:9443/jts/admin
+		+ Application.needLogin(): JTS Application (location=https://mb-titanium1.fyre.ibm.com:9443/jts, no user logged in) need login asno user is set.
+		  -> no application is already logged in on same server
+		  -> found application 'JTS Application (location=https://mb-titanium1.fyre.ibm.com:9443/jts, no user logged in)' for URL: https://mb-titanium1.fyre.ibm.com:9443/jts/admin
+		  -> store page at https://mb-titanium1.fyre.ibm.com:9443/jts/admin: https://mb-titanium1.fyre.ibm.com:9443/jts/admin
+		+ WebPage.get(): get page content (https://mb-titanium1.fyre.ibm.com:9443/jts/admin)
+		  -> found application 'JTS Application (location=https://mb-titanium1.fyre.ibm.com:9443/jts, no user logged in)' for URL: https://mb-titanium1.fyre.ibm.com:9443/jts/admin
+		  -> browser URL: https://mb-titanium1.fyre.ibm.com:9443/jts/admin
+		  -> current user: null
+		  -> loading page...
+		  -> found application 'JTS Application (location=https://mb-titanium1.fyre.ibm.com:9443/jts, no user logged in)' for URL: https://mb-titanium1.fyre.ibm.com:9443/jts/admin
+		  -> browser URL: https://mb-titanium1.fyre.ibm.com:9443/jts/admin
+		+ JazzAbstractWebPage.load(): Load the current page: https://mb-titanium1.fyre.ibm.com:9443/jts/admin
+INFO: browser was already at 'https://mb-titanium1.fyre.ibm.com:9443/jts/admin'.
+		  -> should login
+			(finding element By.xpath: //div[starts-with(@id,'com_ibm_rqm_planning_web_ui_internal_page_NotAuthorized')] for browser Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-titanium1.fyre.ibm.com:9443/jts/admin (null) in frame 'null')
+			(finding element By.xpath: //*[@id='errorPageContainer'] for browser Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-titanium1.fyre.ibm.com:9443/jts/admin (null) in frame 'null')
+			(  -> found Web element {full xpath: //*[@id='errorPageContainer']} in no frame)
+Cannot access page https://mb-titanium1.fyre.ibm.com:9443/jts/admin
+BrowserConnectionError: Cannot access page https://mb-titanium1.fyre.ibm.com:9443/jts/admin
+	- com.ibm.team.fvt.tests.web.WebBrowser.checkConnection(WebBrowser.java:1323)
+	- com.ibm.team.cspf.jazz.internal.pages.JazzAbstractWebPage.getErrorMessageElement(JazzAbstractWebPage.java:424)
+	- com.ibm.team.cspf.jazz.internal.pages.JazzAbstractWebPage.performLogin(JazzAbstractWebPage.java:1138)
+	- com.ibm.team.fvt.tests.web.WebPage.load(WebPage.java:1181)
+	- com.ibm.team.cspf.jazz.internal.pages.JazzAbstractWebPage.load(JazzAbstractWebPage.java:929)
+	- com.ibm.team.fvt.tests.web.WebPage.get(WebPage.java:969)
+	- com.ibm.team.fvt.tests.web.WebPage.openPage(WebPage.java:447)
+	- com.ibm.team.fvt.tests.web.WebPage.openPage(WebPage.java:421)
+	- com.ibm.team.cspf.jazz.scenario.JazzScenarioStep.openWebPage(JazzScenarioStep.java:667)
+	- com.ibm.team.fvt.tests.clm.scenario.ClmScenarioStep.openJtsAdminHomePage(ClmScenarioStep.java:3938)
+	- com.ibm.team.fvt.tests.clm.scenario.ClmScenarioStep.openClmAdminActiveProjectAreasPage(ClmScenarioStep.java:2748)
+	- com.ibm.team.fvt.tests.clm.scenario.ClmScenarioStep.createRmProject(ClmScenarioStep.java:984)
+	- com.ibm.team.fvt.tests.rm.sanitytest.scenario.SanityTestScenarioStep.createProject(SanityTestScenarioStep.java:107)
+	- com.ibm.team.fvt.tests.rm.sanitytest.scenario.SanityTestScenarioStep.createStepProject(SanityTestScenarioStep.java:92)
+	- com.ibm.team.fvt.tests.rm.sanitytest.scenario.STS_Automerge_ChangesetToStream.test01_SetupStep(STS_Automerge_ChangesetToStream.java:76)
+	  -> KO (in 68ms)
+		due to: Cannot access page https://mb-titanium1.fyre.ibm.com:9443/jts/admin
+		+ one snaphot taken when the failure occured:
+		-> Cleanup test by clearing the pages cache.
+	- 'isPipeline' value=false
+**********  Close Debug Session: 20210817103054  ********

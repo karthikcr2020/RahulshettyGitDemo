@@ -1,0 +1,683 @@
+**********  Open Debug Session: 20210614154223  ********
+Attach debug log file to RQM Adapter:
+	'com.ibm.rqm.adapter.resultAttachmentsFile' parameter is not set
+	'qm_AttachmentsFile' envirnment variable is not set either, give up...
+	- 'stopOnFailure' value=false
+	- 'timeoutsThreshold' value=2
+	- 'baseUrl' value=https://mb-two1.fyre.ibm.com:9443/rm/web
+Info: path for application 'https://mb-two1.fyre.ibm.com:9443/rm' contains several segments. Context root (rm) was initialized with first one.
+	- 'userRegistry' value=3
+	- 'appsToRegister' value=rm,gc
+		+ CspfFactory.<clinit>(): INFO: Factory 'com.ibm.team.cspf.report.internal.factories.ReportWebPageFactory' has not been found.
+Info: path for application 'https://mb-two1.fyre.ibm.com:9443/rm' contains several segments. Context root (rm) was initialized with first one.
+Info: path for application 'https://mb-two1.fyre.ibm.com:9443/rm' contains several segments. Context root (rm) was initialized with first one.
+	- 'timeout' value=70
+	- 'timeoutShort' value=15
+	- 'timeoutToOpenPage' value=45
+	- 'timeoutMtmSampleCreation' value=12000
+	- 'browserPath' value=C:/Program Files/Mozilla Firefox/firefox.exe
+	- 'geckoPath' value=C:/Users/KarthikCR/workspace/org.selenium.java.client/gecko/v29/geckodriver.exe
+	- 'browserProfile' value=C:/Users/KarthikCR/AppData/Roaming/Mozilla/Firefox/Profiles/wioourlo.default
+	- 'download.dir' value=uploads/test_files
+	- 'selenium.snapshots.dir' value=screenshots
+		+ WebBrowser.setWindow(): (dimension=(1600, 900), location=null)
+	- 'defaultAdminUsername' value=clmadmin
+	- 'defaultAdminUserID' value=clmadmin
+	- 'defaultAdminPassword' value=c*******
+	- 'adminUsername' value=clmadmin
+	- 'adminUserID' value=clmadmin
+	- 'adminPassword' value=c*******
+	- 'adminEmail' value=clmadmin@example.net
+	- 'expressSetup' value=false
+	- 'dwDefaultUser' value=true
+	- 'testUsername' value=Al
+	- 'testUserID' value=al
+	- 'testPassword' value=a*******
+	- 'testEmail' value=al@jkebanking.net
+	- 'runPleTests' value=true
+	- 'testProjectName' value=
+	- 'nonDefaultComponentName' value=Component X
+	- 'nonDefaultStreamName' value=Stream X
+	- 'author1Username' value=bob
+	- 'author1UserID' value=bob
+	- 'author1Password' value=b*******
+	- 'author1Email' value=bob@eu.jke.ibm.com
+	- 'author3Username' value=Dave
+	- 'author3UserID' value=dave
+	- 'author3Password' value=d*******
+	- 'author3Email' value=dave@eu.jke.ibm.com
+	- 'cleanData' value=false
+Selenium and Browser information:
+	- Selenium Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+	- Firefox version: 68.10.0
+	- Browser window size = (1600, 900)
+	- Browser window position = (3, 3)
+
+Starting execution of BVT test case 'ClmStep00c_ChangeRmProjectCreateTimeoutToEnableRmProjectCreation' at 15:42:27
+======================================================================================================
+	- 15:42:27: start test case 'test01_setRmCreateProjectTimeout'...
+		+ WebPage.createPage(): Create page https://mb-two1.fyre.ibm.com:9443/rm/admin#action=jazz.viewPage&id=com.ibm.team.repository.server for user User id=clmadmin, name=clmadmin, passwd=c*******, mail=clmadmin@example.net
+			-> location: https://mb-two1.fyre.ibm.com:9443/rm/admin#action=jazz.viewPage&id=com.ibm.team.repository.server
+			-> user: User id=clmadmin, name=clmadmin, passwd=c*******, mail=clmadmin@example.net
+			-> class:    com.ibm.team.fvt.tests.clm.pages.clm.ClmAdminServerPage
+		  -> found application 'RM Application (location=https://mb-two1.fyre.ibm.com:9443/rm, no user logged in)' for URL: https://mb-two1.fyre.ibm.com:9443/rm/admin#action=jazz.viewPage&id=com.ibm.team.repository.server
+		+ Topology.needLogin(): See whether it needs to log in before going to https://mb-two1.fyre.ibm.com:9443/rm/admin#action=jazz.viewPage&id=com.ibm.team.repository.server
+		  -> found application 'RM Application (location=https://mb-two1.fyre.ibm.com:9443/rm, no user logged in)' for URL: https://mb-two1.fyre.ibm.com:9443/rm/admin#action=jazz.viewPage&id=com.ibm.team.repository.server
+		+ Application.needLogin(): RM Application (location=https://mb-two1.fyre.ibm.com:9443/rm, no user logged in) need login asno user is set.
+		  -> no application is already logged in on same server
+		  -> store page at https://mb-two1.fyre.ibm.com:9443/rm/admin#action=jazz.viewPage&id=com.ibm.team.repository.server: about:blank
+		+ WebPage.get(): get page content (https://mb-two1.fyre.ibm.com:9443/rm/admin#action=jazz.viewPage&id=com.ibm.team.repository.server)
+		  -> browser URL: about:blank
+		  -> current user: null
+		  -> loading page...
+		  -> browser URL: about:blank
+		+ JazzAbstractWebPage.load(): Load the current page: https://mb-two1.fyre.ibm.com:9443/rm/admin#action=jazz.viewPage&id=com.ibm.team.repository.server
+		+ WebBrowser.get(): browser get: https://mb-two1.fyre.ibm.com:9443/rm/admin#action=jazz.viewPage&id=com.ibm.team.repository.server
+		  -> driver url: about:blank
+		  -> stored location: null
+INFO: URL of page 'https://mb-two1.fyre.ibm.com:9443/rm/admin#action=jazz.viewPage&id=com.ibm.team.repository.server' has changed to 'https://mb-two1.fyre.ibm.com:9443/jts/auth/authrequired#action=jazz.viewPage&id=com.ibm.team.repository.server' just after having been loaded.
+		  -> should login
+			(finding element By.xpath: //div[starts-with(@id,'com_ibm_rqm_planning_web_ui_internal_page_NotAuthorized')] for browser Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/jts/auth/authrequired#action=jazz.viewPage&id=com.ibm.team.repository.server, location=https://mb-two1.fyre.ibm.com:9443/rm/admin#action=jazz.viewPage&id=com.ibm.team.repository.server (null) in frame 'null')
+			(finding element By.xpath: //*[@id='errorPageContainer'] for browser Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/jts/auth/authrequired#action=jazz.viewPage&id=com.ibm.team.repository.server, location=https://mb-two1.fyre.ibm.com:9443/rm/admin#action=jazz.viewPage&id=com.ibm.team.repository.server (null) in frame 'null')
+			(finding element By.xpath: //div[starts-with(@id,'com_ibm_rqm_planning_web_ui_internal_page_NotAuthorized')] for browser Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/jts/auth/authrequired#action=jazz.viewPage&id=com.ibm.team.repository.server, location=https://mb-two1.fyre.ibm.com:9443/rm/admin#action=jazz.viewPage&id=com.ibm.team.repository.server (null) in frame 'null')
+			(finding element By.xpath: //div[@dojoattachpoint='messageArea' and contains(@class,'ERROR')] for browser Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/jts/auth/authrequired#action=jazz.viewPage&id=com.ibm.team.repository.server, location=https://mb-two1.fyre.ibm.com:9443/rm/admin#action=jazz.viewPage&id=com.ibm.team.repository.server (null) in frame 'null')
+			(finding element By.xpath: //div[@id='jazz_ui_wizard_ExternalWizardStep_5']//iframe for browser Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/jts/auth/authrequired#action=jazz.viewPage&id=com.ibm.team.repository.server, location=https://mb-two1.fyre.ibm.com:9443/rm/admin#action=jazz.viewPage&id=com.ibm.team.repository.server (null) in frame 'null')
+		+ JazzAbstractWebPage.performLogin(): Perform login of user User id=clmadmin, name=clmadmin, passwd=c*******, mail=clmadmin@example.net
+		+ WebBrowser.waitForElement(): waiting for element: [By.name: j_username] (fail=false, timeout=70, displayed=true, single=true)
+		+ WebBrowser.waitForElements(): waiting for elements: [By.name: j_username]
+			(finding elements By.name: j_username for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/jts/auth/authrequired#action=jazz.viewPage&id=com.ibm.team.repository.server, location=https://mb-two1.fyre.ibm.com:9443/rm/admin#action=jazz.viewPage&id=com.ibm.team.repository.server (null))
+			  (-> found 'Web element {full xpath: //*[@name='j_username']} in no frame)
+			(getting displayed state for Web element {full xpath: //*[@name='j_username']} in no frame)
+			 ( -> true)
+		  -> found element: Web element {full xpath: //*[@name='j_username']} in no frame (visible)
+		  -> return 1 visible elements
+		+ WebBrowser.typeText(): Type text 'clmadmin' (cleared)
+			(getting enabled state for Web element {full xpath: //*[@name='j_username']} in no frame)
+			 ( -> true)
+			(getting attribute 'aria-label' for Web element {full xpath: //*[@name='j_username']} in no frame, fail=false)
+			 ( -> "null")
+			(getting attribute 'value' for Web element {full xpath: //*[@name='j_username']} in no frame, fail=false)
+			 ( -> "")
+			(sending keys '' to Web element {full xpath: //*[@name='j_username']} in no frame)
+			 ( -> done.)
+			(clearing Web element {full xpath: //*[@name='j_username']} in no frame)
+			 ( -> done.)
+			(sending keys 'clmadmin' to Web element {full xpath: //*[@name='j_username']} in no frame)
+			 ( -> done.)
+			(sending keys '' to Web element {full xpath: //*[@name='j_username']} in no frame)
+			 ( -> done.)
+		+ WebBrowser.waitForElement(): waiting for element: [By.name: j_password] (fail=true, timeout=70, displayed=true, single=true)
+		+ WebBrowser.waitForElements(): waiting for elements: [By.name: j_password]
+			(finding elements By.name: j_password for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/jts/auth/authrequired#action=jazz.viewPage&id=com.ibm.team.repository.server, location=https://mb-two1.fyre.ibm.com:9443/rm/admin#action=jazz.viewPage&id=com.ibm.team.repository.server (null))
+			  (-> found 'Web element {full xpath: //*[@name='j_password']} in no frame)
+			(getting displayed state for Web element {full xpath: //*[@name='j_password']} in no frame)
+			 ( -> true)
+		  -> found element: Web element {full xpath: //*[@name='j_password']} in no frame (visible)
+		  -> return 1 visible elements
+		+ WebBrowser.typeText(): Type password '******' (cleared)
+			(getting enabled state for Web element {full xpath: //*[@name='j_password']} in no frame)
+			 ( -> true)
+			(getting attribute 'aria-label' for Web element {full xpath: //*[@name='j_password']} in no frame, fail=false)
+			 ( -> "null")
+			(getting attribute 'value' for Web element {full xpath: //*[@name='j_password']} in no frame, fail=false)
+			 ( -> "")
+			(sending keys '' to Web element {full xpath: //*[@name='j_password']} in no frame)
+			 ( -> done.)
+			(clearing Web element {full xpath: //*[@name='j_password']} in no frame)
+			 ( -> done.)
+			(sending password '*****' to Web element {full xpath: //*[@name='j_password']} in no frame)
+			 ( -> done.)
+			(sending keys '' to Web element {full xpath: //*[@name='j_password']} in no frame)
+			 ( -> done.)
+		+ WebPage.matchBrowserUrl(): Test whether page location matches current browser URL or not.
+		  -> current url: https://mb-two1.fyre.ibm.com:9443/jts/auth/authrequired#action=jazz.viewPage&id=com.ibm.team.repository.server
+		  -> page location: https://mb-two1.fyre.ibm.com:9443/rm/admin#action=jazz.viewPage&id=com.ibm.team.repository.server
+		  -> browser URL: https://mb-two1.fyre.ibm.com:9443/jts/auth/authrequired#action=jazz.viewPage&id=com.ibm.team.repository.server
+		  -> page URL: https://mb-two1.fyre.ibm.com:9443/rm/admin#action=jazz.viewPage&id=com.ibm.team.repository.server
+		  -> NO MATCH: browser URL path does not start with page URL path
+		+ WebBrowser.waitForElement(): waiting for element: [By.xpath: //button[text()='Log In'] | //button[text()='Log in'] | //input[@value='Log in']] (fail=true, timeout=70, displayed=true, single=true)
+		+ WebBrowser.waitForElements(): waiting for elements: [By.xpath: //button[text()='Log In'] | //button[text()='Log in'] | //input[@value='Log in']]
+			(finding elements By.xpath: //button[text()='Log In'] | //button[text()='Log in'] | //input[@value='Log in'] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/jts/auth/authrequired#action=jazz.viewPage&id=com.ibm.team.repository.server, location=https://mb-two1.fyre.ibm.com:9443/rm/admin#action=jazz.viewPage&id=com.ibm.team.repository.server (null))
+			  (-> found 'Web element {full xpath: //button[text()='Log In'] | //button[text()='Log in'] | //input[@value='Log in']} in no frame)
+			(getting displayed state for Web element {full xpath: //button[text()='Log In'] | //button[text()='Log in'] | //input[@value='Log in']} in no frame)
+			 ( -> true)
+		  -> found element: Web element {full xpath: //button[text()='Log In'] | //button[text()='Log in'] | //input[@value='Log in']} in no frame (visible)
+		  -> return 1 visible elements
+		+ WebBrowser.clickButton(): click on button 'Web element {full xpath: //button[text()='Log In'] | //button[text()='Log in'] | //input[@value='Log in']} in no frame'
+			(getting enabled state for Web element {full xpath: //button[text()='Log In'] | //button[text()='Log in'] | //input[@value='Log in']} in no frame)
+			 ( -> true)
+			(clicking on Web element {full xpath: //button[text()='Log In'] | //button[text()='Log in'] | //input[@value='Log in']} in no frame)
+			 ( -> done.)
+			(getting displayed state for Web element {full xpath: //button[text()='Log In'] | //button[text()='Log in'] | //input[@value='Log in']} in no frame)
+			(WORKAROUND: exception The element reference of [object String] "9e7dc0ab-50d0-458f-8342-e2161dedb10c" is stale; either the element is no longer attached to the DOM, it is not in the current frame context, or the document has been refreshed
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/stale_element_reference.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'DESKTOP-0D63QME', ip: '192.168.225.233', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_271'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 68.10.0, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20200622191537, moz:geckodriverVersion: 0.29.0, moz:headless: false, moz:processID: 12592, moz:profile: C:\Users\KarthikCR\AppData\..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: ignore}
+Session ID: e734511d-c4f0-4ffc-ac6d-d068754bdbba has been caught...
+			 -> return false instead)
+			(finding element By.xpath: .//div[@class='loginErrorMessage'] for browser Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/jts/auth/authrequired#action=jazz.viewPage&id=com.ibm.team.repository.server, location=https://mb-two1.fyre.ibm.com:9443/rm/admin#action=jazz.viewPage&id=com.ibm.team.repository.server (null) in frame 'null')
+		+ Topology.login(): Login user clmadmin for all applications
+		  -> found application 'RM Application (location=https://mb-two1.fyre.ibm.com:9443/rm, no user logged in)' for URL: https://mb-two1.fyre.ibm.com:9443/rm/admin#action=jazz.viewPage&id=com.ibm.team.repository.server
+		+ Application.login(): Log in user 'User id=clmadmin, name=clmadmin, passwd=c*******, mail=clmadmin@example.net' to current RM Application (location=https://mb-two1.fyre.ibm.com:9443/rm, no user logged in)
+		+ Application.login(): Log in user 'User id=clmadmin, name=clmadmin, passwd=c*******, mail=clmadmin@example.net' to current RM Application (location=https://mb-two1.fyre.ibm.com:9443/rm, user logged in: User id=clmadmin, name=clmadmin, passwd=c*******, mail=clmadmin@example.net)
+		  -> nothing was done as there user was already logged in.
+		+ Application.login(): Log in user 'User id=clmadmin, name=clmadmin, passwd=c*******, mail=clmadmin@example.net' to current RM Application (location=https://mb-two1.fyre.ibm.com:9443/rm, no user logged in)
+		+ Application.login(): Log in user 'User id=clmadmin, name=clmadmin, passwd=c*******, mail=clmadmin@example.net' to current RM Application (location=https://mb-two1.fyre.ibm.com:9443/rm, no user logged in)
+		+ Application.login(): Log in user 'User id=clmadmin, name=clmadmin, passwd=c*******, mail=clmadmin@example.net' to current RM Application (location=https://mb-two1.fyre.ibm.com:9443/rm, user logged in: User id=clmadmin, name=clmadmin, passwd=c*******, mail=clmadmin@example.net)
+		  -> nothing was done as there user was already logged in.
+		+ Application.login(): Log in user 'User id=clmadmin, name=clmadmin, passwd=c*******, mail=clmadmin@example.net' to current RM Application (location=https://mb-two1.fyre.ibm.com:9443/rm, user logged in: User id=clmadmin, name=clmadmin, passwd=c*******, mail=clmadmin@example.net)
+		  -> nothing was done as there user was already logged in.
+		+ Application.login(): Log in user 'User id=clmadmin, name=clmadmin, passwd=c*******, mail=clmadmin@example.net' to current RM Application (location=https://mb-two1.fyre.ibm.com:9443/rm, user logged in: User id=clmadmin, name=clmadmin, passwd=c*******, mail=clmadmin@example.net)
+		  -> nothing was done as there user was already logged in.
+		+ Topology.login(): Login user clmadmin for all applications
+		  -> found application 'RM Application (location=https://mb-two1.fyre.ibm.com:9443/rm, user logged in: User id=clmadmin, name=clmadmin, passwd=c*******, mail=clmadmin@example.net)' for URL: https://mb-two1.fyre.ibm.com:9443/rm/admin#action=jazz.viewPage&id=com.ibm.team.repository.server
+		+ Application.login(): Log in user 'User id=clmadmin, name=clmadmin, passwd=c*******, mail=clmadmin@example.net' to current RM Application (location=https://mb-two1.fyre.ibm.com:9443/rm, user logged in: User id=clmadmin, name=clmadmin, passwd=c*******, mail=clmadmin@example.net)
+		  -> nothing was done as there user was already logged in.
+		+ WebBrowser.resetFrame(): Reset frame null
+		+ WebBrowser.waitForElement(): waiting for element: [By.id: net-jazz-ajax-WorkbenchRoot] (fail=true, timeout=70, displayed=true, single=true)
+		+ WebBrowser.waitForElements(): waiting for elements: [By.id: net-jazz-ajax-WorkbenchRoot]
+			(finding elements By.id: net-jazz-ajax-WorkbenchRoot for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/admin#action=jazz.viewPage&id=com.ibm.team.repository.server (null))
+			  (-> found 'Web element {full xpath: //*[@id='net-jazz-ajax-WorkbenchRoot']} in no frame)
+			(getting displayed state for Web element {full xpath: //*[@id='net-jazz-ajax-WorkbenchRoot']} in no frame)
+			 ( -> true)
+		  -> found element: Web element {full xpath: //*[@id='net-jazz-ajax-WorkbenchRoot']} in no frame (visible)
+		  -> return 1 visible elements
+			(finding elements By.xpath: ./child::* for Web element {full xpath: //*[@id='net-jazz-ajax-WorkbenchRoot']} in no frame, displayed=true, recovery=true)
+			  (-> found 'Web element {full xpath: //*[@id='net-jazz-ajax-WorkbenchRoot']/child::*} in no frame)
+			(finding element By.xpath: .//div[contains(@id, 'jazz_ui_Dialog')] for browser Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/admin#action=jazz.viewPage&id=com.ibm.team.repository.server (null) in frame 'null')
+			(finding element By.xpath: //div[starts-with(@id,'com_ibm_rqm_planning_web_ui_internal_page_NotAuthorized')] for browser Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/admin#action=jazz.viewPage&id=com.ibm.team.repository.server (null) in frame 'null')
+		+ JazzAbstractWebPage.checkAcceptableServerErrorMessages(): Check whether a server error message is displayed in the page
+			(finding element By.xpath: //*[@id='errorPageContainer'] for browser Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/admin#action=jazz.viewPage&id=com.ibm.team.repository.server (null) in frame 'null')
+			(finding element By.xpath: //div[starts-with(@id,'com_ibm_rqm_planning_web_ui_internal_page_NotAuthorized')] for browser Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/admin#action=jazz.viewPage&id=com.ibm.team.repository.server (null) in frame 'null')
+			(finding element By.xpath: //div[@dojoattachpoint='messageArea' and contains(@class,'ERROR')] for browser Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/admin#action=jazz.viewPage&id=com.ibm.team.repository.server (null) in frame 'null')
+			(finding element By.xpath: //div[@id='jazz_ui_wizard_ExternalWizardStep_5']//iframe for browser Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/admin#action=jazz.viewPage&id=com.ibm.team.repository.server (null) in frame 'null')
+		+ WebBrowser.waitForMultipleElements(): waiting for multiple elements (fail=true, timeout=70):'By.tagName: h1', 'By.id: com_ibm_team_repository_web_ui_internal_admin_NotAuthorizedView_0'
+			(finding elements By.tagName: h1 for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/admin#action=jazz.viewPage&id=com.ibm.team.repository.server (null))
+			  (-> found 'Web element {full xpath: //h1]} in no frame)
+		  -> found 'By.tagName: h1'
+			(finding elements By.id: com_ibm_team_repository_web_ui_internal_admin_NotAuthorizedView_0 for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/admin#action=jazz.viewPage&id=com.ibm.team.repository.server (null))
+		+ WebBrowser.waitForElement(): waiting for element: [By.xpath: //*[contains(@dojoattachpoint,'bannerTitle')]] (fail=true, timeout=70, displayed=true, single=true)
+		+ WebBrowser.waitForElements(): waiting for elements: [By.xpath: //*[contains(@dojoattachpoint,'bannerTitle')]]
+			(finding elements By.xpath: //*[contains(@dojoattachpoint,'bannerTitle')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/admin#action=jazz.viewPage&id=com.ibm.team.repository.server (null))
+			  (-> found 'Web element {full xpath: //*[contains(@dojoattachpoint,'bannerTitle')]} in no frame)
+			(getting displayed state for Web element {full xpath: //*[contains(@dojoattachpoint,'bannerTitle')]} in no frame)
+			 ( -> true)
+		  -> found element: Web element {full xpath: //*[contains(@dojoattachpoint,'bannerTitle')]} in no frame (visible)
+		  -> return 1 visible elements
+		+ WebBrowserElement.waitForElement(): waiting for element: [By.className: truncateNode] relatively to Web element {full xpath: //*[contains(@dojoattachpoint,'bannerTitle')]} in no frame
+		+ WebBrowserElement.waitForElements(): waiting for elements: [By.className: truncateNode] relatively to Web element {full xpath: //*[contains(@dojoattachpoint,'bannerTitle')]} in no frame
+		+ WebBrowser.waitForElements(): waiting for elements: [//*[contains(@dojoattachpoint,'bannerTitle')]]//[By.className: truncateNode]
+			(finding elements By.className: truncateNode for Web element {full xpath: //*[contains(@dojoattachpoint,'bannerTitle')]} in no frame, displayed=true, recovery=true)
+			(finding elements By.className: truncateNode for Web element {full xpath: //*[contains(@dojoattachpoint,'bannerTitle')]} in no frame, displayed=true, recovery=true)
+			(finding elements By.className: truncateNode for Web element {full xpath: //*[contains(@dojoattachpoint,'bannerTitle')]} in no frame, displayed=true, recovery=true)
+			(finding elements By.className: truncateNode for Web element {full xpath: //*[contains(@dojoattachpoint,'bannerTitle')]} in no frame, displayed=true, recovery=true)
+			(finding elements By.className: truncateNode for Web element {full xpath: //*[contains(@dojoattachpoint,'bannerTitle')]} in no frame, displayed=true, recovery=true)
+		  -> no element was found
+			(getting text for Web element {full xpath: //*[contains(@dojoattachpoint,'bannerTitle')]} in no frame)
+			 ( -> "Administration - Engineering Requirements Management DOORS Next (/rm)")
+		+ JazzAbstractWebPage.getTitle(): Get page title.
+			(getting text for Web element {full xpath: //h1]} in no frame)
+			 ( -> "Status Summary")
+		+ JazzAbstractWebPage.checkAcceptableServerErrorMessages(): Check whether a server error message is displayed in the page
+			(finding element By.xpath: //*[@id='errorPageContainer'] for browser Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/admin#action=jazz.viewPage&id=com.ibm.team.repository.server (null) in frame 'null')
+			(finding element By.xpath: //div[starts-with(@id,'com_ibm_rqm_planning_web_ui_internal_page_NotAuthorized')] for browser Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/admin#action=jazz.viewPage&id=com.ibm.team.repository.server (null) in frame 'null')
+			(finding element By.xpath: //div[@dojoattachpoint='messageArea' and contains(@class,'ERROR')] for browser Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/admin#action=jazz.viewPage&id=com.ibm.team.repository.server (null) in frame 'null')
+			(finding element By.xpath: //div[@id='jazz_ui_wizard_ExternalWizardStep_5']//iframe for browser Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/admin#action=jazz.viewPage&id=com.ibm.team.repository.server (null) in frame 'null')
+		+ WebBrowser.switchToMainWindow(): Switch to main window using stored handle 6442450945
+		+ WebBrowser.switchToMainWindow(): Switch to main window using stored handle 6442450945
+		+ JazzAbstractWebPage.waitWhileBusy(): Wait while the page is busy...
+		+ WebBrowser.waitForElement(): waiting for element: [By.xpath: //*[@dojoattachpoint='_statusMessage' and @role='status']] (fail=false, timeout=90, displayed=false, single=true)
+		+ WebBrowser.waitForElements(): waiting for elements: [By.xpath: //*[@dojoattachpoint='_statusMessage' and @role='status']]
+			(finding elements By.xpath: //*[@dojoattachpoint='_statusMessage' and @role='status'] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/admin#action=jazz.viewPage&id=com.ibm.team.repository.server (null))
+			  (-> found 'Web element {full xpath: //*[@dojoattachpoint='_statusMessage' and @role='status']} in no frame)
+		  -> found element: Web element {full xpath: //*[@dojoattachpoint='_statusMessage' and @role='status']} in no frame
+		  -> return 1  elements
+			(getting displayed state for Web element {full xpath: //*[@dojoattachpoint='_statusMessage' and @role='status']} in no frame)
+			 ( -> false)
+		  -> it has lasted 37ms
+		+ WebBrowser.waitForElement(): waiting for element: [By.xpath: //div[@dojoattachpoint='_contentWrapper']] (fail=true, timeout=70, displayed=true, single=true)
+		+ WebBrowser.waitForElements(): waiting for elements: [By.xpath: //div[@dojoattachpoint='_contentWrapper']]
+			(finding elements By.xpath: //div[@dojoattachpoint='_contentWrapper'] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/admin#action=jazz.viewPage&id=com.ibm.team.repository.server (null))
+			  (-> found 'Web element {full xpath: //div[@dojoattachpoint='_contentWrapper']} in no frame)
+			(getting displayed state for Web element {full xpath: //div[@dojoattachpoint='_contentWrapper']} in no frame)
+			 ( -> true)
+		  -> found element: Web element {full xpath: //div[@dojoattachpoint='_contentWrapper']} in no frame (visible)
+		  -> return 1 visible elements
+		+ WebBrowser.waitForElement(): waiting for element: [By.xpath: //div[@dojoattachpoint='_leftNav']] (fail=true, timeout=70, displayed=true, single=true)
+		+ WebBrowser.waitForElements(): waiting for elements: [By.xpath: //div[@dojoattachpoint='_leftNav']]
+			(finding elements By.xpath: //div[@dojoattachpoint='_leftNav'] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/admin#action=jazz.viewPage&id=com.ibm.team.repository.server (null))
+			  (-> found 'Web element {full xpath: //div[@dojoattachpoint='_leftNav']} in no frame)
+			(getting displayed state for Web element {full xpath: //div[@dojoattachpoint='_leftNav']} in no frame)
+			 ( -> true)
+		  -> found element: Web element {full xpath: //div[@dojoattachpoint='_leftNav']} in no frame (visible)
+		  -> return 1 visible elements
+		+ WebPage.verifyPageUser(): Verify page user User id=clmadmin, name=clmadmin, passwd=c*******, mail=clmadmin@example.net
+		+ WebPage.getLoggedUserElement(): Get logged user web element (fail is false, timeout is 15 sec)
+		+ WebBrowser.waitForElement(): waiting for element: [By.xpath: //a[@title='User Profile']/span[1]] (fail=false, timeout=15, displayed=true, single=true)
+		+ WebBrowser.waitForElements(): waiting for elements: [By.xpath: //a[@title='User Profile']/span[1]]
+			(finding elements By.xpath: //a[@title='User Profile']/span[1] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/admin#action=jazz.viewPage&id=com.ibm.team.repository.server (null))
+			  (-> found 'Web element {full xpath: //a[@title='User Profile']/span[1]} in no frame)
+			(getting displayed state for Web element {full xpath: //a[@title='User Profile']/span[1]} in no frame)
+			 ( -> true)
+		  -> found element: Web element {full xpath: //a[@title='User Profile']/span[1]} in no frame (visible)
+		  -> return 1 visible elements
+		+ JazzAbstractWebPage.matchDisplayedUser(): Test whether user 'User id=clmadmin, name=clmadmin, passwd=c*******, mail=clmadmin@example.net' matches the user text displayed in the page in Web element {full xpath: //a[@title='User Profile']/span[1]} in no frame
+			(getting text for Web element {full xpath: //a[@title='User Profile']/span[1]} in no frame)
+			 ( -> "clmadmin")
+		  -> OK
+		  -> page loaded in 23s
+		  -> found application 'RM Application (location=https://mb-two1.fyre.ibm.com:9443/rm, user logged in: User id=clmadmin, name=clmadmin, passwd=c*******, mail=clmadmin@example.net)' for URL: https://mb-two1.fyre.ibm.com:9443/rm/admin#action=jazz.viewPage&id=com.ibm.team.repository.server
+		  -> browser URL: https://mb-two1.fyre.ibm.com:9443/rm/admin#action=jazz.viewPage&id=com.ibm.team.repository.server
+		+ ClmAdminServerPage.selectSection(): Select section 'Advanced Properties'.
+		+ WebBrowserElement.waitForElement(): waiting for element: [By.xpath: .//div[text()='Advanced Properties']] relatively to Web element {full xpath: //div[@dojoattachpoint='_leftNav']} in no frame
+		+ WebBrowserElement.waitForElements(): waiting for elements: [By.xpath: .//div[text()='Advanced Properties']] relatively to Web element {full xpath: //div[@dojoattachpoint='_leftNav']} in no frame
+		+ WebBrowser.waitForElements(): waiting for elements: [//div[@dojoattachpoint='_leftNav']]//[By.xpath: .//div[text()='Advanced Properties']]
+			(finding elements By.xpath: .//div[text()='Advanced Properties'] for Web element {full xpath: //div[@dojoattachpoint='_leftNav']} in no frame, displayed=true, recovery=true)
+			  (-> found 'Web element {full xpath: //div[@dojoattachpoint='_leftNav']//div[text()='Advanced Properties']} in no frame)
+			(getting displayed state for Web element {full xpath: //div[@dojoattachpoint='_leftNav']//div[text()='Advanced Properties']} in no frame)
+			 ( -> true)
+		  -> found element: Web element {full xpath: //div[@dojoattachpoint='_leftNav']//div[text()='Advanced Properties']} in no frame (visible)
+		  -> return 1 visible elements
+			(clicking on Web element {full xpath: //div[@dojoattachpoint='_leftNav']//div[text()='Advanced Properties']} in no frame)
+			 ( -> done.)
+		+ WebBrowser.waitForElement(): waiting for element: [By.xpath: //div[@dojoattachpoint='_contentWrapper']] (fail=true, timeout=70, displayed=true, single=true)
+		+ WebBrowser.waitForElements(): waiting for elements: [By.xpath: //div[@dojoattachpoint='_contentWrapper']]
+			(finding elements By.xpath: //div[@dojoattachpoint='_contentWrapper'] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/admin#action=jazz.viewPage&id=com.ibm.team.repository.server (null))
+			  (-> found 'Web element {full xpath: //div[@dojoattachpoint='_contentWrapper']} in no frame)
+			(getting displayed state for Web element {full xpath: //div[@dojoattachpoint='_contentWrapper']} in no frame)
+			 ( -> true)
+		  -> found element: Web element {full xpath: //div[@dojoattachpoint='_contentWrapper']} in no frame (visible)
+		  -> return 1 visible elements
+		+ WebBrowserElement.waitForElement(): waiting for element: [By.xpath: .//h1] relatively to Web element {full xpath: //div[@dojoattachpoint='_contentWrapper']} in no frame
+		+ WebBrowserElement.waitForElements(): waiting for elements: [By.xpath: .//h1] relatively to Web element {full xpath: //div[@dojoattachpoint='_contentWrapper']} in no frame
+		+ WebBrowser.waitForElements(): waiting for elements: [//div[@dojoattachpoint='_contentWrapper']]//[By.xpath: .//h1]
+			(finding elements By.xpath: .//h1 for Web element {full xpath: //div[@dojoattachpoint='_contentWrapper']} in no frame, displayed=true, recovery=true)
+			  (-> found 'Web element {full xpath: //div[@dojoattachpoint='_contentWrapper']//h1} in no frame)
+			(getting displayed state for Web element {full xpath: //div[@dojoattachpoint='_contentWrapper']//h1} in no frame)
+			 ( -> true)
+		  -> found element: Web element {full xpath: //div[@dojoattachpoint='_contentWrapper']//h1} in no frame (visible)
+		  -> return 1 visible elements
+			(getting text for Web element {full xpath: //div[@dojoattachpoint='_contentWrapper']//h1} in no frame)
+			 ( -> "Advanced Properties")
+		+ ClmServerAdvancedPropertiesArea.setCurrentValue(): Set property 'com.ibm.rdm.fronting.server.util.ConfigImpl.ProjectCreation.creationDelay.propertyName' value to '10000'for service '10000'.
+		+ WebBrowser.waitForElement(): waiting for element: [By.xpath: .//*[@aria-labelledby='com.ibm.rdm.fronting.server.util.ConfigImpl.ProjectCreation.creationDelay.propertyName']/following-sibling::span[@class='viewValueNode']] (fail=true, timeout=70, displayed=true, single=true)
+		+ WebBrowser.waitForElements(): waiting for elements: [By.xpath: .//*[@aria-labelledby='com.ibm.rdm.fronting.server.util.ConfigImpl.ProjectCreation.creationDelay.propertyName']/following-sibling::span[@class='viewValueNode']]
+			(finding elements By.xpath: .//*[@aria-labelledby='com.ibm.rdm.fronting.server.util.ConfigImpl.ProjectCreation.creationDelay.propertyName']/following-sibling::span[@class='viewValueNode'] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/admin#action=jazz.viewPage&id=com.ibm.team.repository.server (null))
+			(finding elements By.xpath: .//*[@aria-labelledby='com.ibm.rdm.fronting.server.util.ConfigImpl.ProjectCreation.creationDelay.propertyName']/following-sibling::span[@class='viewValueNode'] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/admin#action=jazz.viewPage&id=com.ibm.team.repository.server (null))
+			(finding elements By.xpath: .//*[@aria-labelledby='com.ibm.rdm.fronting.server.util.ConfigImpl.ProjectCreation.creationDelay.propertyName']/following-sibling::span[@class='viewValueNode'] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/admin#action=jazz.viewPage&id=com.ibm.team.repository.server (null))
+			(finding elements By.xpath: .//*[@aria-labelledby='com.ibm.rdm.fronting.server.util.ConfigImpl.ProjectCreation.creationDelay.propertyName']/following-sibling::span[@class='viewValueNode'] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/admin#action=jazz.viewPage&id=com.ibm.team.repository.server (null))
+			(finding elements By.xpath: .//*[@aria-labelledby='com.ibm.rdm.fronting.server.util.ConfigImpl.ProjectCreation.creationDelay.propertyName']/following-sibling::span[@class='viewValueNode'] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/admin#action=jazz.viewPage&id=com.ibm.team.repository.server (null))
+			(finding elements By.xpath: .//*[@aria-labelledby='com.ibm.rdm.fronting.server.util.ConfigImpl.ProjectCreation.creationDelay.propertyName']/following-sibling::span[@class='viewValueNode'] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/admin#action=jazz.viewPage&id=com.ibm.team.repository.server (null))
+			(finding elements By.xpath: .//*[@aria-labelledby='com.ibm.rdm.fronting.server.util.ConfigImpl.ProjectCreation.creationDelay.propertyName']/following-sibling::span[@class='viewValueNode'] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/admin#action=jazz.viewPage&id=com.ibm.team.repository.server (null))
+			(finding elements By.xpath: .//*[@aria-labelledby='com.ibm.rdm.fronting.server.util.ConfigImpl.ProjectCreation.creationDelay.propertyName']/following-sibling::span[@class='viewValueNode'] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/admin#action=jazz.viewPage&id=com.ibm.team.repository.server (null))
+			(finding elements By.xpath: .//*[@aria-labelledby='com.ibm.rdm.fronting.server.util.ConfigImpl.ProjectCreation.creationDelay.propertyName']/following-sibling::span[@class='viewValueNode'] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/admin#action=jazz.viewPage&id=com.ibm.team.repository.server (null))
+			  (-> found 'Web element {full xpath: .//*[@aria-labelledby='com.ibm.rdm.fronting.server.util.ConfigImpl.ProjectCreation.creationDelay.propertyName']/following-sibling::span[@class='viewValueNode']} in no frame)
+			(getting displayed state for Web element {full xpath: .//*[@aria-labelledby='com.ibm.rdm.fronting.server.util.ConfigImpl.ProjectCreation.creationDelay.propertyName']/following-sibling::span[@class='viewValueNode']} in no frame)
+			 ( -> true)
+		  -> found element: Web element {full xpath: .//*[@aria-labelledby='com.ibm.rdm.fronting.server.util.ConfigImpl.ProjectCreation.creationDelay.propertyName']/following-sibling::span[@class='viewValueNode']} in no frame (visible)
+		  -> return 1 visible elements
+			(getting displayed state for Web element {full xpath: .//*[@aria-labelledby='com.ibm.rdm.fronting.server.util.ConfigImpl.ProjectCreation.creationDelay.propertyName']/following-sibling::span[@class='viewValueNode']} in no frame)
+			 ( -> true)
+			(finding element By.xpath: .//*[@aria-labelledby='com.ibm.rdm.fronting.server.util.ConfigImpl.ProjectCreation.creationDelay.propertyName']/following-sibling::span[@class='viewValueNode'] for browser Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/admin#action=jazz.viewPage&id=com.ibm.team.repository.server (null) in frame 'null')
+			(  -> found Web element {full xpath: .//*[@aria-labelledby='com.ibm.rdm.fronting.server.util.ConfigImpl.ProjectCreation.creationDelay.propertyName']/following-sibling::span[@class='viewValueNode']} in no frame)
+			(getting text for Web element {full xpath: .//*[@aria-labelledby='com.ibm.rdm.fronting.server.util.ConfigImpl.ProjectCreation.creationDelay.propertyName']/following-sibling::span[@class='viewValueNode']} in no frame)
+			 ( -> "10000")
+		  -> property value was already set, hence nothing was done...
+		  -> property value has not been set.
+	  -> OK (in 25.7s)
+	- 15:42:53: start test case 'test02_setRmProjectHelperOff'...
+		+ Topology.needLogin(): See whether it needs to log in before going to https://mb-two1.fyre.ibm.com:9443/rm/admin#action=jazz.viewPage&id=com.ibm.team.repository.server
+		  -> found application 'RM Application (location=https://mb-two1.fyre.ibm.com:9443/rm, user logged in: User id=clmadmin, name=clmadmin, passwd=c*******, mail=clmadmin@example.net)' for URL: https://mb-two1.fyre.ibm.com:9443/rm/admin#action=jazz.viewPage&id=com.ibm.team.repository.server
+		+ ClmAdminServerPage.getApplication(): Get application
+		+ ClmAdminServerPage.selectSection(): Select section 'Advanced Properties'.
+		+ ClmServerAdvancedPropertiesArea.setCurrentValue(): Set property 'com.ibm.rdm.web.config.WebConfig.com.ibm.team.web.notypeshelper.enabled.propertyName' value to 'false'for service 'false'.
+		+ WebBrowser.waitForElement(): waiting for element: [By.xpath: .//*[@aria-labelledby='com.ibm.rdm.web.config.WebConfig.com.ibm.team.web.notypeshelper.enabled.propertyName']/following-sibling::span[@class='viewValueNode']] (fail=true, timeout=70, displayed=true, single=true)
+		+ WebBrowser.waitForElements(): waiting for elements: [By.xpath: .//*[@aria-labelledby='com.ibm.rdm.web.config.WebConfig.com.ibm.team.web.notypeshelper.enabled.propertyName']/following-sibling::span[@class='viewValueNode']]
+			(finding elements By.xpath: .//*[@aria-labelledby='com.ibm.rdm.web.config.WebConfig.com.ibm.team.web.notypeshelper.enabled.propertyName']/following-sibling::span[@class='viewValueNode'] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/admin#action=jazz.viewPage&id=com.ibm.team.repository.server (null))
+			  (-> found 'Web element {full xpath: .//*[@aria-labelledby='com.ibm.rdm.web.config.WebConfig.com.ibm.team.web.notypeshelper.enabled.propertyName']/following-sibling::span[@class='viewValueNode']} in no frame)
+			(getting displayed state for Web element {full xpath: .//*[@aria-labelledby='com.ibm.rdm.web.config.WebConfig.com.ibm.team.web.notypeshelper.enabled.propertyName']/following-sibling::span[@class='viewValueNode']} in no frame)
+			 ( -> true)
+		  -> found element: Web element {full xpath: .//*[@aria-labelledby='com.ibm.rdm.web.config.WebConfig.com.ibm.team.web.notypeshelper.enabled.propertyName']/following-sibling::span[@class='viewValueNode']} in no frame (visible)
+		  -> return 1 visible elements
+			(getting displayed state for Web element {full xpath: .//*[@aria-labelledby='com.ibm.rdm.web.config.WebConfig.com.ibm.team.web.notypeshelper.enabled.propertyName']/following-sibling::span[@class='viewValueNode']} in no frame)
+			 ( -> true)
+			(finding element By.xpath: .//*[@aria-labelledby='com.ibm.rdm.web.config.WebConfig.com.ibm.team.web.notypeshelper.enabled.propertyName']/following-sibling::span[@class='viewValueNode'] for browser Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/admin#action=jazz.viewPage&id=com.ibm.team.repository.server (null) in frame 'null')
+			(  -> found Web element {full xpath: .//*[@aria-labelledby='com.ibm.rdm.web.config.WebConfig.com.ibm.team.web.notypeshelper.enabled.propertyName']/following-sibling::span[@class='viewValueNode']} in no frame)
+			(getting text for Web element {full xpath: .//*[@aria-labelledby='com.ibm.rdm.web.config.WebConfig.com.ibm.team.web.notypeshelper.enabled.propertyName']/following-sibling::span[@class='viewValueNode']} in no frame)
+			 ( -> "true")
+		+ WebBrowser.waitForElement(): waiting for element: [By.xpath: .//div[@dojoattachpoint='_serviceHeader' and contains(text(), 'com.ibm.rdm.web.config.WebConfig')]] (fail=true, timeout=70, displayed=true, single=true)
+		+ WebBrowser.waitForElements(): waiting for elements: [By.xpath: .//div[@dojoattachpoint='_serviceHeader' and contains(text(), 'com.ibm.rdm.web.config.WebConfig')]]
+			(finding elements By.xpath: .//div[@dojoattachpoint='_serviceHeader' and contains(text(), 'com.ibm.rdm.web.config.WebConfig')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/admin#action=jazz.viewPage&id=com.ibm.team.repository.server (null))
+			  (-> found 'Web element {full xpath: .//div[@dojoattachpoint='_serviceHeader' and contains(text(), 'com.ibm.rdm.web.config.WebConfig')]} in no frame)
+			(getting displayed state for Web element {full xpath: .//div[@dojoattachpoint='_serviceHeader' and contains(text(), 'com.ibm.rdm.web.config.WebConfig')]} in no frame)
+			 ( -> true)
+		  -> found element: Web element {full xpath: .//div[@dojoattachpoint='_serviceHeader' and contains(text(), 'com.ibm.rdm.web.config.WebConfig')]} in no frame (visible)
+		  -> return 1 visible elements
+			(finding element By.xpath: ..//a for Web element {full xpath: .//div[@dojoattachpoint='_serviceHeader' and contains(text(), 'com.ibm.rdm.web.config.WebConfig')]} in no frame in frame 'null')
+			(  -> found Web element {full xpath: .//div[@dojoattachpoint='_serviceHeader' and contains(text(), 'com.ibm.rdm.web.config.WebConfig')]/..//a} in no frame)
+			(getting text for Web element {full xpath: .//div[@dojoattachpoint='_serviceHeader' and contains(text(), 'com.ibm.rdm.web.config.WebConfig')]/..//a} in no frame)
+			 ( -> "Edit")
+		+ JazzAbstractWebPage.scrollToMakeElementVisible(): (webElement=Web element {full xpath: .//div[@dojoattachpoint='_serviceHeader' and contains(text(), 'com.ibm.rdm.web.config.WebConfig')]/..//a} in no frame)
+			(finding element By.xpath: //div[starts-with(@id,'jazz_ui_PageTemplate_')] for browser Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/admin#action=jazz.viewPage&id=com.ibm.team.repository.server (null) in frame 'null')
+			(  -> found Web element {full xpath: //div[starts-with(@id,'jazz_ui_PageTemplate_')]} in no frame)
+		  -> Found PageTemplate element...
+			(getting attribute 'class' for Web element {full xpath: //div[starts-with(@id,'jazz_ui_PageTemplate_')]} in no frame, fail=false)
+			 ( -> "jazz-ui-PageTemplate animate-home-menu")
+			(clicking on Web element {full xpath: .//div[@dojoattachpoint='_serviceHeader' and contains(text(), 'com.ibm.rdm.web.config.WebConfig')]/..//a} in no frame)
+			 ( -> done.)
+		+ WebBrowser.waitForElement(): waiting for element: [By.xpath: .//*[@aria-labelledby='com.ibm.rdm.web.config.WebConfig.com.ibm.team.web.notypeshelper.enabled.propertyName']] (fail=false, timeout=15, displayed=false, single=true)
+		+ WebBrowser.waitForElements(): waiting for elements: [By.xpath: .//*[@aria-labelledby='com.ibm.rdm.web.config.WebConfig.com.ibm.team.web.notypeshelper.enabled.propertyName']]
+			(finding elements By.xpath: .//*[@aria-labelledby='com.ibm.rdm.web.config.WebConfig.com.ibm.team.web.notypeshelper.enabled.propertyName'] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/admin#action=jazz.viewPage&id=com.ibm.team.repository.server (null))
+			  (-> found 'Web element {full xpath: .//*[@aria-labelledby='com.ibm.rdm.web.config.WebConfig.com.ibm.team.web.notypeshelper.enabled.propertyName']} in no frame)
+		  -> found element: Web element {full xpath: .//*[@aria-labelledby='com.ibm.rdm.web.config.WebConfig.com.ibm.team.web.notypeshelper.enabled.propertyName']} in no frame
+		  -> return 1  elements
+			(finding elements By.xpath: ./option for Web element {full xpath: .//*[@aria-labelledby='com.ibm.rdm.web.config.WebConfig.com.ibm.team.web.notypeshelper.enabled.propertyName']} in no frame, displayed=true, recovery=false)
+			  (-> found 'Web element {full xpath: .//*[@aria-labelledby='com.ibm.rdm.web.config.WebConfig.com.ibm.team.web.notypeshelper.enabled.propertyName']/option} in no frame)
+			  (-> found 'Web element {full xpath: .//*[@aria-labelledby='com.ibm.rdm.web.config.WebConfig.com.ibm.team.web.notypeshelper.enabled.propertyName']/option} in no frame)
+			(getting text for Web element {full xpath: .//*[@aria-labelledby='com.ibm.rdm.web.config.WebConfig.com.ibm.team.web.notypeshelper.enabled.propertyName']/option} in no frame)
+			 ( -> "true")
+			(getting text for Web element {full xpath: .//*[@aria-labelledby='com.ibm.rdm.web.config.WebConfig.com.ibm.team.web.notypeshelper.enabled.propertyName']/option} in no frame)
+			 ( -> "false")
+		+ WebBrowserElement.scrollIntoView(): Scroll current web element into view
+			(clicking on Web element {full xpath: .//*[@aria-labelledby='com.ibm.rdm.web.config.WebConfig.com.ibm.team.web.notypeshelper.enabled.propertyName']/option} in no frame)
+			 ( -> done.)
+		+ JazzAbstractWebPage.getTitle(): Get page title.
+			(getting text for Web element {full xpath: //h1]} in no frame)
+Workaround exception when getting text': StaleElementReferenceException: The element reference of <h1 class="pageTitle"> is stale; either the element is no longer attached to the DOM, it is not in the current frame context, or the document has been refreshed
+	- com.ibm.team.fvt.tests.web.WebBrowserElement.getText(WebBrowserElement.java:1207)
+	- com.ibm.team.fvt.tests.web.WebBrowserElement.getText(WebBrowserElement.java:1171)
+	- com.ibm.team.cspf.jazz.internal.pages.JazzAbstractWebPage.getTitle(JazzAbstractWebPage.java:611)
+	- com.ibm.team.cspf.jazz.internal.pages.JazzAbstractWebPage.save(JazzAbstractWebPage.java:1330)
+	- com.ibm.team.fvt.tests.clm.areas.ClmServerAdvancedPropertiesArea.setCurrentValue(ClmServerAdvancedPropertiesArea.java:179)
+	- com.ibm.team.fvt.tests.clm.pages.clm.ClmAdminServerPage.setAdvancedProperty(ClmAdminServerPage.java:374)
+	- com.ibm.team.fvt.tests.clm.steps.ClmStep00c_ChangeRmProjectCreateTimeoutToEnableRmProjectCreation.setActivationKey(ClmStep00c_ChangeRmProjectCreateTimeoutToEnableRmProjectCreation.java:46)
+	- com.ibm.team.fvt.tests.clm.steps.ClmStep00c_ChangeRmProjectCreateTimeoutToEnableRmProjectCreation.test02_setRmProjectHelperOff(ClmStep00c_ChangeRmProjectCreateTimeoutToEnableRmProjectCreation.java:65)
+		+ WebBrowserElement.recover(): Recover Web element {full xpath: //h1]} in no frame
+		  -> find element {By.tagName: h1} as multiple elements in web driver...
+		  -> found 1 elements:
+		  -> an element is visible at the same place int the list (0) => use it to recover.
+			 ( -> "Advanced Properties")
+		+ JazzAbstractWebPage.save(): Save current CLM web page 'Advanced Properties'
+		+ WebBrowser.resetFrame(): Reset frame null
+		+ JazzAbstractWebPage.scrollToTop(): JazzAbstractWebPage.scrollToTop()
+		  -> hit the Esc key on the page root element...
+		+ WebBrowser.scrollPageTop(): Scroll to top of page
+			(finding element By.xpath: //div[starts-with(@id,'jazz_ui_PageTemplate_')] for browser Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/admin#action=jazz.viewPage&id=com.ibm.team.repository.server (null) in frame 'null')
+			(  -> found Web element {full xpath: //div[starts-with(@id,'jazz_ui_PageTemplate_')]} in no frame)
+Waiting for navbar web element to be unfixed...
+		  -> Found PageTemplate element...
+			(getting attribute 'class' for Web element {full xpath: //div[starts-with(@id,'jazz_ui_PageTemplate_')]} in no frame, fail=false)
+			 ( -> "jazz-ui-PageTemplate animate-home-menu")
+		  -> navbar is no longer fixed
+		+ WebBrowser.waitForElement(): waiting for element: [By.xpath: //*[@dojoattachpoint='_saveAllButton']] (fail=true, timeout=70, displayed=true, single=false)
+		+ WebBrowser.waitForElements(): waiting for elements: [By.xpath: //*[@dojoattachpoint='_saveAllButton']]
+			(finding elements By.xpath: //*[@dojoattachpoint='_saveAllButton'] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/admin#action=jazz.viewPage&id=com.ibm.team.repository.server (null))
+			  (-> found 'Web element {full xpath: //*[@dojoattachpoint='_saveAllButton']} in no frame)
+			(getting displayed state for Web element {full xpath: //*[@dojoattachpoint='_saveAllButton']} in no frame)
+			 ( -> true)
+		  -> found element: Web element {full xpath: //*[@dojoattachpoint='_saveAllButton']} in no frame (visible)
+		  -> return 1 visible elements
+			(getting enabled state for Web element {full xpath: //*[@dojoattachpoint='_saveAllButton']} in no frame)
+			 ( -> true)
+			(getting enabled state for Web element {full xpath: //*[@dojoattachpoint='_saveAllButton']} in no frame)
+			 ( -> true)
+			(getting enabled state for Web element {full xpath: //*[@dojoattachpoint='_saveAllButton']} in no frame)
+			 ( -> true)
+		+ WebBrowser.clickButton(): click on button 'Web element {full xpath: //*[@dojoattachpoint='_saveAllButton']} in no frame'
+			(getting enabled state for Web element {full xpath: //*[@dojoattachpoint='_saveAllButton']} in no frame)
+			 ( -> true)
+			(clicking on Web element {full xpath: //*[@dojoattachpoint='_saveAllButton']} in no frame)
+			 ( -> done.)
+		+ JazzAbstractWebPage.checkAcceptableServerErrorMessages(): Check whether a server error message is displayed in the page
+			(finding element By.xpath: //*[@id='errorPageContainer'] for browser Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/admin#action=jazz.viewPage&id=com.ibm.team.repository.server (null) in frame 'null')
+			(finding element By.xpath: //div[starts-with(@id,'com_ibm_rqm_planning_web_ui_internal_page_NotAuthorized')] for browser Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/admin#action=jazz.viewPage&id=com.ibm.team.repository.server (null) in frame 'null')
+			(finding element By.xpath: //div[@dojoattachpoint='messageArea' and contains(@class,'ERROR')] for browser Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/admin#action=jazz.viewPage&id=com.ibm.team.repository.server (null) in frame 'null')
+			(finding element By.xpath: //div[@id='jazz_ui_wizard_ExternalWizardStep_5']//iframe for browser Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/admin#action=jazz.viewPage&id=com.ibm.team.repository.server (null) in frame 'null')
+		+ WebBrowser.switchToMainWindow(): Switch to main window using stored handle 6442450945
+		+ WebBrowser.switchToMainWindow(): Switch to main window using stored handle 6442450945
+		+ WebBrowser.waitForElement(): waiting for element: [By.xpath: .//*[starts-with(normalize-space(text()),'The configuration changes were saved successfully.')]] (fail=true, timeout=70, displayed=true, single=false)
+		+ WebBrowser.waitForElements(): waiting for elements: [By.xpath: .//*[starts-with(normalize-space(text()),'The configuration changes were saved successfully.')]]
+			(finding elements By.xpath: .//*[starts-with(normalize-space(text()),'The configuration changes were saved successfully.')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/admin#action=jazz.viewPage&id=com.ibm.team.repository.server (null))
+			  (-> found 'Web element {full xpath: .//*[starts-with(normalize-space(text()),'The configuration changes were saved successfully.')]} in no frame)
+			(getting displayed state for Web element {full xpath: .//*[starts-with(normalize-space(text()),'The configuration changes were saved successfully.')]} in no frame)
+			 ( -> true)
+		  -> found element: Web element {full xpath: .//*[starts-with(normalize-space(text()),'The configuration changes were saved successfully.')]} in no frame (visible)
+		  -> return 1 visible elements
+		+ JazzAbstractWebPage.checkAcceptableServerErrorMessages(): Check whether a server error message is displayed in the page
+			(finding element By.xpath: //*[@id='errorPageContainer'] for browser Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/admin#action=jazz.viewPage&id=com.ibm.team.repository.server (null) in frame 'null')
+			(finding element By.xpath: //div[starts-with(@id,'com_ibm_rqm_planning_web_ui_internal_page_NotAuthorized')] for browser Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/admin#action=jazz.viewPage&id=com.ibm.team.repository.server (null) in frame 'null')
+			(finding element By.xpath: //div[@dojoattachpoint='messageArea' and contains(@class,'ERROR')] for browser Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/admin#action=jazz.viewPage&id=com.ibm.team.repository.server (null) in frame 'null')
+			(finding element By.xpath: //div[@id='jazz_ui_wizard_ExternalWizardStep_5']//iframe for browser Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe, url=https://mb-two1.fyre.ibm.com:9443/rm/admin#action=jazz.viewPage&id=com.ibm.team.repository.server (null) in frame 'null')
+			(getting enabled state for Web element {full xpath: //*[@dojoattachpoint='_saveAllButton']} in no frame)
+			 ( -> false)
+		+ WebBrowser.refresh(): Refresh page https://mb-two1.fyre.ibm.com:9443/rm/admin#action=com.ibm.team.repository.admin.configureAdvanced
+		+ WebBrowser.waitForElement(): waiting for element: [By.xpath: .//*[@aria-labelledby='com.ibm.rdm.web.config.WebConfig.com.ibm.team.web.notypeshelper.enabled.propertyName']/following-sibling::span[@class='viewValueNode']] (fail=true, timeout=70, displayed=true, single=true)
+		+ WebBrowser.waitForElements(): waiting for elements: [By.xpath: .//*[@aria-labelledby='com.ibm.rdm.web.config.WebConfig.com.ibm.team.web.notypeshelper.enabled.propertyName']/following-sibling::span[@class='viewValueNode']]
+			(finding elements By.xpath: .//*[@aria-labelledby='com.ibm.rdm.web.config.WebConfig.com.ibm.team.web.notypeshelper.enabled.propertyName']/following-sibling::span[@class='viewValueNode'] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe)
+			  (-> found 'Web element {full xpath: .//*[@aria-labelledby='com.ibm.rdm.web.config.WebConfig.com.ibm.team.web.notypeshelper.enabled.propertyName']/following-sibling::span[@class='viewValueNode']} in no frame)
+			(getting displayed state for Web element {full xpath: .//*[@aria-labelledby='com.ibm.rdm.web.config.WebConfig.com.ibm.team.web.notypeshelper.enabled.propertyName']/following-sibling::span[@class='viewValueNode']} in no frame)
+			 ( -> true)
+		  -> found element: Web element {full xpath: .//*[@aria-labelledby='com.ibm.rdm.web.config.WebConfig.com.ibm.team.web.notypeshelper.enabled.propertyName']/following-sibling::span[@class='viewValueNode']} in no frame (visible)
+		  -> return 1 visible elements
+			(getting displayed state for Web element {full xpath: .//*[@aria-labelledby='com.ibm.rdm.web.config.WebConfig.com.ibm.team.web.notypeshelper.enabled.propertyName']/following-sibling::span[@class='viewValueNode']} in no frame)
+			 ( -> true)
+			(finding element By.xpath: .//*[@aria-labelledby='com.ibm.rdm.web.config.WebConfig.com.ibm.team.web.notypeshelper.enabled.propertyName']/following-sibling::span[@class='viewValueNode'] for browser Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe in frame 'null')
+			(  -> found Web element {full xpath: .//*[@aria-labelledby='com.ibm.rdm.web.config.WebConfig.com.ibm.team.web.notypeshelper.enabled.propertyName']/following-sibling::span[@class='viewValueNode']} in no frame)
+			(getting text for Web element {full xpath: .//*[@aria-labelledby='com.ibm.rdm.web.config.WebConfig.com.ibm.team.web.notypeshelper.enabled.propertyName']/following-sibling::span[@class='viewValueNode']} in no frame)
+			 ( -> "false")
+	  -> OK (in 13.8s)
+	- 15:43:07: start test case 'test03_setRunTestsAgainstRenamedServer'...
+	- 'views.mimicRenamedServer' value=true
+		+ Topology.needLogin(): See whether it needs to log in before going to https://mb-two1.fyre.ibm.com:9443/rm/admin#action=jazz.viewPage&id=com.ibm.team.repository.server
+		  -> found application 'RM Application (location=https://mb-two1.fyre.ibm.com:9443/rm, user logged in: User id=clmadmin, name=clmadmin, passwd=c*******, mail=clmadmin@example.net)' for URL: https://mb-two1.fyre.ibm.com:9443/rm/admin#action=jazz.viewPage&id=com.ibm.team.repository.server
+		+ ClmAdminServerPage.getApplication(): Get application
+		+ ClmAdminServerPage.selectSection(): Select section 'Advanced Properties'.
+		+ ClmServerAdvancedPropertiesArea.setCurrentValue(): Set property 'com.ibm.rdm.fronting.server.util.ConfigImpl.views.mimicRenamedServer.propertyName' value to 'true'for service 'true'.
+		+ WebBrowser.waitForElement(): waiting for element: [By.xpath: .//*[@aria-labelledby='com.ibm.rdm.fronting.server.util.ConfigImpl.views.mimicRenamedServer.propertyName']/following-sibling::span[@class='viewValueNode']] (fail=true, timeout=70, displayed=true, single=true)
+		+ WebBrowser.waitForElements(): waiting for elements: [By.xpath: .//*[@aria-labelledby='com.ibm.rdm.fronting.server.util.ConfigImpl.views.mimicRenamedServer.propertyName']/following-sibling::span[@class='viewValueNode']]
+			(finding elements By.xpath: .//*[@aria-labelledby='com.ibm.rdm.fronting.server.util.ConfigImpl.views.mimicRenamedServer.propertyName']/following-sibling::span[@class='viewValueNode'] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe)
+			  (-> found 'Web element {full xpath: .//*[@aria-labelledby='com.ibm.rdm.fronting.server.util.ConfigImpl.views.mimicRenamedServer.propertyName']/following-sibling::span[@class='viewValueNode']} in no frame)
+			(getting displayed state for Web element {full xpath: .//*[@aria-labelledby='com.ibm.rdm.fronting.server.util.ConfigImpl.views.mimicRenamedServer.propertyName']/following-sibling::span[@class='viewValueNode']} in no frame)
+			 ( -> true)
+		  -> found element: Web element {full xpath: .//*[@aria-labelledby='com.ibm.rdm.fronting.server.util.ConfigImpl.views.mimicRenamedServer.propertyName']/following-sibling::span[@class='viewValueNode']} in no frame (visible)
+		  -> return 1 visible elements
+			(getting displayed state for Web element {full xpath: .//*[@aria-labelledby='com.ibm.rdm.fronting.server.util.ConfigImpl.views.mimicRenamedServer.propertyName']/following-sibling::span[@class='viewValueNode']} in no frame)
+			 ( -> true)
+			(finding element By.xpath: .//*[@aria-labelledby='com.ibm.rdm.fronting.server.util.ConfigImpl.views.mimicRenamedServer.propertyName']/following-sibling::span[@class='viewValueNode'] for browser Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe in frame 'null')
+			(  -> found Web element {full xpath: .//*[@aria-labelledby='com.ibm.rdm.fronting.server.util.ConfigImpl.views.mimicRenamedServer.propertyName']/following-sibling::span[@class='viewValueNode']} in no frame)
+			(getting text for Web element {full xpath: .//*[@aria-labelledby='com.ibm.rdm.fronting.server.util.ConfigImpl.views.mimicRenamedServer.propertyName']/following-sibling::span[@class='viewValueNode']} in no frame)
+			 ( -> "false")
+		+ WebBrowser.waitForElement(): waiting for element: [By.xpath: .//div[@dojoattachpoint='_serviceHeader' and contains(text(), 'com.ibm.rdm.fronting.server.util.ConfigImpl')]] (fail=true, timeout=70, displayed=true, single=true)
+		+ WebBrowser.waitForElements(): waiting for elements: [By.xpath: .//div[@dojoattachpoint='_serviceHeader' and contains(text(), 'com.ibm.rdm.fronting.server.util.ConfigImpl')]]
+			(finding elements By.xpath: .//div[@dojoattachpoint='_serviceHeader' and contains(text(), 'com.ibm.rdm.fronting.server.util.ConfigImpl')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe)
+			  (-> found 'Web element {full xpath: .//div[@dojoattachpoint='_serviceHeader' and contains(text(), 'com.ibm.rdm.fronting.server.util.ConfigImpl')]} in no frame)
+			(getting displayed state for Web element {full xpath: .//div[@dojoattachpoint='_serviceHeader' and contains(text(), 'com.ibm.rdm.fronting.server.util.ConfigImpl')]} in no frame)
+			 ( -> true)
+		  -> found element: Web element {full xpath: .//div[@dojoattachpoint='_serviceHeader' and contains(text(), 'com.ibm.rdm.fronting.server.util.ConfigImpl')]} in no frame (visible)
+		  -> return 1 visible elements
+			(finding element By.xpath: ..//a for Web element {full xpath: .//div[@dojoattachpoint='_serviceHeader' and contains(text(), 'com.ibm.rdm.fronting.server.util.ConfigImpl')]} in no frame in frame 'null')
+			(  -> found Web element {full xpath: .//div[@dojoattachpoint='_serviceHeader' and contains(text(), 'com.ibm.rdm.fronting.server.util.ConfigImpl')]/..//a} in no frame)
+			(getting text for Web element {full xpath: .//div[@dojoattachpoint='_serviceHeader' and contains(text(), 'com.ibm.rdm.fronting.server.util.ConfigImpl')]/..//a} in no frame)
+			 ( -> "Edit")
+		+ JazzAbstractWebPage.scrollToMakeElementVisible(): (webElement=Web element {full xpath: .//div[@dojoattachpoint='_serviceHeader' and contains(text(), 'com.ibm.rdm.fronting.server.util.ConfigImpl')]/..//a} in no frame)
+			(finding element By.xpath: //div[starts-with(@id,'jazz_ui_PageTemplate_')] for browser Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe in frame 'null')
+			(  -> found Web element {full xpath: //div[starts-with(@id,'jazz_ui_PageTemplate_')]} in no frame)
+		  -> Found PageTemplate element...
+			(getting attribute 'class' for Web element {full xpath: //div[starts-with(@id,'jazz_ui_PageTemplate_')]} in no frame, fail=false)
+			 ( -> "jazz-ui-PageTemplate animate-home-menu")
+			(clicking on Web element {full xpath: .//div[@dojoattachpoint='_serviceHeader' and contains(text(), 'com.ibm.rdm.fronting.server.util.ConfigImpl')]/..//a} in no frame)
+			 ( -> done.)
+		+ WebBrowser.waitForElement(): waiting for element: [By.xpath: .//*[@aria-labelledby='com.ibm.rdm.fronting.server.util.ConfigImpl.views.mimicRenamedServer.propertyName']] (fail=false, timeout=15, displayed=false, single=true)
+		+ WebBrowser.waitForElements(): waiting for elements: [By.xpath: .//*[@aria-labelledby='com.ibm.rdm.fronting.server.util.ConfigImpl.views.mimicRenamedServer.propertyName']]
+			(finding elements By.xpath: .//*[@aria-labelledby='com.ibm.rdm.fronting.server.util.ConfigImpl.views.mimicRenamedServer.propertyName'] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe)
+			  (-> found 'Web element {full xpath: .//*[@aria-labelledby='com.ibm.rdm.fronting.server.util.ConfigImpl.views.mimicRenamedServer.propertyName']} in no frame)
+		  -> found element: Web element {full xpath: .//*[@aria-labelledby='com.ibm.rdm.fronting.server.util.ConfigImpl.views.mimicRenamedServer.propertyName']} in no frame
+		  -> return 1  elements
+		+ WebBrowser.typeText(): Type text 'true' (cleared)
+			(getting enabled state for Web element {full xpath: .//*[@aria-labelledby='com.ibm.rdm.fronting.server.util.ConfigImpl.views.mimicRenamedServer.propertyName']} in no frame)
+			 ( -> true)
+			(getting attribute 'aria-label' for Web element {full xpath: .//*[@aria-labelledby='com.ibm.rdm.fronting.server.util.ConfigImpl.views.mimicRenamedServer.propertyName']} in no frame, fail=false)
+			 ( -> "null")
+			(getting attribute 'value' for Web element {full xpath: .//*[@aria-labelledby='com.ibm.rdm.fronting.server.util.ConfigImpl.views.mimicRenamedServer.propertyName']} in no frame, fail=false)
+			 ( -> "false")
+			(sending keys '' to Web element {full xpath: .//*[@aria-labelledby='com.ibm.rdm.fronting.server.util.ConfigImpl.views.mimicRenamedServer.propertyName']} in no frame)
+			 ( -> done.)
+			(clearing Web element {full xpath: .//*[@aria-labelledby='com.ibm.rdm.fronting.server.util.ConfigImpl.views.mimicRenamedServer.propertyName']} in no frame)
+			 ( -> done.)
+			(sending keys 'true' to Web element {full xpath: .//*[@aria-labelledby='com.ibm.rdm.fronting.server.util.ConfigImpl.views.mimicRenamedServer.propertyName']} in no frame)
+			 ( -> done.)
+			(sending keys '' to Web element {full xpath: .//*[@aria-labelledby='com.ibm.rdm.fronting.server.util.ConfigImpl.views.mimicRenamedServer.propertyName']} in no frame)
+			 ( -> done.)
+		+ WebBrowser.waitForElement(): waiting for element: [By.xpath: //*[contains(@class, 'invalidMsg') and contains(text(), 'CRJAZ1122I')]] (fail=false, timeout=15, displayed=true, single=true)
+		+ WebBrowser.waitForElements(): waiting for elements: [By.xpath: //*[contains(@class, 'invalidMsg') and contains(text(), 'CRJAZ1122I')]]
+			(finding elements By.xpath: //*[contains(@class, 'invalidMsg') and contains(text(), 'CRJAZ1122I')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe)
+			(finding elements By.xpath: //*[contains(@class, 'invalidMsg') and contains(text(), 'CRJAZ1122I')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe)
+			(finding elements By.xpath: //*[contains(@class, 'invalidMsg') and contains(text(), 'CRJAZ1122I')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe)
+			(finding elements By.xpath: //*[contains(@class, 'invalidMsg') and contains(text(), 'CRJAZ1122I')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe)
+			(finding elements By.xpath: //*[contains(@class, 'invalidMsg') and contains(text(), 'CRJAZ1122I')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe)
+			(finding elements By.xpath: //*[contains(@class, 'invalidMsg') and contains(text(), 'CRJAZ1122I')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe)
+			(finding elements By.xpath: //*[contains(@class, 'invalidMsg') and contains(text(), 'CRJAZ1122I')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe)
+			(finding elements By.xpath: //*[contains(@class, 'invalidMsg') and contains(text(), 'CRJAZ1122I')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe)
+			(finding elements By.xpath: //*[contains(@class, 'invalidMsg') and contains(text(), 'CRJAZ1122I')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe)
+			(finding elements By.xpath: //*[contains(@class, 'invalidMsg') and contains(text(), 'CRJAZ1122I')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe)
+			(finding elements By.xpath: //*[contains(@class, 'invalidMsg') and contains(text(), 'CRJAZ1122I')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe)
+			(finding elements By.xpath: //*[contains(@class, 'invalidMsg') and contains(text(), 'CRJAZ1122I')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe)
+			(finding elements By.xpath: //*[contains(@class, 'invalidMsg') and contains(text(), 'CRJAZ1122I')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe)
+			(finding elements By.xpath: //*[contains(@class, 'invalidMsg') and contains(text(), 'CRJAZ1122I')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe)
+			(finding elements By.xpath: //*[contains(@class, 'invalidMsg') and contains(text(), 'CRJAZ1122I')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe)
+			(finding elements By.xpath: //*[contains(@class, 'invalidMsg') and contains(text(), 'CRJAZ1122I')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe)
+			(finding elements By.xpath: //*[contains(@class, 'invalidMsg') and contains(text(), 'CRJAZ1122I')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe)
+			(finding elements By.xpath: //*[contains(@class, 'invalidMsg') and contains(text(), 'CRJAZ1122I')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe)
+			(finding elements By.xpath: //*[contains(@class, 'invalidMsg') and contains(text(), 'CRJAZ1122I')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe)
+			(finding elements By.xpath: //*[contains(@class, 'invalidMsg') and contains(text(), 'CRJAZ1122I')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe)
+			(finding elements By.xpath: //*[contains(@class, 'invalidMsg') and contains(text(), 'CRJAZ1122I')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe)
+			(finding elements By.xpath: //*[contains(@class, 'invalidMsg') and contains(text(), 'CRJAZ1122I')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe)
+			(finding elements By.xpath: //*[contains(@class, 'invalidMsg') and contains(text(), 'CRJAZ1122I')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe)
+			(finding elements By.xpath: //*[contains(@class, 'invalidMsg') and contains(text(), 'CRJAZ1122I')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe)
+			(finding elements By.xpath: //*[contains(@class, 'invalidMsg') and contains(text(), 'CRJAZ1122I')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe)
+			(finding elements By.xpath: //*[contains(@class, 'invalidMsg') and contains(text(), 'CRJAZ1122I')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe)
+			(finding elements By.xpath: //*[contains(@class, 'invalidMsg') and contains(text(), 'CRJAZ1122I')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe)
+			(finding elements By.xpath: //*[contains(@class, 'invalidMsg') and contains(text(), 'CRJAZ1122I')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe)
+			(finding elements By.xpath: //*[contains(@class, 'invalidMsg') and contains(text(), 'CRJAZ1122I')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe)
+			(finding elements By.xpath: //*[contains(@class, 'invalidMsg') and contains(text(), 'CRJAZ1122I')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe)
+			(finding elements By.xpath: //*[contains(@class, 'invalidMsg') and contains(text(), 'CRJAZ1122I')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe)
+			(finding elements By.xpath: //*[contains(@class, 'invalidMsg') and contains(text(), 'CRJAZ1122I')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe)
+			(finding elements By.xpath: //*[contains(@class, 'invalidMsg') and contains(text(), 'CRJAZ1122I')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe)
+			(finding elements By.xpath: //*[contains(@class, 'invalidMsg') and contains(text(), 'CRJAZ1122I')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe)
+			(finding elements By.xpath: //*[contains(@class, 'invalidMsg') and contains(text(), 'CRJAZ1122I')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe)
+			(finding elements By.xpath: //*[contains(@class, 'invalidMsg') and contains(text(), 'CRJAZ1122I')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe)
+			(finding elements By.xpath: //*[contains(@class, 'invalidMsg') and contains(text(), 'CRJAZ1122I')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe)
+			(finding elements By.xpath: //*[contains(@class, 'invalidMsg') and contains(text(), 'CRJAZ1122I')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe)
+			(finding elements By.xpath: //*[contains(@class, 'invalidMsg') and contains(text(), 'CRJAZ1122I')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe)
+			(finding elements By.xpath: //*[contains(@class, 'invalidMsg') and contains(text(), 'CRJAZ1122I')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe)
+			(finding elements By.xpath: //*[contains(@class, 'invalidMsg') and contains(text(), 'CRJAZ1122I')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe)
+			(finding elements By.xpath: //*[contains(@class, 'invalidMsg') and contains(text(), 'CRJAZ1122I')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe)
+			(finding elements By.xpath: //*[contains(@class, 'invalidMsg') and contains(text(), 'CRJAZ1122I')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe)
+			(finding elements By.xpath: //*[contains(@class, 'invalidMsg') and contains(text(), 'CRJAZ1122I')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe)
+			(finding elements By.xpath: //*[contains(@class, 'invalidMsg') and contains(text(), 'CRJAZ1122I')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe)
+			(finding elements By.xpath: //*[contains(@class, 'invalidMsg') and contains(text(), 'CRJAZ1122I')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe)
+			(finding elements By.xpath: //*[contains(@class, 'invalidMsg') and contains(text(), 'CRJAZ1122I')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe)
+			(finding elements By.xpath: //*[contains(@class, 'invalidMsg') and contains(text(), 'CRJAZ1122I')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe)
+			(finding elements By.xpath: //*[contains(@class, 'invalidMsg') and contains(text(), 'CRJAZ1122I')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe)
+			(finding elements By.xpath: //*[contains(@class, 'invalidMsg') and contains(text(), 'CRJAZ1122I')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe)
+			(finding elements By.xpath: //*[contains(@class, 'invalidMsg') and contains(text(), 'CRJAZ1122I')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe)
+			(finding elements By.xpath: //*[contains(@class, 'invalidMsg') and contains(text(), 'CRJAZ1122I')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe)
+			(finding elements By.xpath: //*[contains(@class, 'invalidMsg') and contains(text(), 'CRJAZ1122I')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe)
+			(finding elements By.xpath: //*[contains(@class, 'invalidMsg') and contains(text(), 'CRJAZ1122I')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe)
+			(finding elements By.xpath: //*[contains(@class, 'invalidMsg') and contains(text(), 'CRJAZ1122I')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe)
+			(finding elements By.xpath: //*[contains(@class, 'invalidMsg') and contains(text(), 'CRJAZ1122I')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe)
+			(finding elements By.xpath: //*[contains(@class, 'invalidMsg') and contains(text(), 'CRJAZ1122I')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe)
+			(finding elements By.xpath: //*[contains(@class, 'invalidMsg') and contains(text(), 'CRJAZ1122I')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe)
+			(finding elements By.xpath: //*[contains(@class, 'invalidMsg') and contains(text(), 'CRJAZ1122I')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe)
+			(finding elements By.xpath: //*[contains(@class, 'invalidMsg') and contains(text(), 'CRJAZ1122I')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe)
+			(finding elements By.xpath: //*[contains(@class, 'invalidMsg') and contains(text(), 'CRJAZ1122I')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe)
+		  -> no element was found
+		+ JazzAbstractWebPage.getTitle(): Get page title.
+			(getting text for Web element {full xpath: //h1]} in no frame)
+Workaround exception when getting text': StaleElementReferenceException: The element reference of <h1 class="pageTitle inlineDisplay"> is stale; either the element is no longer attached to the DOM, it is not in the current frame context, or the document has been refreshed
+	- com.ibm.team.fvt.tests.web.WebBrowserElement.getText(WebBrowserElement.java:1207)
+	- com.ibm.team.fvt.tests.web.WebBrowserElement.getText(WebBrowserElement.java:1171)
+	- com.ibm.team.cspf.jazz.internal.pages.JazzAbstractWebPage.getTitle(JazzAbstractWebPage.java:611)
+	- com.ibm.team.cspf.jazz.internal.pages.JazzAbstractWebPage.save(JazzAbstractWebPage.java:1330)
+	- com.ibm.team.fvt.tests.clm.areas.ClmServerAdvancedPropertiesArea.setCurrentValue(ClmServerAdvancedPropertiesArea.java:179)
+	- com.ibm.team.fvt.tests.clm.pages.clm.ClmAdminServerPage.setAdvancedProperty(ClmAdminServerPage.java:374)
+	- com.ibm.team.fvt.tests.clm.steps.ClmStep00c_ChangeRmProjectCreateTimeoutToEnableRmProjectCreation.setActivationKey(ClmStep00c_ChangeRmProjectCreateTimeoutToEnableRmProjectCreation.java:46)
+	- com.ibm.team.fvt.tests.clm.steps.ClmStep00c_ChangeRmProjectCreateTimeoutToEnableRmProjectCreation.test03_setRunTestsAgainstRenamedServer(ClmStep00c_ChangeRmProjectCreateTimeoutToEnableRmProjectCreation.java:79)
+		+ WebBrowserElement.recover(): Recover Web element {full xpath: //h1]} in no frame
+		  -> find element {By.tagName: h1} as multiple elements in web driver...
+		  -> found 1 elements:
+		  -> an element is visible at the same place int the list (0) => use it to recover.
+			 ( -> "Advanced Properties")
+		+ JazzAbstractWebPage.save(): Save current CLM web page 'Advanced Properties'
+		+ WebBrowser.resetFrame(): Reset frame null
+		+ JazzAbstractWebPage.scrollToTop(): JazzAbstractWebPage.scrollToTop()
+		  -> hit the Esc key on the page root element...
+		+ WebBrowser.scrollPageTop(): Scroll to top of page
+			(finding element By.xpath: //div[starts-with(@id,'jazz_ui_PageTemplate_')] for browser Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe in frame 'null')
+			(  -> found Web element {full xpath: //div[starts-with(@id,'jazz_ui_PageTemplate_')]} in no frame)
+Waiting for navbar web element to be unfixed...
+		  -> Found PageTemplate element...
+			(getting attribute 'class' for Web element {full xpath: //div[starts-with(@id,'jazz_ui_PageTemplate_')]} in no frame, fail=false)
+			 ( -> "jazz-ui-PageTemplate animate-home-menu")
+		  -> navbar is no longer fixed
+		+ WebBrowser.waitForElement(): waiting for element: [By.xpath: //*[@dojoattachpoint='_saveAllButton']] (fail=true, timeout=70, displayed=true, single=false)
+		+ WebBrowser.waitForElements(): waiting for elements: [By.xpath: //*[@dojoattachpoint='_saveAllButton']]
+			(finding elements By.xpath: //*[@dojoattachpoint='_saveAllButton'] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe)
+			  (-> found 'Web element {full xpath: //*[@dojoattachpoint='_saveAllButton']} in no frame)
+			(getting displayed state for Web element {full xpath: //*[@dojoattachpoint='_saveAllButton']} in no frame)
+			 ( -> true)
+		  -> found element: Web element {full xpath: //*[@dojoattachpoint='_saveAllButton']} in no frame (visible)
+		  -> return 1 visible elements
+			(getting enabled state for Web element {full xpath: //*[@dojoattachpoint='_saveAllButton']} in no frame)
+			 ( -> true)
+			(getting enabled state for Web element {full xpath: //*[@dojoattachpoint='_saveAllButton']} in no frame)
+			 ( -> true)
+			(getting enabled state for Web element {full xpath: //*[@dojoattachpoint='_saveAllButton']} in no frame)
+			 ( -> true)
+		+ WebBrowser.clickButton(): click on button 'Web element {full xpath: //*[@dojoattachpoint='_saveAllButton']} in no frame'
+			(getting enabled state for Web element {full xpath: //*[@dojoattachpoint='_saveAllButton']} in no frame)
+			 ( -> true)
+			(clicking on Web element {full xpath: //*[@dojoattachpoint='_saveAllButton']} in no frame)
+			 ( -> done.)
+		+ JazzAbstractWebPage.checkAcceptableServerErrorMessages(): Check whether a server error message is displayed in the page
+			(finding element By.xpath: //*[@id='errorPageContainer'] for browser Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe in frame 'null')
+			(finding element By.xpath: //div[starts-with(@id,'com_ibm_rqm_planning_web_ui_internal_page_NotAuthorized')] for browser Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe in frame 'null')
+			(finding element By.xpath: //div[@dojoattachpoint='messageArea' and contains(@class,'ERROR')] for browser Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe in frame 'null')
+			(finding element By.xpath: //div[@id='jazz_ui_wizard_ExternalWizardStep_5']//iframe for browser Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe in frame 'null')
+		+ WebBrowser.switchToMainWindow(): Switch to main window using stored handle 6442450945
+		+ WebBrowser.switchToMainWindow(): Switch to main window using stored handle 6442450945
+		+ WebBrowser.waitForElement(): waiting for element: [By.xpath: .//*[starts-with(normalize-space(text()),'The configuration changes were saved successfully.')]] (fail=true, timeout=70, displayed=true, single=false)
+		+ WebBrowser.waitForElements(): waiting for elements: [By.xpath: .//*[starts-with(normalize-space(text()),'The configuration changes were saved successfully.')]]
+			(finding elements By.xpath: .//*[starts-with(normalize-space(text()),'The configuration changes were saved successfully.')] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe)
+			  (-> found 'Web element {full xpath: .//*[starts-with(normalize-space(text()),'The configuration changes were saved successfully.')]} in no frame)
+			(getting displayed state for Web element {full xpath: .//*[starts-with(normalize-space(text()),'The configuration changes were saved successfully.')]} in no frame)
+			 ( -> true)
+		  -> found element: Web element {full xpath: .//*[starts-with(normalize-space(text()),'The configuration changes were saved successfully.')]} in no frame (visible)
+		  -> return 1 visible elements
+		+ JazzAbstractWebPage.checkAcceptableServerErrorMessages(): Check whether a server error message is displayed in the page
+			(finding element By.xpath: //*[@id='errorPageContainer'] for browser Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe in frame 'null')
+			(finding element By.xpath: //div[starts-with(@id,'com_ibm_rqm_planning_web_ui_internal_page_NotAuthorized')] for browser Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe in frame 'null')
+			(finding element By.xpath: //div[@dojoattachpoint='messageArea' and contains(@class,'ERROR')] for browser Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe in frame 'null')
+			(finding element By.xpath: //div[@id='jazz_ui_wizard_ExternalWizardStep_5']//iframe for browser Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe in frame 'null')
+			(getting enabled state for Web element {full xpath: //*[@dojoattachpoint='_saveAllButton']} in no frame)
+			 ( -> false)
+		+ WebBrowser.refresh(): Refresh page https://mb-two1.fyre.ibm.com:9443/rm/admin#action=com.ibm.team.repository.admin.configureAdvanced
+		+ WebBrowser.waitForElement(): waiting for element: [By.xpath: .//*[@aria-labelledby='com.ibm.rdm.fronting.server.util.ConfigImpl.views.mimicRenamedServer.propertyName']/following-sibling::span[@class='viewValueNode']] (fail=true, timeout=70, displayed=true, single=true)
+		+ WebBrowser.waitForElements(): waiting for elements: [By.xpath: .//*[@aria-labelledby='com.ibm.rdm.fronting.server.util.ConfigImpl.views.mimicRenamedServer.propertyName']/following-sibling::span[@class='viewValueNode']]
+			(finding elements By.xpath: .//*[@aria-labelledby='com.ibm.rdm.fronting.server.util.ConfigImpl.views.mimicRenamedServer.propertyName']/following-sibling::span[@class='viewValueNode'] for Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe)
+			  (-> found 'Web element {full xpath: .//*[@aria-labelledby='com.ibm.rdm.fronting.server.util.ConfigImpl.views.mimicRenamedServer.propertyName']/following-sibling::span[@class='viewValueNode']} in no frame)
+			(getting displayed state for Web element {full xpath: .//*[@aria-labelledby='com.ibm.rdm.fronting.server.util.ConfigImpl.views.mimicRenamedServer.propertyName']/following-sibling::span[@class='viewValueNode']} in no frame)
+			 ( -> true)
+		  -> found element: Web element {full xpath: .//*[@aria-labelledby='com.ibm.rdm.fronting.server.util.ConfigImpl.views.mimicRenamedServer.propertyName']/following-sibling::span[@class='viewValueNode']} in no frame (visible)
+		  -> return 1 visible elements
+			(getting displayed state for Web element {full xpath: .//*[@aria-labelledby='com.ibm.rdm.fronting.server.util.ConfigImpl.views.mimicRenamedServer.propertyName']/following-sibling::span[@class='viewValueNode']} in no frame)
+			 ( -> true)
+			(finding element By.xpath: .//*[@aria-labelledby='com.ibm.rdm.fronting.server.util.ConfigImpl.views.mimicRenamedServer.propertyName']/following-sibling::span[@class='viewValueNode'] for browser Firefox browser, path=C:/Program Files/Mozilla Firefox/firefox.exe in frame 'null')
+			(  -> found Web element {full xpath: .//*[@aria-labelledby='com.ibm.rdm.fronting.server.util.ConfigImpl.views.mimicRenamedServer.propertyName']/following-sibling::span[@class='viewValueNode']} in no frame)
+			(getting text for Web element {full xpath: .//*[@aria-labelledby='com.ibm.rdm.fronting.server.util.ConfigImpl.views.mimicRenamedServer.propertyName']/following-sibling::span[@class='viewValueNode']} in no frame)
+			 ( -> "true")
+	  -> OK (in 32.1s)
+	- 'isPipeline' value=false
+**********  Close Debug Session: 20210614154223  ********

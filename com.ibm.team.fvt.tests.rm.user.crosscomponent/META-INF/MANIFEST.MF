@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: RM User Cross-Component Scenario
+Bundle-SymbolicName: com.ibm.team.fvt.tests.rm.user.crosscomponent
+Bundle-Version: 7.0.3.qualifier
+Export-Package: com.ibm.team.fvt.tests.rm.user.crosscomponent.scenario,
+ com.ibm.team.fvt.tests.rm.user.crosscomponent.steps
+Require-Bundle: com.ibm.team.fvt.tests.clm,
+ com.ibm.team.fvt.tests.rm.sanitytest;bundle-version="6.0.4"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7

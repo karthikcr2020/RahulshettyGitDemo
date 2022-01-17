@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><launchConfiguration type="org.eclipse.jdt.junit.launchconfig">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/com.ibm.team.fvt.tests.rm.user.importing"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="4"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.junit.CONTAINER" value=""/>
+<booleanAttribute key="org.eclipse.jdt.junit.KEEPRUNNING_ATTR" value="false"/>
+<stringAttribute key="org.eclipse.jdt.junit.TESTNAME" value=""/>
+<stringAttribute key="org.eclipse.jdt.junit.TEST_KIND" value="org.eclipse.jdt.junit.loader.junit4"/>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="com.ibm.team.fvt.tests.rm.user.importing.ImportingUserScenario"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="com.ibm.team.fvt.tests.rm.user.importing"/>
+<stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-DparamFilesDir=params&#13;&#10;-DparamFilesPath=browser/firefox_v52_win.properties;rm-user-import/tomcat.properties;system_under_test.properties"/>
+</launchConfiguration>

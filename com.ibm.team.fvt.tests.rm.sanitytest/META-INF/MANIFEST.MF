@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: RM Sanity
+Bundle-SymbolicName: com.ibm.team.fvt.tests.rm.sanitytest
+Bundle-Version: 7.0.3.qualifier
+Export-Package: com.ibm.team.fvt.tests.rm.sanitytest.helpers,
+ com.ibm.team.fvt.tests.rm.sanitytest.scenario,
+ com.ibm.team.fvt.tests.rm.sanitytest.steps
+Require-Bundle: com.ibm.team.fvt.tests.clm
+Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Import-Package: com.ibm.team.fvt.tests.utils.moonunit

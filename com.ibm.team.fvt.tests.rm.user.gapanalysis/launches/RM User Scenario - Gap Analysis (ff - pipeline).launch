@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><launchConfiguration type="org.eclipse.jdt.junit.launchconfig">
+<listEntry value="/com.ibm.team.fvt.tests.rm.user.gapanalysis/src/com/ibm/team/fvt/tests/rm/user/gapanalysis/scenario/GapAnalysisUserScenario.java"/>
+<listEntry value="/com.ibm.team.fvt.tests.rm.sanitytest/src/com/ibm/team/fvt/tests/rm/sanitytest/scenario/SanityTestScenario.java"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.junit.CONTAINER" value=""/>
+<booleanAttribute key="org.eclipse.jdt.junit.KEEPRUNNING_ATTR" value="false"/>
+<stringAttribute key="org.eclipse.jdt.junit.TESTNAME" value=""/>
+<stringAttribute key="org.eclipse.jdt.junit.TEST_KIND" value="org.eclipse.jdt.junit.loader.junit4"/>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="com.ibm.team.fvt.tests.rm.user.gapanalysis.GapAnalysisUserScenario"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="com.ibm.team.fvt.tests.rm.user.gapanalysis"/>
+<stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-DparamFilesDir=params&#13;&#10;-DparamFilesPath=browser/firefox_v52.properties;rm-user-gap-analysis/pipeline.properties&#13;&#10;-DbaseUrl=https://vl-a6188d62-ihs.rtp.raleigh.ibm.com:9443&#13;&#10;-DskipJtsSetup=false&#13;&#10;-DfirstStep=&#13;&#10;-DfirstTest=&#13;&#10;-Dsteps=&#13;&#10;-Dtests=&#13;&#10;-DstopOnFailure=true"/>
+</launchConfiguration>
